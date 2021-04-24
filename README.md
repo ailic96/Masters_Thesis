@@ -1,13 +1,74 @@
 # Diplomski rad
 
-### Student: 
+__Student:__
 * Anton Ilić
-### Mentor:
+
+__Mentor:__
 * _izv. prof. dr. sc._ Ana Meštrović
-### Komentor: 
-* _doc. dr. sc._ Slobodan Beliga
+
+__Komentor:__ 
+* _dr. sc._ Slobodan Beliga
+
+__Naslov:__ 
+* Analiza sentimenata novinskih članaka vezanih uz tematiku koronavirusa
+
+__English title:__
+* Sentiment Analysis of Coronavirus Related News Articles
+
+__Sadržaj zadatka:__
+
+Cilj diplomskog rada je prikupiti tekstualne podatke s odabranog novinskog (internetskog) portala za vremensko razdoblje 1.1.2020.- 30.4.2021.
+
+Prikupljene tekstualne podatke potrebno je organizirati i pohraniti u oblik prikladan za obradu nestrukturiranih podataka. Prilikom odabira novinskih objava bitno je odabrati one koje imaju označene reakcije čitatelja u obliku emocija (reakcija u obliku odabranog osjećajnika - engl. emoticon). 
+
+Potrebno je opisati postupak prikupljanja podataka. Na takvom skupu podataka potrebno je mjerama deskriptivne statistike izračunati i opisati udjele novinskih članaka vezane za tematiku koronavirusa (posebno na cjelovitom skupu podataka, te posebno po određenim kategorijama). 
+
+Osim toga, potrebno je načiniti podskup novinskih članaka vezanih za tematiku koronavirusa prema definiranom COVID-19 tezaurusu koji će se koristiti u zadatku analize sentimenta korona objava. Podatkovni skup vezan za korona objave potrebno je podijeliti u 2 dijela, jedan za učenje, a drugi za testiranje (najbolje u omjeru 70:30). 
+
+U postupku pripreme podataka za učenje i testiranje treba zadržati samo one članke koji imaju označene emocije od najmanje 3 čitatelja (najmanje 3 reakcije u obliku osjećajnika). Model za predikciju sentimenta klasificirati će svaki novinski članak u pozitivnu, neutralnu ili negativnu klasu. 
+
+Za analizu sentimenta na svim tekstovima je u inicijalnom koraku potrebno odraditi standardne korake predobrade i normalizacije teksta, a osim toga potrebno je definirati skale na kojima će se mjeriti sentiment (primjerice na skali vrijednosti iz intervala od -1 do 1) i način izračuna vrijednosti sentimenta koji uzima u obzir više različitih reakcija (npr. ljutnja, oduševljenje, sreća i sl.). 
+
+Prvi model za predikciju sentimenta konstruirati nenadziranim pristupom (npr. koristeći tezaurus sentimenta), a drugi inducirati nadziranim pristupom koristeći standatrdne modele strojnog učenja (npr. SVM). Dobivene rezultate koji predviđaju sentiment potrebno je evaluirati u terminima preciznosti, odziva i F1 mjere na način da se predikcija modela usporedi s sentimentom dobivenim iz postojećih anotacija čitatelja.
 
 # Changelog
+
+### __24.04.2021__
+
+#### __src/processing/language_cleaninig.py__
+
+* Dodana opcija za čišćenje svih znakova koji nisu alfanumerički osim točke za analizu sentimenta nenadziranim učenjem po rečenici. Znakovi ? i ! se pretvaraju u .
+* Zadržana je opcija za čišćenje svih zaustavnih riječi pomoću zasebne funkcije.
+
+#### __src/analysis/article_positivity.py__
+
+* Dodana skripta koja služi za izračun pozitivnosti svakog pojedinog naslova, podnaslova i punog teksta članaka pomoću sljedećih metrika:
+    * Koeficijent u intervalu vrijednosti -1 do 1 dobiven iz sedam 
+    emoji reakcija. 
+        * ```reaction_positivity = (reaction_love*1 + reaction_laugh*0.5 + reaction_hug*1 + reaction_ponder*-0.25 + reaction_sad*-1 + reaction_mad*-1 + reaction_mind_blown*-0.75)/reaction_count ```
+    * Tri vrijednosti (naslov, podnaslov i puni tekst članka) dobivene zbrajenjem i oduzimanjem pozitivnosti svake pojedine riječi prema 
+    predefiniranim kriterijima u spomenutim tekstualnim elementima.
+        * Ukupni rezultat je dobiven dijeljenjem sume pozitivnosti s ukupnim
+        brojem riječi koje se nalaze u tekstualnom elementu
+        * Rezultat je spremljen u _.csv_ datoteku, respektivno za svaki analizirani tekstualni element.
+    * Tri vrijednosti (naslov, podnaslov i puni tekst članka) dobivene
+    zbrajanjem i oduzimanjem pozitivnosti za svaku pojedinu rečenicu. 
+        * Odstranjene su rečenice s ukupnom vrijednosti 0 (Nula predstavlja neodgovarajuće parsiranu rečenicu).
+        * Za svaku rečenicu se ukupna suma pozitivnosti dijeli s brojem riječi te se od svih rečenica kao rezulatat uzima srednja vrijednost
+        svih rečenica za pojedini tekstualni element.
+        * Rezultat je spremljen u _.csv_ datoteku, respektivno za svaki analizirani tekstualni element.
+
+#### __src/analysis/article_add_classes.py__
+        
+
+#### __word_lists/interpunction.txt__
+
+* Lista zaustavnih nealfanumeričkih znakova bez znaka točke (.).
+
+#### __word_lists/covid_dictionary.txt__
+
+* Lista svih COVID-19 povezanih termina je proširena.
+
 
 ### __20.04.2021__
 
