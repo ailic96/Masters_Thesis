@@ -19,7 +19,7 @@ __Sadržaj zadatka:__
 
 Cilj diplomskog rada je prikupiti tekstualne podatke s odabranog novinskog (internetskog) portala za vremensko razdoblje 1.1.2020.- 30.4.2021.
 
-Prikupljene tekstualne podatke potrebno je organizirati i pohraniti u oblik prikladan za obradu nestrukturiranih podataka. Prilikom odabira novinskih objava bitno je odabrati one koje imaju označene reakcije čitatelja u obliku emocija (reakcija u obliku odabranog osjećajnika - engl. emoticon). 
+Prikupljene tekstualne podatke potrebno je organizirati i pohraniti u oblik prikladan za obradu nestrukturiranih podataka. Prilikom odabira novinskih objava bitno je odabrati one koje imaju označene reakcije čitatelja u obliku emocija (emoticon). 
 
 Potrebno je opisati postupak prikupljanja podataka. Na takvom skupu podataka potrebno je mjerama deskriptivne statistike izračunati i opisati udjele novinskih članaka vezane za tematiku koronavirusa (posebno na cjelovitom skupu podataka, te posebno po određenim kategorijama). 
 
@@ -37,7 +37,7 @@ Prvi model za predikciju sentimenta konstruirati nenadziranim pristupom (npr. ko
 
 #### __src/processing/language_cleaninig.py__
 
-* Dodana opcija za čišćenje svih znakova koji nisu alfanumerički osim točke za analizu sentimenta nenadziranim učenjem po rečenici. Znakovi ? i ! se pretvaraju u .
+* Dodana opcija za čišćenje svih znakova koji nisu alfanumerički osim zaustavne točke za analizu sentimenta nenadziranim učenjem po rečenici. Znakovi ? i ! se pretvaraju u znak zaustavne točke.
 * Zadržana je opcija za čišćenje svih zaustavnih riječi pomoću zasebne funkcije.
 
 #### __src/analysis/article_positivity.py__
@@ -59,7 +59,15 @@ Prvi model za predikciju sentimenta konstruirati nenadziranim pristupom (npr. ko
         * Rezultat je spremljen u _.csv_ datoteku, respektivno za svaki analizirani tekstualni element.
 
 #### __src/analysis/article_add_classes.py__
-        
+
+* Skripta člancima dodjeljuje ocjenu pozitivnosti pomoću sljedećih klasa prema navedenim vrijednostima koeficijenata pozitivnosti emoji-a:
+    * POSITIVE >= 0.1
+    * 0 <= NEUTRAL > 0.1
+    * NEGATIVE < 0
+
+#### __src/analysis/support_vector_machine.py__
+
+* Generičan kod za predikciju pozitivnosti teksta metodom potpornih vektora (SVM).
 
 #### __word_lists/interpunction.txt__
 
