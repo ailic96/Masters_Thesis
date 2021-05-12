@@ -31,7 +31,194 @@ Za analizu sentimenta na svim tekstovima je u inicijalnom koraku potrebno odradi
 
 Prvi model za predikciju sentimenta konstruirati nenadziranim pristupom (npr. koristeći tezaurus sentimenta), a drugi inducirati nadziranim pristupom koristeći standatrdne modele strojnog učenja (npr. SVM). Dobivene rezultate koji predviđaju sentiment potrebno je evaluirati u terminima preciznosti, odziva i F1 mjere na način da se predikcija modela usporedi s sentimentom dobivenim iz postojećih anotacija čitatelja.
 
+# Upute za pokretanje
+
+Pokretanje je odrađeno u terminalu Visual Studio Code editora prema sljedećem redoslijedu:
+
+Scrapanje URL-ova.
+```
+python src\scraping\article_url_scraper.py
+```
+
+Scrapanje sadržaja svakog URL-a.
+```
+python src\scraping\article_scraper.py
+```
+
+Filtriranje članaka koji imaju tematiku vezanu uz COVID-19.
+```
+python src\processing\article_filter.py
+```
+
+Kvantifikacija članaka po kategorijama i tematici.
+```
+python src\analysis\article_quantification.py
+```
+
+Čišćenje tekstualnih stupaca od zaustavnih znakova i riječi.
+```
+python src\processing\language_cleaning.py
+```
+
+Lematizacija skupova pozitivnih i negativnih riječi.
+```
+python src\processing\lemmatization_words_list.py
+```
+
+Lematizacija tekstualnih stupaca skupa podataka.
+```
+python src\processing\lemmatization_article.py
+```
+
+Dodavanje klasa pozitivnosti prema zadanim intervalima.
+```
+python src\analysis\article_add_classes.py
+```
+
+Algoritam potpornih vektora (SVM) nad člancima.
+```
+python src\analysis\support_vector_machine.py
+```
+
 # Changelog
+
+### __12.05.2021__
+
+#### __src/scraping/article_scraper.py__
+
+* Implementiran exception za neispravne članke
+
+####  __src/processing/lemmatization_article.py__
+
+* Kozmetičke promjene
+
+#### __src/analysis/article_positivity.py__
+
+* Refaktoriran algoritam za izračune sentimenata
+    * Povećana efikasnost
+    * Smanjen broj operacija
+    * Opis algoritma u kodu
+* Ponovna korekcija koeficijenata nekih emotikona
+
+```
+reaction_positivity = (reaction_love*1 + reaction_laugh*-0.25 + reaction_hug*1 + reaction_ponder*-0.25 + reaction_sad*-1 + reaction_mad*-1 + reaction_mind_blown*-0.5)/reaction_count
+```
+* Implementiran brojač obrađenih redaka skupa podataka
+
+
+####  __src/analysis/article_add_classes.py__
+
+* Prošireni opisi podataka:
+
+![Data Descriptions](imgs/descriptions.png)
+
+
+#### __src\analysis\sentiment_doc2vec.ipynb__
+
+* Implementirano [rješenje](https://towardsdatascience.com/multi-class-text-classification-with-doc2vec-logistic-regression-9da9947b43f4) za doc2vec pripremu podataka
+* Testirani algoritmi (U git kodu uključen jedan) uz daleko najgore predikcije
+
+#### __src\analysis\sentiment_ml.ipynb__
+
+* [Rezultati](https://github.com/ailic96/Masters_Thesis/blob/main/src/analysis/sentiment_ml.ipynb)
+* Implementirani algoritmi Support Vector Machine, Naive Bayes i Random Forest
+* Provjeren balans podataka - Problem nebalansiranog skupa podataka - klasifikator ignorira neutralnu klasu
+    * Problem korektiran pomoću rebalansa metodom resample
+    * Negativni slučajevi su downsampleani, pozitivni i neutralni upsampleani
+    * ![Original_distribution](imgs\distribution_original.PNG)
+    * ![Original_distribution](imgs\distribution_resampled.PNG)
+* Podaci razdvojeni u skup za treniranje i testiranje u omjeru 70:30
+* Implementiran k-Fold cross validation s 5 presvijanja
+* na skupu za treniranje proveden Term Frequency — Inverse Document Frequency (TFDF) za kvantifikaciju riječi
+* SMOTE algoritam (Ukoliko je potreban, upsample se je pokazao boljim)
+* __Rezultati:__
+```
+Accuracy(K-Fold): 74.881 (0.017)
+
+Naive Bayes (Default):
+===================================
+
+Train target values count:  Counter({'NEGATIVE': 1400, 'POSITIVE': 1050, 'NEUTRAL': 695})
+Test target values count:  Counter({'NEGATIVE': 600, 'POSITIVE': 450, 'NEUTRAL': 298})
+Result values count:  Counter({'NEGATIVE': 693, 'POSITIVE': 442, 'NEUTRAL': 213})
+
+               precision    recall  f1-score   support
+
+    NEGATIVE       0.72      0.83      0.77       600
+     NEUTRAL       0.88      0.63      0.73       298
+    POSITIVE       0.73      0.72      0.72       450
+
+    accuracy                           0.75      1348
+   macro avg       0.78      0.72      0.74      1348
+weighted avg       0.76      0.75      0.75      1348
+
+Accuracy Score:  74.77744807121661
+
+Computed in 0.31528329849243164 seconds.
+=======================================================================
+=======================================================================
+
+SVM (Default):
+===================================
+
+Train target values count:  Counter({'NEGATIVE': 1400, 'POSITIVE': 1050, 'NEUTRAL': 695})
+Test target values count:  Counter({'NEGATIVE': 600, 'POSITIVE': 450, 'NEUTRAL': 298})
+Result values count:  Counter({'NEGATIVE': 580, 'POSITIVE': 466, 'NEUTRAL': 302})
+
+               precision    recall  f1-score   support
+
+    NEGATIVE       0.86      0.83      0.85       600
+     NEUTRAL       0.93      0.94      0.93       298
+    POSITIVE       0.80      0.83      0.82       450
+
+    accuracy                           0.86      1348
+   macro avg       0.86      0.87      0.87      1348
+weighted avg       0.86      0.86      0.86      1348
+
+Accuracy Score:  85.53412462908013
+
+
+Computed in 157.62331342697144 seconds.
+
+=======================================================================
+=======================================================================
+
+Accuracy(K-Fold): 89.126 (0.011)
+
+Random Forest (Resampled):
+===================================
+
+Train target values count:  Counter({'NEGATIVE': 1400, 'POSITIVE': 1050, 'NEUTRAL': 695})
+Test target values count:  Counter({'NEGATIVE': 600, 'POSITIVE': 450, 'NEUTRAL': 298})
+Result values count:  Counter({'NEGATIVE': 614, 'POSITIVE': 439, 'NEUTRAL': 295})
+
+               precision    recall  f1-score   support
+
+    NEGATIVE       0.90      0.92      0.91       600
+     NEUTRAL       1.00      0.99      0.99       298
+    POSITIVE       0.90      0.88      0.89       450
+
+    accuracy                           0.92      1348
+   macro avg       0.93      0.93      0.93      1348
+weighted avg       0.92      0.92      0.92      1348
+
+Accuracy Score:  92.13649851632047
+
+
+Computed in 9.674824953079224 seconds.
+
+
+```
+
+### __03.05.2021__
+
+#### __src/scraping/article_url_scraper.py__
+
+* Skup prodataka proširen na članke do 30.4.2021
+
+#### __src/scraping/article_scraper.py__
+
+* Dodan _try - except_ blok za rješavanje problema obrisanih članaka i nepostojećih URL-ova
 
 ### __24.04.2021__
 
