@@ -1,4 +1,4 @@
-from functions import delete_if_exists
+from common import delete_if_exists
 from bs4 import BeautifulSoup   # scraping library
 import requests                 # fetching data from web
 import re                       # regular expressions library
@@ -90,19 +90,19 @@ def article_crawler(assign_url):
     
     # Go to assigned url through Selenium
     if  (assign_url == 'https://www.dalmacijadanas.hr/rubrika/dalmacija/'):
-        scroll_category(600)   
+        scroll_category(120)   
         #scroll_category(5)     #test
     elif(assign_url == 'https://www.dalmacijadanas.hr/rubrika/vijesti/'):
-        scroll_category(700) 
+        scroll_category(150) 
         #scroll_category(20)    #test    
     elif(assign_url == 'https://www.dalmacijadanas.hr/rubrika/sport/'):
-        scroll_category(450)
+        scroll_category(100)
         #scroll_category(20)    #test
     elif(assign_url == 'https://www.dalmacijadanas.hr/rubrika/relax/'):
-        scroll_category(350)
+        scroll_category(100)
         #scroll_category(10)    #test
     elif(assign_url == 'https://www.dalmacijadanas.hr/rubrika/specijali/'):
-        scroll_category(70)
+        scroll_category(50)
         #scroll_category(10)    #test
     elif(assign_url == 'https://www.dalmacijadanas.hr/rubrika/kolumne/'):
         scroll_category(30)
@@ -178,8 +178,8 @@ def article_scraper(assign_url):
 
     # Declaration of start and finish article scrap date
     
-    start_date = datetime.date(2021, 4, 16)
-    finish_date = datetime.date(2020, 12, 1)
+    start_date = datetime.date(2021, 4, 30)
+    finish_date = datetime.date(2021, 4, 17)
 
     last_article = False
 
