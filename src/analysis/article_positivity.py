@@ -24,17 +24,16 @@ def list_contains(list_1, list_positive, list_negative):
     """
     total = 0
 
-    for word_positive in list_positive:
-        for word in list_1:
-            if(word_positive[0] == word):
-                total+=float(word_positive[1])  
+    for word in list_1:
+        for word_positive in list_positive:
+            if(word == word_positive[0]):
+                total+=float(word_positive[1])
 
-    for word_negative in list_negative:
-        for word in list_1:
-            if(word_negative[0] == word):
-                total-=float(word_negative[1])            
+        for word_negative in list_negative:
+            if(word == word_negative[0]):
+                total-=float(word_negative[1]) 
 
-    return round(total/len(list_1), 5)
+    return np.round(total/len(list_1), decimals = 5)
 
 
 def sentence_positivity(list_1, list_positive, list_negative):
@@ -51,55 +50,50 @@ def sentence_positivity(list_1, list_positive, list_negative):
         float: Positvity
     """
 
-    sentence_weights_positive = []
-    sentence_weights_negative = []
+    sentence_weights = []
 
     negative_expressions = ['ne']
-
-
+    
     for sentence in list_1:
+
         sentence_tokens = word_tokenize(sentence)
         sentence_score = 0
-        for idx, word in enumerate(sentence_tokens):
-            if word in negative_expressions:
-                sentence_tokens[idx:] = ['ne'] * (len(sentence_tokens) - idx)
-            for word_positive in list_positive:
-                if(word == word_positive[0]):
-                    sentence_score += float(word_positive[1])
-                elif word in negative_expressions:
-                    continue
-        
-        sentence_weights_positive.append(sentence_score/len(list_1))
 
-    for sentence in list_1:
-        sentence_tokens = word_tokenize(sentence)
-        sentence_score = 0
+        # Iterate through each sentence
         for idx, word in enumerate(sentence_tokens):
+            
+            # If word 'ne' is found, change the whole sentence to 'ne'
+            # and decrease positivity by -1 for each occurrence
             if word in negative_expressions:
                 sentence_tokens[idx:] = ['ne'] * (len(sentence_tokens) - idx)
                 sentence_score -= 1
-                #print('\n',sentence_tokens)
-                #print(word, sentence_score)
+
+            # Calculate positivity respectively
+            for word_positive in list_positive:
+                if(word == word_positive[0]):
+                    sentence_score += float(word_positive[1])
+                elif word in negative_expressions:      # Skips 'ne'
+                    continue
+
+            # Calculate negativity respectively
             for word_negative in list_negative:
                 if(word == word_negative[0]):
                     sentence_score -= float(word_negative[1])
-                elif word in negative_expressions:
+                elif word in negative_expressions:      # Skips 'ne'
                     continue
+        
+        # Add calculated positivity to a list
+        sentence_weights.append(sentence_score/len(list_1))
 
-        sentence_weights_negative.append(sentence_score/len(list_1))
-
-    total = list(np.add(sentence_weights_positive, sentence_weights_negative))
-
-    total = [ elem for elem in total if elem != 0.0]
-
+    #Remove sentence weights if their value equals 0.0
+    total = [elem for elem in sentence_weights if elem != 0.0]
     total_mean = np.mean(total)
-
-    #print('Positive sentence:\n', sentence_weights_positive)
-    #print('Negative sentence:\n', sentence_weights_negative)
+    
+    #print('Sentence weights:\n', sentence_weights)
     #print('Total:\n', total)
     #print('Total mean:\n',total_mean)
 
-    return round(total_mean, 5)
+    return np.round(total_mean, decimals = 5)
 
 
 
@@ -118,6 +112,12 @@ def article_positivity(input_path, output_path, positivity_path, negativity_path
     ID = 0
 
     print('Calculating ' + str(input_path) + ' article positivity...')
+
+    # Number of lines / URLS to be processed
+    processed_articles = 1
+    article_counter = len(open('data/portal_articles_covid_sentences_lemmatized.csv', encoding='utf-8').readlines())
+    print('Found ' + str(article_counter) + ' articles')
+
 
     with open(input_path, 'r', encoding = 'utf-8') as csv_read, \
         open(positivity_path, 'r', encoding = 'utf-8') as csv_read_positive, \
@@ -149,6 +149,8 @@ def article_positivity(input_path, output_path, positivity_path, negativity_path
         #next(csv_reader_negative, None)
 
         for row in csv_reader:
+            
+            print('Processed ' + str(processed_articles) + ' / ' + str(article_counter) + ' articles')
 
             #print(row)
             title = row[1]
@@ -156,15 +158,15 @@ def article_positivity(input_path, output_path, positivity_path, negativity_path
             article_text = row[5]
 
             reaction_love =         float(row[10])     # 1
-            reaction_laugh =        float(row[11])     # 0.5
+            reaction_laugh =        float(row[11])     # 0.25
             reaction_hug =          float(row[12])     # 1
             reaction_ponder =       float(row[13])     # -0.25
             reaction_sad =          float(row[14])     # -1
             reaction_mad =          float(row[15])     # -1
-            reaction_mind_blown =   float(row[16])     # -0.75
+            reaction_mind_blown =   float(row[16])     # -0.50
 
             reaction_count = reaction_love + reaction_laugh + reaction_hug + reaction_ponder + reaction_sad + reaction_mad + reaction_mind_blown
-            reaction_positivity = (reaction_love*1 + reaction_laugh*0.5 + reaction_hug*1 + reaction_ponder*-0.25 + reaction_sad*-1 + reaction_mad*-1 + reaction_mind_blown*-0.75)/reaction_count 
+            reaction_positivity = (reaction_love*1 + reaction_laugh*-0.25 + reaction_hug*1 + reaction_ponder*-0.25 + reaction_sad*-1 + reaction_mad*-1 + reaction_mind_blown*-0.5)/reaction_count 
             reaction_positivity = round(reaction_positivity, 2)
 
             title_positivity    = list_contains(title.split(), csv_reader_positive, csv_reader_negative)
@@ -180,7 +182,7 @@ def article_positivity(input_path, output_path, positivity_path, negativity_path
                         row[16], title_positivity, subtitle_positivity, article_positivity,title_positivity_sentence, 
                         subtitle_positivity_sentence, article_positivity_sentence, reaction_positivity])
             
-
+            processed_articles += 1
     print('Clean file saved at: ' + output_path)
 
 '''
