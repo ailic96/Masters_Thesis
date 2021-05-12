@@ -133,7 +133,7 @@ reaction_positivity = (reaction_love*1 + reaction_laugh*-0.25 + reaction_hug*1 +
 * SMOTE algoritam (Ukoliko je potreban, upsample se je pokazao boljim)
 * __Rezultati:__
 ```
-Accuracy(K-Fold): 74.881 (0.017)
+
 
 Naive Bayes (Default):
 ===================================
@@ -153,8 +153,10 @@ Result values count:  Counter({'NEGATIVE': 693, 'POSITIVE': 442, 'NEUTRAL': 213}
 weighted avg       0.76      0.75      0.75      1348
 
 Accuracy Score:  74.77744807121661
+Accuracy(K-Fold): 74.881 (0.017)
 
-Computed in 0.31528329849243164 seconds.
+
+Computed in 1.7423129081726074 seconds.
 =======================================================================
 =======================================================================
 
@@ -176,14 +178,12 @@ Result values count:  Counter({'NEGATIVE': 580, 'POSITIVE': 466, 'NEUTRAL': 302}
 weighted avg       0.86      0.86      0.86      1348
 
 Accuracy Score:  85.53412462908013
+Accuracy(K-Fold): 0.846 (0.007)
 
 
-Computed in 157.62331342697144 seconds.
-
+Computed in 151.3306860923767 seconds.
 =======================================================================
 =======================================================================
-
-Accuracy(K-Fold): 89.126 (0.011)
 
 Random Forest (Resampled):
 ===================================
@@ -203,9 +203,10 @@ Result values count:  Counter({'NEGATIVE': 614, 'POSITIVE': 439, 'NEUTRAL': 295}
 weighted avg       0.92      0.92      0.92      1348
 
 Accuracy Score:  92.13649851632047
+Accuracy(K-Fold): 89.126 (0.011)
 
 
-Computed in 9.674824953079224 seconds.
+Computed in 6.730567455291748 seconds.
 
 
 ```
