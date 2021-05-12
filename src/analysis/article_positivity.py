@@ -36,6 +36,7 @@ def list_contains(list_1, list_positive, list_negative):
     return np.round(total/len(list_1), decimals = 5)
 
 
+
 def sentence_positivity(list_1, list_positive, list_negative):
     """
     Checks if item from list_1 is in the list_positive or/and in list_negative.
@@ -185,12 +186,6 @@ def article_positivity(input_path, output_path, positivity_path, negativity_path
             processed_articles += 1
     print('Clean file saved at: ' + output_path)
 
-'''
-article_positivity('data/portal_articles_covid_lemmatized.csv', 
-'data/portal_articles_covid_positivity.csv', 
-'word_lists/crosentilex-positives_lemmatized.txt',
-'word_lists/crosentilex-negatives_lemmatized.txt')
-'''
 
 article_positivity('data/portal_articles_covid_sentences_lemmatized.csv', 
 'data/portal_articles_covid_positivity_extended.csv', 

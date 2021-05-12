@@ -5,6 +5,7 @@ import pandas as pd     # Advanced data manipulation
 from common import delete_if_exists, file_to_list
 
 
+
 def covid_identifier(input_path, output_path, covid_wordlist):
     """
     Identifies COVID-19 related articles by searching through

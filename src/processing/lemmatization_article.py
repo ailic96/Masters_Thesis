@@ -81,5 +81,4 @@ def lemmatize_articles(input_path, output_path):
     print('Lemmatized file saved at: ' + output_path)
 
 
-#lemmatize_articles('data/portal_articles_covid_clear.csv', 'data/portal_articles_covid_lemmatized123.csv')
-lemmatize_articles('data/portal_articles_covid.csv', 'data/portal_articles_covid_sentences_lemmatized123.csv')
+lemmatize_articles('data/portal_articles_covid.csv', 'data/portal_articles_covid_sentences_lemmatized.csv')

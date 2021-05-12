@@ -22,3 +22,5 @@ data/portal_article_logger.txt
 quick_editor.py
 data_backup/portal_urls.txt
 geckodriver.log
+data/portal_articles_covid_positivity_vader.csv
+src/analysis/portal_articles_positivity_class.csv

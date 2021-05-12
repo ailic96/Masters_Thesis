@@ -27,10 +27,6 @@ def assign_classes(path):
 
     print('Emoji positivity:\n', desc_emoji_positivity)
 
-
-
-
-
     conditions = [
         (df['Emoji_positivity'] >= 0.1),
         (df['Emoji_positivity'] < 0.1) & (df['Emoji_positivity'] >= 0),
