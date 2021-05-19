@@ -153,8 +153,8 @@ reaction_positivity = (reaction_love*1 + reaction_laugh*-0.25 + reaction_hug*1 +
 * Provjeren balans podataka - Problem nebalansiranog skupa podataka - klasifikator ignorira neutralnu klasu
     * Problem korektiran pomoću rebalansa metodom resample
     * Negativni slučajevi su downsampleani, pozitivni i neutralni upsampleani
-    * ![Original_distribution](imgs\distribution_original.PNG)
-    * ![Original_distribution](imgs\distribution_resampled.PNG)
+    * ![Original_distribution](imgs/distribution_original.PNG)
+    * ![Resampled_distribution](imgs/distribution_resampled.PNG)
 * Podaci razdvojeni u skup za treniranje i testiranje u omjeru 70:30
 * Implementiran k-Fold cross validation s 5 presvijanja
 * na skupu za treniranje proveden Term Frequency — Inverse Document Frequency (TFDF) za kvantifikaciju riječi
