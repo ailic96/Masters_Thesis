@@ -24,3 +24,9 @@ data_backup/portal_urls.txt
 geckodriver.log
 data/portal_articles_covid_positivity_vader.csv
 src/analysis/portal_articles_positivity_class.csv
+data_backup/portal_articles_covid_positivity_vader.csv
+data_backup/portal_articles_covid_positivity_vader_tit_sub.csv
+data_backup/portal_articles_covid_positivity_vader_article_text.csv
+data_backup/portal_articles_covid_positivity_extended copy.csv
+data/portal_articles_final.csv
+data/portal_articles_classes_.csv

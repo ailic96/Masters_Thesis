@@ -44,39 +44,49 @@ def lemmatize_articles(input_path, output_path):
 
         print('Lemmatization started...')
 
+        id = 1
+
         for row in csv_reader:
 
             title = row[1]
             subtitle = row[2]
             article_text = row[5]
 
-            # Some articles may have null values
-            # which can break loops
-
-            if(len(title) == 0):
+            # None value exception handling
+            try:
+                doc_title = nlp(title)
+                lem_title = [word.lemma for sent in doc_title.sentences for word in sent.words]
+            except:
                 title = 'N/A'
-
-            if(len(subtitle) == 0):
-                subtitle = 'N/A'
+                lem_title = 'N/A'
+                pass
             
-            if(len(article_text) == 0):
+            try:
+                doc_subtitle = nlp(subtitle)
+                lem_subtitle = [word.lemma for sent in doc_subtitle.sentences for word in sent.words]
+            except:
+                subtitle = 'N/A'
+                lem_subtitle = 'N/A'
+                pass
+
+            try:
+                doc_article_text = nlp(article_text)
+                lem_article_text =  [word.lemma for sent in doc_article_text.sentences for word in sent.words]
+            
+            except:
                 article_text = 'N/A'
-
-            doc_title = nlp(title)
-            doc_subtitle = nlp(subtitle)
-            doc_article_text = nlp(article_text)
-
-            lem_title =         [word.lemma for sent in doc_title.sentences for word in sent.words]
-            lem_subtitle =      [word.lemma for sent in doc_subtitle.sentences for word in sent.words]
-            lem_article_text =  [word.lemma for sent in doc_article_text.sentences for word in sent.words]
+                lem_article_text = 'N/A'
+                pass
 
             lem_title =         (' ').join(lem_title).lower()
             lem_subtitle =      (' ').join(lem_subtitle).lower()
             lem_article_text =  (' ').join(lem_article_text).lower()
 
-            csv_writer.writerow([row[0], lem_title, lem_subtitle, row[3], row[4], lem_article_text, row[6], 
+            csv_writer.writerow([id, lem_title, lem_subtitle, row[3], row[4], lem_article_text, row[6], 
                         row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15], 
                         row[16]])
+
+            id+=1
         
     print('Lemmatized file saved at: ' + output_path)
 

@@ -3,6 +3,9 @@ import numpy as np
 
 
 def assign_classes(path):
+    '''
+    Assign a class (String) to each calculated emoji positivity in a new column.
+    '''
 
     df = pd.read_csv(path, sep=',', encoding='utf-8')
 
@@ -37,8 +40,9 @@ def assign_classes(path):
 
     df['Positivity'] = np.select(conditions, values)
 
-    df.to_csv('data/portal_articles_positivity_class.csv', sep=',', encoding='utf-8', index=False)
+    df.to_csv('data/portal_articles_classes_.csv', sep=',', encoding='utf-8', index=False)
 
 
 assign_classes('data/portal_articles_covid_positivity_extended.csv')
+
 

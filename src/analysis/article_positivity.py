@@ -8,6 +8,8 @@ from nltk.corpus import stopwords
 #nltk.download('punkt')
 #nltk.download('stopwords')
 
+import os
+import pandas as pd
 
 def list_contains(list_1, list_positive, list_negative):
     """
@@ -33,7 +35,7 @@ def list_contains(list_1, list_positive, list_negative):
             if(word == word_negative[0]):
                 total-=float(word_negative[1]) 
 
-    return np.round(total/len(list_1), decimals = 5)
+    return total/len(list_1)
 
 
 
@@ -84,17 +86,13 @@ def sentence_positivity(list_1, list_positive, list_negative):
                     continue
         
         # Add calculated positivity to a list
-        sentence_weights.append(sentence_score/len(list_1))
+        sentence_weights.append(sentence_score)
 
     #Remove sentence weights if their value equals 0.0
     total = [elem for elem in sentence_weights if elem != 0.0]
     total_mean = np.mean(total)
-    
-    #print('Sentence weights:\n', sentence_weights)
-    #print('Total:\n', total)
-    #print('Total mean:\n',total_mean)
 
-    return np.round(total_mean, decimals = 5)
+    return total_mean
 
 
 
@@ -108,7 +106,7 @@ def article_positivity(input_path, output_path, positivity_path, negativity_path
         positivity_path (string): Path to the list of positive expression ratings.
         negativity_path (string): Path to the list of negative expression ratings.
     """
-    delete_if_exists(output_path)
+    #delete_if_exists(output_path)
 
     ID = 0
 
@@ -142,48 +140,68 @@ def article_positivity(input_path, output_path, positivity_path, negativity_path
         'Reaction_sad', 'Reaction_mad', 'Reaction_mind_blown', 
         'Title_positivity', 'Subtitle_positivity', 'Text_positivity','Title_positivity_sentence','Subtitle_positivity_sentence','Text_positivity_sentence', 'Emoji_positivity']
 
-        csv_writer.writerow(headers)
 
-        # Skip old header, add new a new one
-        next(csv_reader, None)
-        #next(csv_reader_positive, None)
-        #next(csv_reader_negative, None)
+        ID = 1
 
-        for row in csv_reader:
+        if os.stat(output_path).st_size > 0:
+            df_output = pd.read_csv(output_path, delimiter=',', lineterminator='\n')
+            num_rows = len(df_output.index) + 1
+        else:
+            print('No previous inputs found!')
+            num_rows = 0
+                
+
+        if num_rows > 0:
+            print('File not empty! Number of inputs: ', num_rows + 1)
+            print('Continuing...')
+            ID = num_rows 
+        else:
+            csv_writer.writerow(headers)
+            # Skip header on iterating
+            next(csv_reader, None)
+
+        for idx, row in enumerate(csv_reader):
             
-            print('Processed ' + str(processed_articles) + ' / ' + str(article_counter) + ' articles')
+            if idx < num_rows:  
+                # Continue if last input
+                print('Skipped articles:' + str(idx) + '/' + str(num_rows-1))
+                continue
+            else:
 
-            #print(row)
-            title = row[1]
-            subtitle = row[2]
-            article_text = row[5]
+                print('Processed ' + str(processed_articles) + ' / ' + str(article_counter - num_rows ) + ' articles')
 
-            reaction_love =         float(row[10])     # 1
-            reaction_laugh =        float(row[11])     # 0.25
-            reaction_hug =          float(row[12])     # 1
-            reaction_ponder =       float(row[13])     # -0.25
-            reaction_sad =          float(row[14])     # -1
-            reaction_mad =          float(row[15])     # -1
-            reaction_mind_blown =   float(row[16])     # -0.50
+                #print(row)
+                title = row[1]
+                subtitle = row[2]
+                article_text = row[5]
 
-            reaction_count = reaction_love + reaction_laugh + reaction_hug + reaction_ponder + reaction_sad + reaction_mad + reaction_mind_blown
-            reaction_positivity = (reaction_love*1 + reaction_laugh*-0.25 + reaction_hug*1 + reaction_ponder*-0.25 + reaction_sad*-1 + reaction_mad*-1 + reaction_mind_blown*-0.5)/reaction_count 
-            reaction_positivity = round(reaction_positivity, 2)
+                reaction_love =         float(row[10])     # 1
+                reaction_laugh =        float(row[11])     # 0.25
+                reaction_hug =          float(row[12])     # 1
+                reaction_ponder =       float(row[13])     # -0.25
+                reaction_sad =          float(row[14])     # -1
+                reaction_mad =          float(row[15])     # -1
+                reaction_mind_blown =   float(row[16])     # -0.50
 
-            title_positivity    = list_contains(title.split(), csv_reader_positive, csv_reader_negative)
-            subtitle_positivity = list_contains(subtitle.split(), csv_reader_positive, csv_reader_negative)
-            article_positivity  = list_contains(article_text.split(), csv_reader_positive, csv_reader_negative)
+                reaction_count = reaction_love + reaction_laugh + reaction_hug + reaction_ponder + reaction_sad + reaction_mad + reaction_mind_blown
+                reaction_positivity = (reaction_love*1 + reaction_laugh*-0.25 + reaction_hug*1 + reaction_ponder*-0.25 + reaction_sad*-1 + reaction_mad*-1 + reaction_mind_blown*-0.5)/reaction_count 
+                reaction_positivity = round(reaction_positivity, 2)
 
-            title_positivity_sentence = sentence_positivity(title.split('.'), csv_reader_positive, csv_reader_negative)
-            subtitle_positivity_sentence = sentence_positivity(subtitle.split('.'), csv_reader_positive, csv_reader_negative)
-            article_positivity_sentence = sentence_positivity(article_text.split('.'), csv_reader_positive, csv_reader_negative)
-            
-            csv_writer.writerow([row[0], row[1], row[2], row[3], row[4], row[5],row[6], 
-                        row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15], 
-                        row[16], title_positivity, subtitle_positivity, article_positivity,title_positivity_sentence, 
-                        subtitle_positivity_sentence, article_positivity_sentence, reaction_positivity])
-            
-            processed_articles += 1
+                title_positivity    = list_contains(title.split(), csv_reader_positive, csv_reader_negative)
+                subtitle_positivity = list_contains(subtitle.split(), csv_reader_positive, csv_reader_negative)
+                article_positivity  = list_contains(article_text.split(), csv_reader_positive, csv_reader_negative)
+
+                title_positivity_sentence = sentence_positivity(title.split('.'), csv_reader_positive, csv_reader_negative)
+                subtitle_positivity_sentence = sentence_positivity(subtitle.split('.'), csv_reader_positive, csv_reader_negative)
+                article_positivity_sentence = sentence_positivity(article_text.split('.'), csv_reader_positive, csv_reader_negative)
+                
+                csv_writer.writerow([row[0], row[1], row[2], row[3], row[4], row[5],row[6], 
+                            row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15], 
+                            row[16], title_positivity, subtitle_positivity, article_positivity,title_positivity_sentence, 
+                            subtitle_positivity_sentence, article_positivity_sentence, reaction_positivity])
+                
+                processed_articles += 1
+                
     print('Clean file saved at: ' + output_path)
 
 

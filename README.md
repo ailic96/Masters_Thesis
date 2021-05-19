@@ -70,17 +70,45 @@ Lematizacija tekstualnih stupaca skupa podataka.
 python src\processing\lemmatization_article.py
 ```
 
-Dodavanje klasa pozitivnosti prema zadanim intervalima.
+Računanje sentimenata nenadziranim pristupom (Vlastiti algoritam)
+```
+python src\analysis\article_positivity.py
+```
+
+Dodavanje klasa pozitivnosti prema zadanim intervalima koji su dobiveni nenadziranim pristuom.
 ```
 python src\analysis\article_add_classes.py
 ```
 
-Algoritam potpornih vektora (SVM) nad člancima.
+Računanje sentimenata nenadziranim pristupom (Vader) - Korišten i TunnelBear VPN zbog ograničenja strojnog prevođenja
 ```
-python src\analysis\support_vector_machine.py
+python src\analysis\article_positivity_vader.py
 ```
 
+Algoritmi nadziranog učenja
+```
+python src\analysis\sentiment_ml.ipynb
+```
+
+doc2vec (Eksperimentalno)
+```
+python src\analysis\sentiment_doc2vec.ipynb
+```
+
+Konačna analiza rezultata
+```
+src\analysis\graphing.ipynb
+```
+
+__Napomene:__
+
+* Kod _.ipynb_ i Pandas dataframe-a je potrebno definirati apsolutnu putanju do direktorija u kojem se datoteka nalazi.
+
 # Changelog
+
+### __19.05.2021__
+
+* [Zadnji rezultati](https://github.com/ailic96/Masters_Thesis/blob/main/src/analysis/graphing.ipynb)
 
 ### __12.05.2021__
 
