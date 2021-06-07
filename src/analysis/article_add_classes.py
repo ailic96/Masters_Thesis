@@ -31,16 +31,15 @@ def assign_classes(path):
     print('Emoji positivity:\n', desc_emoji_positivity)
 
     conditions = [
-        (df['Emoji_positivity'] >= 0.1),
-        (df['Emoji_positivity'] < 0.1) & (df['Emoji_positivity'] >= 0),
+        (df['Emoji_positivity'] >= 0),
         (df['Emoji_positivity'] < 0)
     ]
 
-    values = ['POSITIVE', 'NEUTRAL', 'NEGATIVE']
+    values = ['NONNEGATIVE', 'NEGATIVE']
 
     df['Positivity'] = np.select(conditions, values)
 
-    df.to_csv('data/portal_articles_classes_.csv', sep=',', encoding='utf-8', index=False)
+    df.to_csv('data/portal_articles_classes.csv', sep=',', encoding='utf-8', index=False)
 
 
 assign_classes('data/portal_articles_covid_positivity_extended.csv')

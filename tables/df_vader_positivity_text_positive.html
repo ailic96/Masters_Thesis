@@ -1,83 +1,814 @@
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: left;">
       <th></th>
       <th>Title</th>
       <th>URL</th>
       <th>Text_positivity_vader</th>
       <th>Positivity</th>
+      <th>RF_text_prediction</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>2079</th>
       <td>NOVE TEHNOLOGIJE U HGSS-u Uvode revoluciju u spašavanju, evo o čemu se radi</td>
-      <td>https://www.dalmacijadanas.hr/nove-tehnologije-u-hgss-u-uvode-revoluciju-u-spasavanju-evo-o-cemu-se-radi/</td>
+      <td><a href="https://www.dalmacijadanas.hr/nove-tehnologije-u-hgss-u-uvode-revoluciju-u-spasavanju-evo-o-cemu-se-radi/" target="_blank">https://www.dalmacijadanas.hr/nove-tehnologije-u-hgss-u-uvode-revoluciju-u-spasavanju-evo-o-cemu-se-radi/</a></td>
       <td>0.971219</td>
-      <td>NEUTRAL</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>2531</th>
       <td>Online konferencija WIRE 2020 u Splitu najveći je forum Europske komisije za inovacije i regionalni razvoj</td>
-      <td>https://www.dalmacijadanas.hr/online-konferencija-wire-2020-u-splitu-najveci-je-forum-europske-komisije-za-inovacije-i-regionalni-razvoj/</td>
+      <td><a href="https://www.dalmacijadanas.hr/online-konferencija-wire-2020-u-splitu-najveci-je-forum-europske-komisije-za-inovacije-i-regionalni-razvoj/" target="_blank">https://www.dalmacijadanas.hr/online-konferencija-wire-2020-u-splitu-najveci-je-forum-europske-komisije-za-inovacije-i-regionalni-razvoj/</a></td>
       <td>0.965432</td>
-      <td>POSITIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>3280</th>
       <td>ZELENO-PLAVI U SAMOIZOLACIJI Dva igrača Olmissuma pozitivna na koronavirus</td>
-      <td>https://www.dalmacijadanas.hr/zeleno-plavi-u-samoizolaciji-dva-igraca-olmissuma-pozitivna-na-koronavirus/</td>
+      <td><a href="https://www.dalmacijadanas.hr/zeleno-plavi-u-samoizolaciji-dva-igraca-olmissuma-pozitivna-na-koronavirus/" target="_blank">https://www.dalmacijadanas.hr/zeleno-plavi-u-samoizolaciji-dva-igraca-olmissuma-pozitivna-na-koronavirus/</a></td>
       <td>0.962882</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>118</th>
       <td>TUGA U HRVATSKOJ Od posljedica korone preminuo legendarni hokejaš: “Počivao u miru dragi naš Prijatelju”</td>
-      <td>https://www.dalmacijadanas.hr/tuga-u-hrvatskoj-od-posljedica-korone-preminuo-legendarni-hokejas-pocivao-u-miru-dragi-nas-prijatelju/</td>
+      <td><a href="https://www.dalmacijadanas.hr/tuga-u-hrvatskoj-od-posljedica-korone-preminuo-legendarni-hokejas-pocivao-u-miru-dragi-nas-prijatelju/" target="_blank">https://www.dalmacijadanas.hr/tuga-u-hrvatskoj-od-posljedica-korone-preminuo-legendarni-hokejas-pocivao-u-miru-dragi-nas-prijatelju/</a></td>
       <td>0.959730</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>3102</th>
       <td>DOBRA VIJEST ZA VOZAČE Gorivo od ponoći pojeftinjuje, najviše će pojeftiniti dizel</td>
-      <td>https://www.dalmacijadanas.hr/dobra-vijest-za-vozace-gorivo-od-ponoci-pojeftinjuje-najvise-ce-pojeftiniti-dizel/</td>
+      <td><a href="https://www.dalmacijadanas.hr/dobra-vijest-za-vozace-gorivo-od-ponoci-pojeftinjuje-najvise-ce-pojeftiniti-dizel/" target="_blank">https://www.dalmacijadanas.hr/dobra-vijest-za-vozace-gorivo-od-ponoci-pojeftinjuje-najvise-ce-pojeftiniti-dizel/</a></td>
       <td>0.928915</td>
-      <td>POSITIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>2103</th>
       <td>Splitska vampirica proslavila 638. rođendan: Nazdravila je novim mladim krvopijama</td>
-      <td>https://www.dalmacijadanas.hr/splitska-vampirica-proslavila-638-rodendan-nazdravila-je-novim-mladim-krvopijama/</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitska-vampirica-proslavila-638-rodendan-nazdravila-je-novim-mladim-krvopijama/" target="_blank">https://www.dalmacijadanas.hr/splitska-vampirica-proslavila-638-rodendan-nazdravila-je-novim-mladim-krvopijama/</a></td>
       <td>0.912481</td>
       <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>3252</th>
       <td>PROSIDBA ZA PAMĆENJE Poznati dalmatinski bodybuilder na Svjetskom prvenstvu zaprosio djevojku na bini</td>
-      <td>https://www.dalmacijadanas.hr/prosidba-za-pamcenje-poznati-dalmatinski-bodybuilder-na-svjetskom-prvenstvu-zaprosio-djevojku-na-bini/</td>
+      <td><a href="https://www.dalmacijadanas.hr/prosidba-za-pamcenje-poznati-dalmatinski-bodybuilder-na-svjetskom-prvenstvu-zaprosio-djevojku-na-bini/" target="_blank">https://www.dalmacijadanas.hr/prosidba-za-pamcenje-poznati-dalmatinski-bodybuilder-na-svjetskom-prvenstvu-zaprosio-djevojku-na-bini/</a></td>
       <td>0.910901</td>
-      <td>POSITIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>2048</th>
       <td>POTEKLE SUZE RADOSNICE Pogledajte slavlje u svlačionici nakon pobjede. Pijević: “Pišemo hrvatsku povijest”</td>
-      <td>https://www.dalmacijadanas.hr/potekle-suze-radosnice-pogledajte-slavlje-u-svlacionici-nakon-pobjede-pijevic-pisemo-hrvatsku-povijest/</td>
+      <td><a href="https://www.dalmacijadanas.hr/potekle-suze-radosnice-pogledajte-slavlje-u-svlacionici-nakon-pobjede-pijevic-pisemo-hrvatsku-povijest/" target="_blank">https://www.dalmacijadanas.hr/potekle-suze-radosnice-pogledajte-slavlje-u-svlacionici-nakon-pobjede-pijevic-pisemo-hrvatsku-povijest/</a></td>
       <td>0.909992</td>
-      <td>POSITIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>2024</th>
       <td>Juniori OK Ribola Kaštela osvojili prvenstvo bez poraza</td>
-      <td>https://www.dalmacijadanas.hr/juniori-ok-ribola-kastela-osvojili-prvenstvo-bez-poraza/</td>
+      <td><a href="https://www.dalmacijadanas.hr/juniori-ok-ribola-kastela-osvojili-prvenstvo-bez-poraza/" target="_blank">https://www.dalmacijadanas.hr/juniori-ok-ribola-kastela-osvojili-prvenstvo-bez-poraza/</a></td>
       <td>0.906764</td>
-      <td>POSITIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>1994</th>
       <td>OSVJEŽENJE NA DALMATINSKOJ MALONOGOMETNOJ SCENI “Podržite rad ovih mladih genijalaca”</td>
-      <td>https://www.dalmacijadanas.hr/osvjezenje-na-dalmatinskoj-malonogometnoj-sceni-podrzite-rad-ovih-mladih-genijalaca/</td>
+      <td><a href="https://www.dalmacijadanas.hr/osvjezenje-na-dalmatinskoj-malonogometnoj-sceni-podrzite-rad-ovih-mladih-genijalaca/" target="_blank">https://www.dalmacijadanas.hr/osvjezenje-na-dalmatinskoj-malonogometnoj-sceni-podrzite-rad-ovih-mladih-genijalaca/</a></td>
       <td>0.900517</td>
-      <td>POSITIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2061</th>
+      <td>GASTRO UŽITAK Splitska studentska udruga organizira zanimljiv događaj: “Cilj nam je da Erasmus studenti dožive iskustvo kuhanja”</td>
+      <td><a href="https://www.dalmacijadanas.hr/gastro-uzitak-splitska-studentska-udruga-organizira-zanimljiv-dogadaj-cilj-nam-je-da-erasmus-studenti-dozive-iskustvo-kuhanja/" target="_blank">https://www.dalmacijadanas.hr/gastro-uzitak-splitska-studentska-udruga-organizira-zanimljiv-dogadaj-cilj-nam-je-da-erasmus-studenti-dozive-iskustvo-kuhanja/</a></td>
+      <td>0.875139</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2046</th>
+      <td>Bivši Vatreni napao Božinovićevog zamjenika: “Baš si trutina”</td>
+      <td><a href="https://www.dalmacijadanas.hr/bivsi-vatreni-napao-bozinovicevog-zamjenika-bas-si-trutina/" target="_blank">https://www.dalmacijadanas.hr/bivsi-vatreni-napao-bozinovicevog-zamjenika-bas-si-trutina/</a></td>
+      <td>0.871954</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2202</th>
+      <td>Zdravka iz “Života na vagi” otkrila svoju želju za 2021.: “Iz godine u godinu uvik želim isto…”</td>
+      <td><a href="https://www.dalmacijadanas.hr/zdravka-iz-zivota-na-vagi-otkrila-svoju-zelju-za-2021-iz-godine-u-godinu-uvik-zelim-isto/" target="_blank">https://www.dalmacijadanas.hr/zdravka-iz-zivota-na-vagi-otkrila-svoju-zelju-za-2021-iz-godine-u-godinu-uvik-zelim-isto/</a></td>
+      <td>0.869600</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1974</th>
+      <td>TONČI, MATEA I KARLA POBRALI SVE NAGRADE Jedrenje, tae kwon do i judo, te nogomet i kuglanje pobrali nagrade Splitskog saveza športova</td>
+      <td><a href="https://www.dalmacijadanas.hr/tonci-matea-i-karla-pobrali-sve-nagrade-jedrenje-tae-kwon-do-i-judo-te-nogomet-i-kuglanje-pobrali-nagrade-splitskog-saveza-sportova/" target="_blank">https://www.dalmacijadanas.hr/tonci-matea-i-karla-pobrali-sve-nagrade-jedrenje-tae-kwon-do-i-judo-te-nogomet-i-kuglanje-pobrali-nagrade-splitskog-saveza-sportova/</a></td>
+      <td>0.865327</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1947</th>
+      <td>Barbara pozitivna na Covid 19: Splićanka propušta Europsko prvenstvo, pitali smo je što će biti s Tokijem</td>
+      <td><a href="https://www.dalmacijadanas.hr/barbara-pozitivna-na-covid-19-splicanka-propusta-europsko-prvenstvo-pitali-smo-je-sto-ce-biti-s-tokijem/" target="_blank">https://www.dalmacijadanas.hr/barbara-pozitivna-na-covid-19-splicanka-propusta-europsko-prvenstvo-pitali-smo-je-sto-ce-biti-s-tokijem/</a></td>
+      <td>0.858998</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2258</th>
+      <td>POTRAGA ZA LJEPOTOM Dr. Diana Plazonić: “Potraga za ljepotom je u ljudskoj prirodi, ali važno je povezati vanjsku ljepotu sa unutarnjom”</td>
+      <td><a href="https://www.dalmacijadanas.hr/potraga-za-ljepotom-dr-diana-plazonic-neki-ljudi-ne-prihvacaju-svoju-unutarnju-ljepotu-ne-cijene-ono-sto-imaju/" target="_blank">https://www.dalmacijadanas.hr/potraga-za-ljepotom-dr-diana-plazonic-neki-ljudi-ne-prihvacaju-svoju-unutarnju-ljepotu-ne-cijene-ono-sto-imaju/</a></td>
+      <td>0.850725</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2622</th>
+      <td>HNK Split: Prekidaju se 30. Marulićevi dani</td>
+      <td><a href="https://www.dalmacijadanas.hr/hnk-split-prekidaju-se-30-marulicevi-dani/" target="_blank">https://www.dalmacijadanas.hr/hnk-split-prekidaju-se-30-marulicevi-dani/</a></td>
+      <td>0.841061</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3279</th>
+      <td>BOĆANJE Braća Ćubela i Marino Miličević donijeli tri zlata sa prvenstava Hrvatske u Bašku Vodu!</td>
+      <td><a href="https://www.dalmacijadanas.hr/bocanje-braca-cubela-i-marino-milicevic-donijeli-tri-zlata-sa-prvenstava-hrvatske-u-basku-vodu/" target="_blank">https://www.dalmacijadanas.hr/bocanje-braca-cubela-i-marino-milicevic-donijeli-tri-zlata-sa-prvenstava-hrvatske-u-basku-vodu/</a></td>
+      <td>0.834924</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>621</th>
+      <td>SPLITSKI DES DOBIO NAGRADU ZA DOSTOJANSTVEN RAD I GOSPODARSKI RAST”: “Ovo nam puno znači. Neumorno pomažemo osobama s invaliditetom”</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitski-des-dobio-nagradu-za-dostojanstven-rad-i-gospodarski-rast-ovo-nam-puno-znaci-neumorno-pomazemo-osobama-s-invaliditetom/" target="_blank">https://www.dalmacijadanas.hr/splitski-des-dobio-nagradu-za-dostojanstven-rad-i-gospodarski-rast-ovo-nam-puno-znaci-neumorno-pomazemo-osobama-s-invaliditetom/</a></td>
+      <td>0.834810</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>KUGLANJE Mertojak prvak Hrvatske</td>
+      <td><a href="https://www.dalmacijadanas.hr/kuglanje-mertojak-prvak-hrvatske/" target="_blank">https://www.dalmacijadanas.hr/kuglanje-mertojak-prvak-hrvatske/</a></td>
+      <td>0.834387</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>458</th>
+      <td>NEMA MISTA NA ZIDIĆU Proljetni ugođaj u Dalmaciji: Splitska Riva danas je bila krcata</td>
+      <td><a href="https://www.dalmacijadanas.hr/nema-mista-na-zidicu-proljetni-ugodaj-u-dalmaciji-splitska-riva-danas-je-bila-krcata/" target="_blank">https://www.dalmacijadanas.hr/nema-mista-na-zidicu-proljetni-ugodaj-u-dalmaciji-splitska-riva-danas-je-bila-krcata/</a></td>
+      <td>0.828066</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>865</th>
+      <td>AD Plastik, Deltron i Uber – SeekandHit najuspješnije su županijske tvrtke u 2019.</td>
+      <td><a href="https://www.dalmacijadanas.hr/ad-plastik-deltron-i-uber-seekandhit-najuspjesnije-su-zupanijske-tvrtke-u-2019/" target="_blank">https://www.dalmacijadanas.hr/ad-plastik-deltron-i-uber-seekandhit-najuspjesnije-su-zupanijske-tvrtke-u-2019/</a></td>
+      <td>0.827006</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2255</th>
+      <td>DVI – TRI RIČI Legendarni splitski fotograf Vedran Šegvić nam je otkrio tajnu: “Evo zašto mi žene rado poziraju”</td>
+      <td><a href="https://www.dalmacijadanas.hr/dvi-tri-rici-legendarni-splitski-fotograf-vedran-segvic-nam-je-otkrio-tajnu-evo-zasto-mi-zene-rado-poziraju/" target="_blank">https://www.dalmacijadanas.hr/dvi-tri-rici-legendarni-splitski-fotograf-vedran-segvic-nam-je-otkrio-tajnu-evo-zasto-mi-zene-rado-poziraju/</a></td>
+      <td>0.823747</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2592</th>
+      <td>Omiškom gradonačelniku kćerka pozitivna, on mora u samoizolaciju</td>
+      <td><a href="https://www.dalmacijadanas.hr/omiskom-gradonacelniku-kcerka-pozitivna-on-mora-u-samoizolaciju/" target="_blank">https://www.dalmacijadanas.hr/omiskom-gradonacelniku-kcerka-pozitivna-on-mora-u-samoizolaciju/</a></td>
+      <td>0.822055</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>456</th>
+      <td>DOČEKANA UZ BAKLJE I MIŠU Nagrađena Edita Lučić Jelić stigla u Split: “Hvala svim mojim slušateljima”</td>
+      <td><a href="https://www.dalmacijadanas.hr/docekana-uz-baklje-i-misu-nagradena-edita-lucic-jelic-stigla-u-split-hvala-svim-mojim-slusateljima/" target="_blank">https://www.dalmacijadanas.hr/docekana-uz-baklje-i-misu-nagradena-edita-lucic-jelic-stigla-u-split-hvala-svim-mojim-slusateljima/</a></td>
+      <td>0.820440</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2456</th>
+      <td>Sjajna vijest za studente Podstrane: Pravo na stipendiju ostvarilo njih 101</td>
+      <td><a href="https://www.dalmacijadanas.hr/sjajna-vijest-za-studente-podstrane-pravo-na-stipendiju-ostvarilo-njih-101/" target="_blank">https://www.dalmacijadanas.hr/sjajna-vijest-za-studente-podstrane-pravo-na-stipendiju-ostvarilo-njih-101/</a></td>
+      <td>0.819458</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>843</th>
+      <td>IVANA MARKOVIĆ: “Velika čast mi je bila biti gradonačelnicom svih vas, predivnih ljudi”</td>
+      <td><a href="https://www.dalmacijadanas.hr/ivana-markovic-velika-cast-mi-je-bila-biti-gradonacelnicom-svih-vas-predivnih-ljudi/" target="_blank">https://www.dalmacijadanas.hr/ivana-markovic-velika-cast-mi-je-bila-biti-gradonacelnicom-svih-vas-predivnih-ljudi/</a></td>
+      <td>0.806955</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>818</th>
+      <td>Splitski novinari i sportaši pokazali srce, darovali tone hrane za beskućnike: “Nitko ne treba i ne smije biti gladan”</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitski-novinari-i-sportasi-pokazali-srce-darovali-tone-hrane-za-beskucnike-nitko-ne-treba-i-ne-smije-biti-gladan/" target="_blank">https://www.dalmacijadanas.hr/splitski-novinari-i-sportasi-pokazali-srce-darovali-tone-hrane-za-beskucnike-nitko-ne-treba-i-ne-smije-biti-gladan/</a></td>
+      <td>0.803621</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>Roko Ukić pozitivan na koronavirus</td>
+      <td><a href="https://www.dalmacijadanas.hr/roko-ukic-pozitivan-na-korona-virus/" target="_blank">https://www.dalmacijadanas.hr/roko-ukic-pozitivan-na-korona-virus/</a></td>
+      <td>0.801220</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2074</th>
+      <td>VOLI SVOJ DRNIŠ Poznata hrvatska glumica objavila fotografiju s mamom i uputila važnu poruku: “Uživajte koliko god možete”</td>
+      <td><a href="https://www.dalmacijadanas.hr/voli-svoj-drnis-poznata-hrvatska-glumica-objavila-fotografiju-s-mamom-i-uputila-vaznu-poruku-uzivajte-koliko-god-mozete/" target="_blank">https://www.dalmacijadanas.hr/voli-svoj-drnis-poznata-hrvatska-glumica-objavila-fotografiju-s-mamom-i-uputila-vaznu-poruku-uzivajte-koliko-god-mozete/</a></td>
+      <td>0.796761</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2405</th>
+      <td>Ante Pranić: “Pozitivan sam na koronavirus”</td>
+      <td><a href="https://www.dalmacijadanas.hr/ante-pranic-pozitivan-sam-na-koronavirus/" target="_blank">https://www.dalmacijadanas.hr/ante-pranic-pozitivan-sam-na-koronavirus/</a></td>
+      <td>0.796387</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2521</th>
+      <td>SVEČANO DOČEKANI NA KNINSKOJ TVRĐAVI Uručene diplome 40-orici polaznika obuke za razvoj vođa</td>
+      <td><a href="https://www.dalmacijadanas.hr/svecano-docekani-na-kninskoj-tvrdavi-urucene-diplome-40-orici-polaznika-obuke-za-razvoj-voda/" target="_blank">https://www.dalmacijadanas.hr/svecano-docekani-na-kninskoj-tvrdavi-urucene-diplome-40-orici-polaznika-obuke-za-razvoj-voda/</a></td>
+      <td>0.786192</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2193</th>
+      <td>BOŽIĆNO IZNENAĐENJE Rozga zapjevala u Vestibilu pa najavom raspametila fanove: “Jedva čekam”</td>
+      <td><a href="https://www.dalmacijadanas.hr/bozicno-iznenadenje-rozga-zapjevala-u-vestibilu-pa-najavom-raspametila-fanove-jedva-cekam/" target="_blank">https://www.dalmacijadanas.hr/bozicno-iznenadenje-rozga-zapjevala-u-vestibilu-pa-najavom-raspametila-fanove-jedva-cekam/</a></td>
+      <td>0.783867</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2114</th>
+      <td>Ova prelijepa Splićanka je uspješna majka i poslovna žena: “Sve što želite napraviti, napravite radi sebe, da bi bile zadovoljne sobom, a ne jer to okolina očekuje od vas”</td>
+      <td><a href="https://www.dalmacijadanas.hr/ova-prelijepa-splicanka-je-uspjesna-majka-i-poslovna-zena-sve-sto-zelite-napraviti-napravite-radi-sebe-da-bi-bile-zadovoljne-sobom-a-ne-jer-to-okolina-ocekuje-od-vas/" target="_blank">https://www.dalmacijadanas.hr/ova-prelijepa-splicanka-je-uspjesna-majka-i-poslovna-zena-sve-sto-zelite-napraviti-napravite-radi-sebe-da-bi-bile-zadovoljne-sobom-a-ne-jer-to-okolina-ocekuje-od-vas/</a></td>
+      <td>0.779008</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1530</th>
+      <td>VELIKO PRIZNANJE: USA Today uvrstio Hrvatsku među najpoželjnije destinacije za putovanja u 2021.</td>
+      <td><a href="https://www.dalmacijadanas.hr/veliko-priznanje-usa-today-uvrstio-hrvatsku-medu-najpozeljnije-destinacije-za-putovanja-u-2021/" target="_blank">https://www.dalmacijadanas.hr/veliko-priznanje-usa-today-uvrstio-hrvatsku-medu-najpozeljnije-destinacije-za-putovanja-u-2021/</a></td>
+      <td>0.777942</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2364</th>
+      <td>OBJAVLJENI DETALJI Evo kako će izgledati splitski Advent u novim okolnostima</td>
+      <td><a href="https://www.dalmacijadanas.hr/objavljeni-detalji-evo-kako-ce-izgledati-splitski-advent-u-novim-okolnostima/" target="_blank">https://www.dalmacijadanas.hr/objavljeni-detalji-evo-kako-ce-izgledati-splitski-advent-u-novim-okolnostima/</a></td>
+      <td>0.775910</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2093</th>
+      <td>IZAZOVNA MIRTA POZIRALA U USKOJ HALJINI Obožavatelji oduševljeni: “Savršena si, kakve noge imaš”</td>
+      <td><a href="https://www.dalmacijadanas.hr/izazovna-mirta-pozirala-u-uskoj-haljini-obozavatelji-odusevljeni-savrsena-si-kakve-noge-imas/" target="_blank">https://www.dalmacijadanas.hr/izazovna-mirta-pozirala-u-uskoj-haljini-obozavatelji-odusevljeni-savrsena-si-kakve-noge-imas/</a></td>
+      <td>0.770376</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>374</th>
+      <td>“Splitski cvit” za 2020. godinu je Mihaela Pfeifer: „Ovu nagradu posvećujem svim djelatnicima KBC-a Split“</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitski-cvit-za-2020-godinu-je-mihaela-pfeifer-ovu-nagradu-posvecujem-svim-djelatnicima-kbc-a-split/" target="_blank">https://www.dalmacijadanas.hr/splitski-cvit-za-2020-godinu-je-mihaela-pfeifer-ovu-nagradu-posvecujem-svim-djelatnicima-kbc-a-split/</a></td>
+      <td>0.766003</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Direktorica TZ-a Split otkriva čime smo oduševili najjače američke agencije koje obilaze Hrvatsku</td>
+      <td><a href="https://www.dalmacijadanas.hr/direktorica-tz-a-split-otkriva-cime-smo-odusevili-najjace-americke-agencije-koje-obilaze-hrvatsku/" target="_blank">https://www.dalmacijadanas.hr/direktorica-tz-a-split-otkriva-cime-smo-odusevili-najjace-americke-agencije-koje-obilaze-hrvatsku/</a></td>
+      <td>0.763762</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>895</th>
+      <td>OTVOREN “VIRTUALNI HUMANITARNI BUVLJAK”: “Budite i vi dio ove lijepe priče, pokažite veliko srce i darujte splitske udruge”</td>
+      <td><a href="https://www.dalmacijadanas.hr/otvoren-virtualni-humanitarni-buvljak-budite-i-vi-dio-ove-lijepe-price-pokazite-veliko-srce-i-darujte-splitske-udruge/" target="_blank">https://www.dalmacijadanas.hr/otvoren-virtualni-humanitarni-buvljak-budite-i-vi-dio-ove-lijepe-price-pokazite-veliko-srce-i-darujte-splitske-udruge/</a></td>
+      <td>0.761986</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>322</th>
+      <td>Turistička zajednica grada Splita organizira besplatnu online edukaciju – “Pametna rješenja za iznajmljivače”</td>
+      <td><a href="https://www.dalmacijadanas.hr/turisticka-zajednica-grada-splita-organizira-besplatnu-online-edukaciju-pametna-rjesenja-za-iznajmljivace/" target="_blank">https://www.dalmacijadanas.hr/turisticka-zajednica-grada-splita-organizira-besplatnu-online-edukaciju-pametna-rjesenja-za-iznajmljivace/</a></td>
+      <td>0.761020</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>445</th>
+      <td>Splitsko-dalmatinska županija nagradila najbolje učenike</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitsko-dalmatinska-zupanija-nagradila-najbolje-ucenike/" target="_blank">https://www.dalmacijadanas.hr/splitsko-dalmatinska-zupanija-nagradila-najbolje-ucenike/</a></td>
+      <td>0.760631</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>931</th>
+      <td>Teatar na kraju grada privremeno je zatvorio svoja vrata, ali uskoro će imati najljepšu ljetnu pozornicu u Splitu</td>
+      <td><a href="https://www.dalmacijadanas.hr/teatar-na-kraju-grada-privremeno-je-zatvorio-svoja-vrata-ali-uskoro-ce-imati-najljepsu-ljetnu-pozornicu-u-splitu/" target="_blank">https://www.dalmacijadanas.hr/teatar-na-kraju-grada-privremeno-je-zatvorio-svoja-vrata-ali-uskoro-ce-imati-najljepsu-ljetnu-pozornicu-u-splitu/</a></td>
+      <td>0.754254</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2084</th>
+      <td>JEDNOGLASNOM ODLUKOM Bračanka Zdravka Damjanović pobijedila na Večeri francuske šansone</td>
+      <td><a href="https://www.dalmacijadanas.hr/jednoglasnom-odlukom-bracanka-zdravka-damjanovic-pobijedila-na-veceri-francuske-sansone/" target="_blank">https://www.dalmacijadanas.hr/jednoglasnom-odlukom-bracanka-zdravka-damjanovic-pobijedila-na-veceri-francuske-sansone/</a></td>
+      <td>0.753830</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2402</th>
+      <td>SPLITSKI ADVENT BEZ KUĆICA! “Zbog sigurnosti posjetitelja”</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitski-advent-bez-kucica-zbog-sigurnosti-posjetitelja/" target="_blank">https://www.dalmacijadanas.hr/splitski-advent-bez-kucica-zbog-sigurnosti-posjetitelja/</a></td>
+      <td>0.751822</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2736</th>
+      <td>Učenici idu na tjedan dana dulje zimske praznike ove godine</td>
+      <td><a href="https://www.dalmacijadanas.hr/ucenici-idu-na-tjedan-dana-dulje-zimske-praznike-ove-godine/" target="_blank">https://www.dalmacijadanas.hr/ucenici-idu-na-tjedan-dana-dulje-zimske-praznike-ove-godine/</a></td>
+      <td>0.750815</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1253</th>
+      <td>GODINA JE PROŠLA Evo Najvećih hitova Zorana Milanovića otkako je prisegnuo</td>
+      <td><a href="https://www.dalmacijadanas.hr/godina-je-prosla-evo-najvecih-hitova-zorana-milanovica-otkako-je-prisegnuo/" target="_blank">https://www.dalmacijadanas.hr/godina-je-prosla-evo-najvecih-hitova-zorana-milanovica-otkako-je-prisegnuo/</a></td>
+      <td>0.749861</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2984</th>
+      <td>Zaraženi Butković u četvrtak se susreo s članovima Vlade: “Nije bio u bliskom kontaktu, poštivali su razmak i nosili maske”</td>
+      <td><a href="https://www.dalmacijadanas.hr/zarazeni-butkovic-u-cetvrtak-se-susreo-s-clanovima-vlade-nije-bio-u-bliskom-kontaktu-postivali-su-razmak-i-nosili-maske/" target="_blank">https://www.dalmacijadanas.hr/zarazeni-butkovic-u-cetvrtak-se-susreo-s-clanovima-vlade-nije-bio-u-bliskom-kontaktu-postivali-su-razmak-i-nosili-maske/</a></td>
+      <td>0.744235</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3332</th>
+      <td>NAGRADE 27. SUSRETA HRVATSKIH TAMBURAŠKIH ORKESTARA I SASTAVA Tamburaškom orkestru KUD-a Jedinstvo srebrna plaketa</td>
+      <td><a href="https://www.dalmacijadanas.hr/nagrade-27-susreta-hrvatskih-tamburaskih-orkestara-i-sastava-tamburaskom-orkestru-kud-a-jedinstvo-srebrna-plaketa/" target="_blank">https://www.dalmacijadanas.hr/nagrade-27-susreta-hrvatskih-tamburaskih-orkestara-i-sastava-tamburaskom-orkestru-kud-a-jedinstvo-srebrna-plaketa/</a></td>
+      <td>0.743017</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2012</th>
+      <td>FINAL FOUR LIGE PRVAKA: KK Mertojak u Bambergu</td>
+      <td><a href="https://www.dalmacijadanas.hr/final-four-lige-prvaka-kk-mertojak-u-bambergu/" target="_blank">https://www.dalmacijadanas.hr/final-four-lige-prvaka-kk-mertojak-u-bambergu/</a></td>
+      <td>0.742091</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1980</th>
+      <td>Kalinić nakon pobjede nad Rijekom: Nećemo poletjeti, ovo nam mora postati rutina</td>
+      <td><a href="https://www.dalmacijadanas.hr/kalinic-nakon-pobjede-nad-rijekom-necemo-poletjeti-ovo-nam-mora-postati-rutina/" target="_blank">https://www.dalmacijadanas.hr/kalinic-nakon-pobjede-nad-rijekom-necemo-poletjeti-ovo-nam-mora-postati-rutina/</a></td>
+      <td>0.740387</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>571</th>
+      <td>SPASI ŽIVOT, DARUJ KRV Održana prva akcija dobrovoljnog darivanja krvi u organizaciji Pitt Bulla i Crvenog križa</td>
+      <td><a href="https://www.dalmacijadanas.hr/spasi-zivot-daruj-krv-odrzana-prva-akcija-dobrovoljnog-darivanja-krvi-u-organizaciju-pitt-bulla-i-crvenog-kriza/" target="_blank">https://www.dalmacijadanas.hr/spasi-zivot-daruj-krv-odrzana-prva-akcija-dobrovoljnog-darivanja-krvi-u-organizaciju-pitt-bulla-i-crvenog-kriza/</a></td>
+      <td>0.739123</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2136</th>
+      <td>URNEBESNA PARODIJA NA STOŽER Kakav hit na Fejsu: Tisuće podijelile obradu evergreena</td>
+      <td><a href="https://www.dalmacijadanas.hr/urnebesna-parodija-na-stozer-kakav-hit-na-fejsu-tisuce-podijelile-obradu-evergreena/" target="_blank">https://www.dalmacijadanas.hr/urnebesna-parodija-na-stozer-kakav-hit-na-fejsu-tisuce-podijelile-obradu-evergreena/</a></td>
+      <td>0.738247</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2877</th>
+      <td>LIJEPA GESTA Ovaj trgovački lanac preusmjerio preko 650 tisuća kuna svojim radnicima</td>
+      <td><a href="https://www.dalmacijadanas.hr/lijepa-gesta-ovaj-trgovacki-lanac-preusmjerio-preko-650-tisuca-kuna-svojim-radnicima/" target="_blank">https://www.dalmacijadanas.hr/lijepa-gesta-ovaj-trgovacki-lanac-preusmjerio-preko-650-tisuca-kuna-svojim-radnicima/</a></td>
+      <td>0.730967</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3245</th>
+      <td>Dva igrača Hajduka pozitivna na koronavirus!</td>
+      <td><a href="https://www.dalmacijadanas.hr/dva-igraca-hajduka-pozitivna-na-koronavirus/" target="_blank">https://www.dalmacijadanas.hr/dva-igraca-hajduka-pozitivna-na-koronavirus/</a></td>
+      <td>0.729464</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>244</th>
+      <td>VALAMAR METEOR HOTEL 4* U MAKARSKOJ Novouređeni obiteljski hotel otvara vrata uoči uskršnjih blagdana</td>
+      <td><a href="https://www.dalmacijadanas.hr/valamar-meteor-hotel-4-u-makarskoj-novouredeni-obiteljski-hotel-otvara-vrata-uoci-uskrsnjih-blagdana/" target="_blank">https://www.dalmacijadanas.hr/valamar-meteor-hotel-4-u-makarskoj-novouredeni-obiteljski-hotel-otvara-vrata-uoci-uskrsnjih-blagdana/</a></td>
+      <td>0.729400</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2572</th>
+      <td>Adventske svečanosti sigurno u Đardinu, čeka se Capak: 11 ponuda za Zimski akvarel, ima i drugi krug</td>
+      <td><a href="https://www.dalmacijadanas.hr/adventske-svecanosti-sigurno-u-dardinu-ceka-se-capak-11-ponuda-za-zimski-akvarel-ima-i-drugi-krug/" target="_blank">https://www.dalmacijadanas.hr/adventske-svecanosti-sigurno-u-dardinu-ceka-se-capak-11-ponuda-za-zimski-akvarel-ima-i-drugi-krug/</a></td>
+      <td>0.728985</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2435</th>
+      <td>OVO MORATE VIDJETI! Prvi i jedini 360°/VR video s biokovskog Skywalka dočarava kakav je osjećaj stajati nad provalijom</td>
+      <td><a href="https://www.dalmacijadanas.hr/ovo-morate-vidjeti-prvi-i-jedini-360-vr-video-s-biokovskog-skywalka-docarava-kakav-je-osjecaj-stajati-nad-provalijom/" target="_blank">https://www.dalmacijadanas.hr/ovo-morate-vidjeti-prvi-i-jedini-360-vr-video-s-biokovskog-skywalka-docarava-kakav-je-osjecaj-stajati-nad-provalijom/</a></td>
+      <td>0.727784</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2616</th>
+      <td>MARIJANA PULJAK U SAMOIZOLACIJI: “Našoj najmlađoj ljepotici potvrđen je Covid”</td>
+      <td><a href="https://www.dalmacijadanas.hr/marijana-puljak-u-samoizolaciji-nasoj-najmladoj-ljepotici-potvrden-je-covid/" target="_blank">https://www.dalmacijadanas.hr/marijana-puljak-u-samoizolaciji-nasoj-najmladoj-ljepotici-potvrden-je-covid/</a></td>
+      <td>0.725291</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3378</th>
+      <td>SPLIĆANKE GA OBOŽAVAJU Poznati splitski butik Kamali osvanuo u novom ruhu: Izvrsne krojačice i trendi materijali</td>
+      <td><a href="https://www.dalmacijadanas.hr/splicanke-ga-obozavaju-poznati-splitski-butik-kamali-osvanuo-u-novom-ruhu-izvrsne-krojacice-i-trendi-materijali/" target="_blank">https://www.dalmacijadanas.hr/splicanke-ga-obozavaju-poznati-splitski-butik-kamali-osvanuo-u-novom-ruhu-izvrsne-krojacice-i-trendi-materijali/</a></td>
+      <td>0.724027</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>737</th>
+      <td>Nagrade Grada Splita laureatima uručene u Banovini: “Vi ste sol grada koja daje posebnost, okus i snagu”</td>
+      <td><a href="https://www.dalmacijadanas.hr/nagrade-grada-splita-laureatima-urucene-u-banovini-vi-ste-sol-grada-koja-daje-posebnost-okus-i-snagu/" target="_blank">https://www.dalmacijadanas.hr/nagrade-grada-splita-laureatima-urucene-u-banovini-vi-ste-sol-grada-koja-daje-posebnost-okus-i-snagu/</a></td>
+      <td>0.720881</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>677</th>
+      <td>Stožer CZ uputio obavijest potresom pogođenom stanovništvu koje boravi na području Splitsko-dalmatinske županije</td>
+      <td><a href="https://www.dalmacijadanas.hr/stozer-cz-uputio-obavijest-potresom-pogodenom-stanovnistvu-koji-boravi-na-podrucju-splitsko-dalmatinske-zupanije/" target="_blank">https://www.dalmacijadanas.hr/stozer-cz-uputio-obavijest-potresom-pogodenom-stanovnistvu-koji-boravi-na-podrucju-splitsko-dalmatinske-zupanije/</a></td>
+      <td>0.720097</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>573</th>
+      <td>MAKARSKI GRADONAČELNIK POZITIVAN NA COVID: “Imam jače simptome”</td>
+      <td><a href="https://www.dalmacijadanas.hr/makarski-gradonacelnik-pozitivan-na-covid-imam-jace-simptome/" target="_blank">https://www.dalmacijadanas.hr/makarski-gradonacelnik-pozitivan-na-covid-imam-jace-simptome/</a></td>
+      <td>0.719397</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2000</th>
+      <td>UVIJEK SA SVOJOM ZAJEDNICOM Bilo srce i Zrno Soli daruju institucije i udruge grada Splita</td>
+      <td><a href="https://www.dalmacijadanas.hr/uvijek-sa-svojom-zajednicom-bilo-srce-i-zrno-soli-daruju-institucije-i-udruge-grada-splita/" target="_blank">https://www.dalmacijadanas.hr/uvijek-sa-svojom-zajednicom-bilo-srce-i-zrno-soli-daruju-institucije-i-udruge-grada-splita/</a></td>
+      <td>0.717558</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2083</th>
+      <td>Prizor iz kuće u Dalmaciji postao hit: “Blagoslov u doba korone”</td>
+      <td><a href="https://www.dalmacijadanas.hr/prizor-iz-kuce-u-dalmaciji-postao-hit-blagoslov-u-doba-korone/" target="_blank">https://www.dalmacijadanas.hr/prizor-iz-kuce-u-dalmaciji-postao-hit-blagoslov-u-doba-korone/</a></td>
+      <td>0.717412</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2329</th>
+      <td>BOŽIĆ, KRSTULOVIĆ OPARA, GAVRIĆ Otkrili su nam koja im je planina najdraža i tko im je omiljeni fotograf</td>
+      <td><a href="https://www.dalmacijadanas.hr/bozic-krstulovic-opara-gavric-otkrili-su-nam-koja-im-je-planina-najdraza-i-tko-im-je-omiljeni-fotograf/" target="_blank">https://www.dalmacijadanas.hr/bozic-krstulovic-opara-gavric-otkrili-su-nam-koja-im-je-planina-najdraza-i-tko-im-je-omiljeni-fotograf/</a></td>
+      <td>0.716883</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3255</th>
+      <td>POSJETILI SMO MALE NOGOMETAŠE HAJDUKA SA TEŠKOĆAMA U RAZVOJU: „Oni žive za ovaj dan, Hajduk im je sve u životu“</td>
+      <td><a href="https://www.dalmacijadanas.hr/posjetili-smo-male-nogometase-hajduka-sa-teskocama-u-razvoju-oni-zive-za-ovaj-dan-hajduk-im-je-sve-u-zivotu/" target="_blank">https://www.dalmacijadanas.hr/posjetili-smo-male-nogometase-hajduka-sa-teskocama-u-razvoju-oni-zive-za-ovaj-dan-hajduk-im-je-sve-u-zivotu/</a></td>
+      <td>0.711563</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1156</th>
+      <td>IZAZOV ZA TURIZAM “Preživjet će samo najbolji…s tri i više zvjezdica”</td>
+      <td><a href="https://www.dalmacijadanas.hr/izazov-za-turizam-prezivjet-ce-samo-najbolji-s-tri-i-vise-zvjezdica/" target="_blank">https://www.dalmacijadanas.hr/izazov-za-turizam-prezivjet-ce-samo-najbolji-s-tri-i-vise-zvjezdica/</a></td>
+      <td>0.706907</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1132</th>
+      <td>HIT PREDSTAVA SE VRAĆA U SPLIT “VLA VLA VLAJLAND” Cabaret – Monodrama koja pogađa točno u sridu</td>
+      <td><a href="https://www.dalmacijadanas.hr/hit-predstava-se-vraca-u-split-vla-vla-vlajland-cabaret-monodrama-koja-pogada-tocno-u-sridu/" target="_blank">https://www.dalmacijadanas.hr/hit-predstava-se-vraca-u-split-vla-vla-vlajland-cabaret-monodrama-koja-pogada-tocno-u-sridu/</a></td>
+      <td>0.706732</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>“LUĐE I OD ULTRE” Tri dana pred početak prodaje, rezervirano je više od 600 ulaznica za kazališni festival “Teatar uz more”</td>
+      <td><a href="https://www.dalmacijadanas.hr/lude-i-od-ultre-tri-dana-pred-pocetak-prodaje-rezervirano-je-vise-od-600-ulaznica-za-kazalisni-festival-teatar-uz-more/" target="_blank">https://www.dalmacijadanas.hr/lude-i-od-ultre-tri-dana-pred-pocetak-prodaje-rezervirano-je-vise-od-600-ulaznica-za-kazalisni-festival-teatar-uz-more/</a></td>
+      <td>0.704582</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>557</th>
+      <td>RAJ ZA LJUBITELJE STRIPA Split dobio svoju prvu striparnicu: “Mogu se naći nova i stara izdanja”</td>
+      <td><a href="https://www.dalmacijadanas.hr/raj-za-ljubitelje-stripa-split-dobio-svoju-prvu-striparnicu-mogu-se-naci-nova-i-stara-izdanja/" target="_blank">https://www.dalmacijadanas.hr/raj-za-ljubitelje-stripa-split-dobio-svoju-prvu-striparnicu-mogu-se-naci-nova-i-stara-izdanja/</a></td>
+      <td>0.703195</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>945</th>
+      <td>POZITIVAN JOŠ JEDAN DALMATINSKI NAČELNIK Iz izolacije poručio: “Samo pozitivno”</td>
+      <td><a href="https://www.dalmacijadanas.hr/pozitivan-jos-jedan-dalmatinski-nacelnik-iz-izolacije-porucio-samo-pozitivno/" target="_blank">https://www.dalmacijadanas.hr/pozitivan-jos-jedan-dalmatinski-nacelnik-iz-izolacije-porucio-samo-pozitivno/</a></td>
+      <td>0.702841</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>469</th>
+      <td>Radio Šibenik nudi besplatnu reklamu ugostiteljima!</td>
+      <td><a href="https://www.dalmacijadanas.hr/radio-sibenik-nudi-besplatnu-reklamu-ugostiteljima/" target="_blank">https://www.dalmacijadanas.hr/radio-sibenik-nudi-besplatnu-reklamu-ugostiteljima/</a></td>
+      <td>0.702335</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2167</th>
+      <td>Velika studija potvrdila: COVID-19 je muška bolest – češće obolijevaju, imaju ozbiljnije komplikacije</td>
+      <td><a href="https://www.dalmacijadanas.hr/velika-studija-potvrdila-covid-19-je-muska-bolest-cesce-obolijevaju-imaju-ozbiljnije-komplikacije/" target="_blank">https://www.dalmacijadanas.hr/velika-studija-potvrdila-covid-19-je-muska-bolest-cesce-obolijevaju-imaju-ozbiljnije-komplikacije/</a></td>
+      <td>0.701917</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3377</th>
+      <td>COVID BIZNIS Oglasio prodaju pozitivnog testa: “Odmori se 14 dana od susjeda, rodbine, svekrve…”</td>
+      <td><a href="https://www.dalmacijadanas.hr/covid-biznis-oglasio-prodaju-pozitivnog-testa-odmori-se-14-dana-od-susjeda-rodbine-svekrve/" target="_blank">https://www.dalmacijadanas.hr/covid-biznis-oglasio-prodaju-pozitivnog-testa-odmori-se-14-dana-od-susjeda-rodbine-svekrve/</a></td>
+      <td>0.696908</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>770</th>
+      <td>BEYOND THE HORIZON Trogirski učenici uspješno odradili Erasmus projekt, upoznali češke kolege s ljepotama Dalmacije</td>
+      <td><a href="https://www.dalmacijadanas.hr/beyond-the-horizon-trogirski-ucenici-uspjesno-odradili-erasmus-projekt-upoznali-ceske-kolege-s-ljepotama-dalmacije/" target="_blank">https://www.dalmacijadanas.hr/beyond-the-horizon-trogirski-ucenici-uspjesno-odradili-erasmus-projekt-upoznali-ceske-kolege-s-ljepotama-dalmacije/</a></td>
+      <td>0.695170</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>655</th>
+      <td>Posvećen novi oltar i blagoslovljena obnovljena crkva Sv. Ante u Seocima</td>
+      <td><a href="https://www.dalmacijadanas.hr/posvecen-novi-oltar-i-blagoslovljena-obnovljena-crkva-sv-ante-u-seocima/" target="_blank">https://www.dalmacijadanas.hr/posvecen-novi-oltar-i-blagoslovljena-obnovljena-crkva-sv-ante-u-seocima/</a></td>
+      <td>0.694724</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1954</th>
+      <td>OVE CURE SU VRATILE PONOS SPLITSKOJ ODBOJCI Odbojkašice Brda – cure za 5!</td>
+      <td><a href="https://www.dalmacijadanas.hr/ove-cure-su-vratile-ponos-splitskoj-odbojci-odbojkasice-brda-cure-za-5/" target="_blank">https://www.dalmacijadanas.hr/ove-cure-su-vratile-ponos-splitskoj-odbojci-odbojkasice-brda-cure-za-5/</a></td>
+      <td>0.693565</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2194</th>
+      <td>ORIGINALNA ČESTITKA Marko Grubnić zbog zabrane ne može biti s obitelji: Pronašao način kako će se “družiti”</td>
+      <td><a href="https://www.dalmacijadanas.hr/orginalna-cestitka-marko-grubnic-zbog-zabrane-ne-moze-biti-s-obitelji-pronasao-nacin-kako-ce-se-druziti/" target="_blank">https://www.dalmacijadanas.hr/orginalna-cestitka-marko-grubnic-zbog-zabrane-ne-moze-biti-s-obitelji-pronasao-nacin-kako-ce-se-druziti/</a></td>
+      <td>0.692472</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1605</th>
+      <td>SNAŽNA PORUKA Pomorci ujedinjeni u želji da pomognu nastradalima: “Ljudi, niste sami!”</td>
+      <td><a href="https://www.dalmacijadanas.hr/snazna-poruka-pomorci-ujedinjeni-u-zelji-da-pomognu-nastradalima-ljudi-niste-sami/" target="_blank">https://www.dalmacijadanas.hr/snazna-poruka-pomorci-ujedinjeni-u-zelji-da-pomognu-nastradalima-ljudi-niste-sami/</a></td>
+      <td>0.690994</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>476</th>
+      <td>Djelatnike Anđela darivali iz Bilog srca i Zrna Soli: ‘Ganuti smo, iako rad s djecom obogaćuje naše živote’</td>
+      <td><a href="https://www.dalmacijadanas.hr/djelatnike-andela-darivali-iz-bilog-srca-i-zrna-soli-ganuti-smo-iako-rad-djecom-obogacuje-nase-zivote/" target="_blank">https://www.dalmacijadanas.hr/djelatnike-andela-darivali-iz-bilog-srca-i-zrna-soli-ganuti-smo-iako-rad-djecom-obogacuje-nase-zivote/</a></td>
+      <td>0.690258</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1848</th>
+      <td>FANTASTIČAN NOVI IZUM: Protiv korone strojem za zaprašivanje komaraca</td>
+      <td><a href="https://www.dalmacijadanas.hr/fantastican-novi-izum-protiv-korone-strojem-za-zaprasivanje-komaraca/" target="_blank">https://www.dalmacijadanas.hr/fantastican-novi-izum-protiv-korone-strojem-za-zaprasivanje-komaraca/</a></td>
+      <td>0.688270</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1958</th>
+      <td>KORONAVIRUS UŠAO U SVLAČIONICU Otkazane iduće tri utakmice KK Splita</td>
+      <td><a href="https://www.dalmacijadanas.hr/koronavirus-usao-u-svlacionicu-otkazane-iduce-tri-utakmice-kk-splita/" target="_blank">https://www.dalmacijadanas.hr/koronavirus-usao-u-svlacionicu-otkazane-iduce-tri-utakmice-kk-splita/</a></td>
+      <td>0.685955</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2323</th>
+      <td>Sutra se u Đardinu otvara Advent u Splitu „Ljubav nas spaja”</td>
+      <td><a href="https://www.dalmacijadanas.hr/sutra-se-u-dardinu-otvara-advent-u-splitu-ljubav-nas-spaja/" target="_blank">https://www.dalmacijadanas.hr/sutra-se-u-dardinu-otvara-advent-u-splitu-ljubav-nas-spaja/</a></td>
+      <td>0.683096</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1280</th>
+      <td>NEMA SPAVANJA Medvjedi snimljeni u šetnji od Velebita do Gorskog kotara</td>
+      <td><a href="https://www.dalmacijadanas.hr/nema-spavanja-medvjedi-snimljeni-u-setnji-od-velebita-do-gorskog-kotara/" target="_blank">https://www.dalmacijadanas.hr/nema-spavanja-medvjedi-snimljeni-u-setnji-od-velebita-do-gorskog-kotara/</a></td>
+      <td>0.683066</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>498</th>
+      <td>ZAHVALILI IM ŠTO RISKIRAJU SVOJE ŽIVOTE ZA DRUGE Mali Dugopoljci na Valentinovo djelatnike KBC-a Split darovali – srcima!</td>
+      <td><a href="https://www.dalmacijadanas.hr/zahvalili-im-sto-riskiraju-svoje-zivote-za-druge-mali-dugopoljci-na-valentinovo-djelatnike-kbc-a-split-darovali-srcima/" target="_blank">https://www.dalmacijadanas.hr/zahvalili-im-sto-riskiraju-svoje-zivote-za-druge-mali-dugopoljci-na-valentinovo-djelatnike-kbc-a-split-darovali-srcima/</a></td>
+      <td>0.682629</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3342</th>
+      <td>Modni Mačak otkrio što mu je najveća životna želja: “U mom slučaju to je specifičan proces”</td>
+      <td><a href="https://www.dalmacijadanas.hr/modni-macak-otkrio-sto-mu-je-najveca-zivotna-zelja-u-mom-slucaju-to-je-specifican-proces/" target="_blank">https://www.dalmacijadanas.hr/modni-macak-otkrio-sto-mu-je-najveca-zivotna-zelja-u-mom-slucaju-to-je-specifican-proces/</a></td>
+      <td>0.682077</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1302</th>
+      <td>POPUŠTANJE MJERA? Plenković: Sutra ćemo predstaviti nove odluke, građane treba nagraditi</td>
+      <td><a href="https://www.dalmacijadanas.hr/popustanje-mjera-plenkovic-sutra-cemo-predstaviti-nove-odluke-gradane-treba-nagraditi/" target="_blank">https://www.dalmacijadanas.hr/popustanje-mjera-plenkovic-sutra-cemo-predstaviti-nove-odluke-gradane-treba-nagraditi/</a></td>
+      <td>0.682012</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3333</th>
+      <td>Bosiljka Bulović iz splitskog kluba trudnica “Beba Eva”: “Mi smo vremenom postali jedna velika obitelj čija ljubav ne prestaje”</td>
+      <td><a href="https://www.dalmacijadanas.hr/bosiljka-bulovic-iz-splitskog-kluba-trudnica-beba-eva-mi-smo-vremenom-postali-jedna-velika-obitelj-cija-ljubav-ne-prestaje/" target="_blank">https://www.dalmacijadanas.hr/bosiljka-bulovic-iz-splitskog-kluba-trudnica-beba-eva-mi-smo-vremenom-postali-jedna-velika-obitelj-cija-ljubav-ne-prestaje/</a></td>
+      <td>0.681100</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>961</th>
+      <td>Nova turistička atrakcija na Tvrđavi Klis: Uskoro kreće izgradnja nove ljetne pozornice</td>
+      <td><a href="https://www.dalmacijadanas.hr/nova-turisticka-atrakcija-na-tvrdavi-klis-uskoro-krece-izgradnja-nove-ljetne-pozornice/" target="_blank">https://www.dalmacijadanas.hr/nova-turisticka-atrakcija-na-tvrdavi-klis-uskoro-krece-izgradnja-nove-ljetne-pozornice/</a></td>
+      <td>0.678610</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2419</th>
+      <td>SOLIN: Međunarodni kongres povijesnih gradova u online izdanju uz besplatno sudjelovanje</td>
+      <td><a href="https://www.dalmacijadanas.hr/solin-medunarodni-kongres-povijesnih-gradova-u-online-izdanju-uz-besplatno-sudjelovanje/" target="_blank">https://www.dalmacijadanas.hr/solin-medunarodni-kongres-povijesnih-gradova-u-online-izdanju-uz-besplatno-sudjelovanje/</a></td>
+      <td>0.677026</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1018</th>
+      <td>Jedna županija na tjedan dana obustavlja nastavu za niže osnovce, uvodi online za više</td>
+      <td><a href="https://www.dalmacijadanas.hr/jedna-zupanija-na-tjedan-dana-obustavlja-nastavu-za-nize-osnovce-uvodi-online-za-vise/" target="_blank">https://www.dalmacijadanas.hr/jedna-zupanija-na-tjedan-dana-obustavlja-nastavu-za-nize-osnovce-uvodi-online-za-vise/</a></td>
+      <td>0.676676</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3300</th>
+      <td>Čolina: Imamo veliki motiv da odemo na Europsko prvenstvo, a utakmice sa Šibenikom znaju biti najteže</td>
+      <td><a href="https://www.dalmacijadanas.hr/colina-imamo-veliki-motiv-da-odemo-na-europsko-prvenstvo-a-utakmice-sa-sibenikom-znaju-biti-najteze/" target="_blank">https://www.dalmacijadanas.hr/colina-imamo-veliki-motiv-da-odemo-na-europsko-prvenstvo-a-utakmice-sa-sibenikom-znaju-biti-najteze/</a></td>
+      <td>0.673237</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2246</th>
+      <td>SPLIT GOURMET EXPO 2020: Festival znanja, vještina i tehnika kuhara i konobara</td>
+      <td><a href="https://www.dalmacijadanas.hr/split-gourmet-expo-2020-festival-znanja-vjestina-i-tehnika-kuhara-i-konobara/" target="_blank">https://www.dalmacijadanas.hr/split-gourmet-expo-2020-festival-znanja-vjestina-i-tehnika-kuhara-i-konobara/</a></td>
+      <td>0.672425</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2455</th>
+      <td>“Zaželi sretniju starost” ide dalje u Splitu: Skrb osigrana za 342 starijih Splićanki i Splićana u nepovoljnom položaju</td>
+      <td><a href="https://www.dalmacijadanas.hr/zazeli-sretniju-starost-ide-dalje-u-splitu-skrb-osigrana-za-342-starijih-splicanki-i-splicana-u-nepovoljnom-polozaju/" target="_blank">https://www.dalmacijadanas.hr/zazeli-sretniju-starost-ide-dalje-u-splitu-skrb-osigrana-za-342-starijih-splicanki-i-splicana-u-nepovoljnom-polozaju/</a></td>
+      <td>0.671799</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>231</th>
+      <td>OGROMNA GUŽVA U CENTRU GRADA Splićani strpljivo i propisno čekaju u redovima</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromna-guzva-u-centru-grada-splicani-strpljivo-i-propisno-cekaju-u-redovima/" target="_blank">https://www.dalmacijadanas.hr/ogromna-guzva-u-centru-grada-splicani-strpljivo-i-propisno-cekaju-u-redovima/</a></td>
+      <td>0.671073</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>939</th>
+      <td>NAJNOVIJI PODACI Skok broja zaraženih u SDŽ: Žarišta su Split, Solin, Sinj, Imotski, Kaštela, Makarska…</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-skok-broja-zarazenih-u-sdz-zarista-su-split-solin-sinj-imotski-kastela-makarska/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-skok-broja-zarazenih-u-sdz-zarista-su-split-solin-sinj-imotski-kastela-makarska/</a></td>
+      <td>0.671073</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>261</th>
+      <td>HITNI MEDICINSKI PRIJEVOZ Muškarac (44) pozitivan na koronu prevezen u Zagreb</td>
+      <td><a href="https://www.dalmacijadanas.hr/hitni-medicinski-prijevoz-muskarac-44-pozitivan-na-koronu-prevezen-u-zagreb/" target="_blank">https://www.dalmacijadanas.hr/hitni-medicinski-prijevoz-muskarac-44-pozitivan-na-koronu-prevezen-u-zagreb/</a></td>
+      <td>0.671073</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2199</th>
+      <td>Mladi Dalmatinac s čak dvije pjesme borit će se za Eurosong. Hrvoje Domazet ne prestaje nizati uspješne glazbene suradnje</td>
+      <td><a href="https://www.dalmacijadanas.hr/mladi-dalmatinac-s-cak-dvije-pjesme-borit-ce-se-za-eurosong-hrvoje-domazet-ne-prestaje-nizati-uspjesne-glazbene-suradnje/" target="_blank">https://www.dalmacijadanas.hr/mladi-dalmatinac-s-cak-dvije-pjesme-borit-ce-se-za-eurosong-hrvoje-domazet-ne-prestaje-nizati-uspjesne-glazbene-suradnje/</a></td>
+      <td>0.670563</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2229</th>
+      <td>Drugi koncert 11. MAGsezone 2020/2021: nastupa mladi i ambiciozni ENDeM kvartet saksofona</td>
+      <td><a href="https://www.dalmacijadanas.hr/drugi-koncert-11-magsezone-2020-2021-nastavlja-mladi-i-ambicioznim-endem-kvartet-saksofona/" target="_blank">https://www.dalmacijadanas.hr/drugi-koncert-11-magsezone-2020-2021-nastavlja-mladi-i-ambicioznim-endem-kvartet-saksofona/</a></td>
+      <td>0.669322</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
   </tbody>
 </table>

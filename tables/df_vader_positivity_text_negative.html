@@ -1,83 +1,814 @@
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: left;">
       <th></th>
       <th>Title</th>
       <th>URL</th>
       <th>Text_positivity_vader</th>
       <th>Positivity</th>
+      <th>RF_text_prediction</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>2299</th>
       <td>U NOĆNIM SATIMA Vlasnica kafića u Dalmaciji posluživala goste unatoč zabrani</td>
-      <td>https://www.dalmacijadanas.hr/u-nocnim-satima-vlasnica-kafica-u-dalmaciji-posluzivala-goste-unatoc-zabrani/</td>
+      <td><a href="https://www.dalmacijadanas.hr/u-nocnim-satima-vlasnica-kafica-u-dalmaciji-posluzivala-goste-unatoc-zabrani/" target="_blank">https://www.dalmacijadanas.hr/u-nocnim-satima-vlasnica-kafica-u-dalmaciji-posluzivala-goste-unatoc-zabrani/</a></td>
       <td>-0.984690</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>1494</th>
       <td>TUŽNA VIJEST: Smrtni slučaj u obitelji Tome Medveda</td>
-      <td>https://www.dalmacijadanas.hr/tuzna-vijest-smrtni-slucaj-u-obitelji-tome-medveda/</td>
+      <td><a href="https://www.dalmacijadanas.hr/tuzna-vijest-smrtni-slucaj-u-obitelji-tome-medveda/" target="_blank">https://www.dalmacijadanas.hr/tuzna-vijest-smrtni-slucaj-u-obitelji-tome-medveda/</a></td>
       <td>-0.960256</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>1736</th>
       <td>SERIJSKI UBOJICA UMRO OD KORONE Ubio je čak 17 ljudi, zvali su ga ‘monstrum vlakova’</td>
-      <td>https://www.dalmacijadanas.hr/serijski-ubojica-umro-od-korone-ubio-je-cak-17-ljudi-zvali-su-ga-monstrum-vlakova/</td>
+      <td><a href="https://www.dalmacijadanas.hr/serijski-ubojica-umro-od-korone-ubio-je-cak-17-ljudi-zvali-su-ga-monstrum-vlakova/" target="_blank">https://www.dalmacijadanas.hr/serijski-ubojica-umro-od-korone-ubio-je-cak-17-ljudi-zvali-su-ga-monstrum-vlakova/</a></td>
       <td>-0.941191</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>2965</th>
       <td>Policija je uhitila zaraženog muškarca koji je svjesno izlazio iz kuće i odlazio među ljude</td>
-      <td>https://www.dalmacijadanas.hr/policija-je-uhitila-zarazenog-muskarca-koji-je-svjesno-izlazio-iz-kuce-i-odlazio-medu-ljude/</td>
+      <td><a href="https://www.dalmacijadanas.hr/policija-je-uhitila-zarazenog-muskarca-koji-je-svjesno-izlazio-iz-kuce-i-odlazio-medu-ljude/" target="_blank">https://www.dalmacijadanas.hr/policija-je-uhitila-zarazenog-muskarca-koji-je-svjesno-izlazio-iz-kuce-i-odlazio-medu-ljude/</a></td>
       <td>-0.906855</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>1313</th>
       <td>JOŠ JEDAN SLUČAJ Policija pritvorila vlasnicu koja je otvorila kafić</td>
-      <td>https://www.dalmacijadanas.hr/jos-jedan-slucaj-policija-pritvorila-vlasnicu-koja-je-otvorila-kafic/</td>
+      <td><a href="https://www.dalmacijadanas.hr/jos-jedan-slucaj-policija-pritvorila-vlasnicu-koja-je-otvorila-kafic/" target="_blank">https://www.dalmacijadanas.hr/jos-jedan-slucaj-policija-pritvorila-vlasnicu-koja-je-otvorila-kafic/</a></td>
       <td>-0.903061</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>1833</th>
       <td>UHIĆENI KOSOVARI Prekinuli kabel za održavanje na životu Covid-19 bolesnika</td>
-      <td>https://www.dalmacijadanas.hr/uhiceni-kosovari-prekinuli-kabel-za-odrzavanje-na-zivotu-covid-19-bolesnika/</td>
+      <td><a href="https://www.dalmacijadanas.hr/uhiceni-kosovari-prekinuli-kabel-za-odrzavanje-na-zivotu-covid-19-bolesnika/" target="_blank">https://www.dalmacijadanas.hr/uhiceni-kosovari-prekinuli-kabel-za-odrzavanje-na-zivotu-covid-19-bolesnika/</a></td>
       <td>-0.897254</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>305</th>
       <td>JEDNA OSOBA PREMINULA U SDŽ: Županija s najvećim brojem novozaraženih</td>
-      <td>https://www.dalmacijadanas.hr/jedna-osoba-preminula-u-sdz-broj-zarazenih-preko-200/</td>
+      <td><a href="https://www.dalmacijadanas.hr/jedna-osoba-preminula-u-sdz-broj-zarazenih-preko-200/" target="_blank">https://www.dalmacijadanas.hr/jedna-osoba-preminula-u-sdz-broj-zarazenih-preko-200/</a></td>
       <td>-0.888004</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>2818</th>
       <td>Zaraženu 36-godišnjakinju policija zatekla u kafiću</td>
-      <td>https://www.dalmacijadanas.hr/zarazenu-36-godisnjakinju-policija-zatekla-u-kaficu/</td>
+      <td><a href="https://www.dalmacijadanas.hr/zarazenu-36-godisnjakinju-policija-zatekla-u-kaficu/" target="_blank">https://www.dalmacijadanas.hr/zarazenu-36-godisnjakinju-policija-zatekla-u-kaficu/</a></td>
       <td>-0.820693</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>1411</th>
       <td>Horvatinčić opet tražio odgodu odlaska u zatvor radi operacije</td>
-      <td>https://www.dalmacijadanas.hr/horvatincic-opet-trazio-odgodu-odlaska-u-zatvor-radi-operacije/</td>
+      <td><a href="https://www.dalmacijadanas.hr/horvatincic-opet-trazio-odgodu-odlaska-u-zatvor-radi-operacije/" target="_blank">https://www.dalmacijadanas.hr/horvatincic-opet-trazio-odgodu-odlaska-u-zatvor-radi-operacije/</a></td>
       <td>-0.789956</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>2508</th>
       <td>ODLIČNE VIJESTI Brač od idućeg ljeta izravno povezan s Berlinom i Düsseldorfom</td>
-      <td>https://www.dalmacijadanas.hr/odlicne-vijesti-brac-od-iduceg-ljeta-izravno-povezan-s-berlinom-i-dusseldorfom/</td>
+      <td><a href="https://www.dalmacijadanas.hr/odlicne-vijesti-brac-od-iduceg-ljeta-izravno-povezan-s-berlinom-i-dusseldorfom/" target="_blank">https://www.dalmacijadanas.hr/odlicne-vijesti-brac-od-iduceg-ljeta-izravno-povezan-s-berlinom-i-dusseldorfom/</a></td>
       <td>-0.774198</td>
-      <td>POSITIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1444</th>
+      <td>PONOVNO ZNAČAJAN PAD: Stižu neslužbeni podaci, evo koliko je u Hrvatskoj novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/ponovno-znacajan-pad-stizu-nesluzbeni-podaci-evo-koliko-je-u-hrvatskoj-novooboljelih/" target="_blank">https://www.dalmacijadanas.hr/ponovno-znacajan-pad-stizu-nesluzbeni-podaci-evo-koliko-je-u-hrvatskoj-novooboljelih/</a></td>
+      <td>-0.759083</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3050</th>
+      <td>Uhićen muškarac koji je Berošu prijetio putem interneta, evo kolika je kazna za širenje govora mržnje</td>
+      <td><a href="https://www.dalmacijadanas.hr/uhicen-muskarac-koji-je-berosu-prijetio-putem-interneta-evo-kolika-je-kazna-za-sirenje-govora-mrznje/" target="_blank">https://www.dalmacijadanas.hr/uhicen-muskarac-koji-je-berosu-prijetio-putem-interneta-evo-kolika-je-kazna-za-sirenje-govora-mrznje/</a></td>
+      <td>-0.745776</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1036</th>
+      <td>STRAVIČNI DETALJI Majka monstrumski pretukla dvogodišnju djevojčicu. Otkriveno koliko je zlostavljanje trajalo</td>
+      <td><a href="https://www.dalmacijadanas.hr/stravicni-detalji-majka-monstrumski-pretukla-dvogodisnju-djevojcicu-otkriveno-koliko-je-zlostavljanje-trajalo/" target="_blank">https://www.dalmacijadanas.hr/stravicni-detalji-majka-monstrumski-pretukla-dvogodisnju-djevojcicu-otkriveno-koliko-je-zlostavljanje-trajalo/</a></td>
+      <td>-0.737789</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1945</th>
+      <td>Zaradila kaznenu prijavu: 62-godišnja Dalmatinka zaražena koronom otišla do dućana, pa malo posjetila obitelj</td>
+      <td><a href="https://www.dalmacijadanas.hr/zaradila-kaznenu-prijavu-62-godisnja-dalmatinka-zarazena-koronom-otisla-do-ducana-pa-malo-posjetila-obitelj/" target="_blank">https://www.dalmacijadanas.hr/zaradila-kaznenu-prijavu-62-godisnja-dalmatinka-zarazena-koronom-otisla-do-ducana-pa-malo-posjetila-obitelj/</a></td>
+      <td>-0.735002</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>475</th>
+      <td>SLUČAJ IZ DALMACIJE Zaražen samovoljno napustio COVID odjel, a zatim ušao u taxi</td>
+      <td><a href="https://www.dalmacijadanas.hr/slucaj-iz-dalmacije-zarazen-samovoljno-napustio-covid-odjel-a-zatim-usao-u-taxi/" target="_blank">https://www.dalmacijadanas.hr/slucaj-iz-dalmacije-zarazen-samovoljno-napustio-covid-odjel-a-zatim-usao-u-taxi/</a></td>
+      <td>-0.721867</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3367</th>
+      <td>Samo u Splitu: Na šetalište uz more “postavljen” znak opasnosti od – Corone!</td>
+      <td><a href="https://www.dalmacijadanas.hr/samo-u-splitu-na-setaliste-uz-more-postavljen-znak-opasnosti-od-corone/" target="_blank">https://www.dalmacijadanas.hr/samo-u-splitu-na-setaliste-uz-more-postavljen-znak-opasnosti-od-corone/</a></td>
+      <td>-0.695573</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3193</th>
+      <td>Škoro: “Je li vam palo na pamet osuditi govor mržnje kad su me nazivali četničkim zetom?”</td>
+      <td><a href="https://www.dalmacijadanas.hr/skoro-je-li-vam-palo-napamet-osuditi-govor-mrznje-kad-su-me-nazivali-cetnickim-zetom/" target="_blank">https://www.dalmacijadanas.hr/skoro-je-li-vam-palo-napamet-osuditi-govor-mrznje-kad-su-me-nazivali-cetnickim-zetom/</a></td>
+      <td>-0.685038</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2829</th>
+      <td>KORONA HARA U DOMOVIMA: Zaraženo je 40 psihičkih bolesnika i 14 djelatnika</td>
+      <td><a href="https://www.dalmacijadanas.hr/korona-hara-u-domovima-zarazeno-je-40-psihickih-bolesnika-i-14-djelatnika/" target="_blank">https://www.dalmacijadanas.hr/korona-hara-u-domovima-zarazeno-je-40-psihickih-bolesnika-i-14-djelatnika/</a></td>
+      <td>-0.682454</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>286</th>
+      <td>OGROMNE BROJKE U SPLITSKO-DALMATINSKOJ ŽUPANIJI Više od 300 novih slučajeva. Očekuju se službeni podaci Stožera SDŽ</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromne-brojke-u-splitsko-dalmatinskoj-zupaniji-vise-od-300-novih-slucajeva-ocekuju-se-sluzbeni-podaci-stozera-sdz/" target="_blank">https://www.dalmacijadanas.hr/ogromne-brojke-u-splitsko-dalmatinskoj-zupaniji-vise-od-300-novih-slucajeva-ocekuju-se-sluzbeni-podaci-stozera-sdz/</a></td>
+      <td>-0.679185</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>923</th>
+      <td>OTVORIO KAFIĆ Vlasnik ugostiteljskog objekta osumnjičen za širenje i prenošenje zarazne bolesti</td>
+      <td><a href="https://www.dalmacijadanas.hr/otvorio-kafic-vlasnik-ugostiteljskog-objekta-osumnjicen-za-sirenje-i-prenosenje-zarazne-bolesti/" target="_blank">https://www.dalmacijadanas.hr/otvorio-kafic-vlasnik-ugostiteljskog-objekta-osumnjicen-za-sirenje-i-prenosenje-zarazne-bolesti/</a></td>
+      <td>-0.676968</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1847</th>
+      <td>Muškarac kažnjen s 2.880 eura jer je kršio izolaciju 8 sekundi</td>
+      <td><a href="https://www.dalmacijadanas.hr/muskarac-kaznjen-s-2880-eura-jer-je-krsio-izolaciju-8-sekundi/" target="_blank">https://www.dalmacijadanas.hr/muskarac-kaznjen-s-2880-eura-jer-je-krsio-izolaciju-8-sekundi/</a></td>
+      <td>-0.671178</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1618</th>
+      <td>SITUACIJA JE I DALJE KATASTROFALNA ‘U Petrinji je hladno, počinje i cijepljenje’</td>
+      <td><a href="https://www.dalmacijadanas.hr/situacija-je-i-dalje-katastrofalna-u-petrinji-je-hladno-pocinje-i-cijepljenje/" target="_blank">https://www.dalmacijadanas.hr/situacija-je-i-dalje-katastrofalna-u-petrinji-je-hladno-pocinje-i-cijepljenje/</a></td>
+      <td>-0.668864</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>908</th>
+      <td>PRVI PUT DVOZNAMENKAST BROJ PREMINULIH U SDŽ Evo koliko je novooboljelih u županiji</td>
+      <td><a href="https://www.dalmacijadanas.hr/prvi-put-dvoznamenkast-broj-preminulih-u-sdz-evo-koliko-je-novooboljelih-u-zupaniji/" target="_blank">https://www.dalmacijadanas.hr/prvi-put-dvoznamenkast-broj-preminulih-u-sdz-evo-koliko-je-novooboljelih-u-zupaniji/</a></td>
+      <td>-0.659381</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1368</th>
+      <td>DALMATINAC NABAVIO LAŽNI COVID TEST U LIVNU Želio je “preveslati” policiju na Kamenskom</td>
+      <td><a href="https://www.dalmacijadanas.hr/dalmatinac-nabavio-lazni-covid-test-u-livnu-zelio-je-preveslati-policiju-na-kamenskom/" target="_blank">https://www.dalmacijadanas.hr/dalmatinac-nabavio-lazni-covid-test-u-livnu-zelio-je-preveslati-policiju-na-kamenskom/</a></td>
+      <td>-0.657903</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2795</th>
+      <td>NEODGOVORNO PONAŠANJE Zaraženi koronom išli registrirati auto, u trgovinu, organizirali feštu, pokušali otići u inozemstvo…</td>
+      <td><a href="https://www.dalmacijadanas.hr/neodgovorno-ponasanje-zarazeni-koronom-isli-registrirati-auto-u-trgovinu-organizirali-festu-pokusali-otici-u-inozemstvo/" target="_blank">https://www.dalmacijadanas.hr/neodgovorno-ponasanje-zarazeni-koronom-isli-registrirati-auto-u-trgovinu-organizirali-festu-pokusali-otici-u-inozemstvo/</a></td>
+      <td>-0.653623</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1019</th>
+      <td>U bolnici umrla djevojka (26), čeka se odgovor je li imala komorbiditete</td>
+      <td><a href="https://www.dalmacijadanas.hr/u-bolnici-umrla-djevojka-26-ceka-se-odgovor-je-li-imala-komorbiditete/" target="_blank">https://www.dalmacijadanas.hr/u-bolnici-umrla-djevojka-26-ceka-se-odgovor-je-li-imala-komorbiditete/</a></td>
+      <td>-0.646503</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3183</th>
+      <td>Najmlađa žrtva koronavirusa u Hrvatskoj imala je samo 39 godina</td>
+      <td><a href="https://www.dalmacijadanas.hr/najmlada-zrtva-koronavirusa-u-hrvatskoj-imala-je-samo-39-godina/" target="_blank">https://www.dalmacijadanas.hr/najmlada-zrtva-koronavirusa-u-hrvatskoj-imala-je-samo-39-godina/</a></td>
+      <td>-0.634130</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>988</th>
+      <td>DRAMA U MOSTARU Pojavila se snimka brutalnog premlaćivanja mladića: “Policija je pretukla i moje dijete”</td>
+      <td><a href="https://www.dalmacijadanas.hr/drama-u-mostaru-pojavila-se-snimka-brutalnog-premlacivanja-mladica-policija-je-pretukla-i-moje-dijete/" target="_blank">https://www.dalmacijadanas.hr/drama-u-mostaru-pojavila-se-snimka-brutalnog-premlacivanja-mladica-policija-je-pretukla-i-moje-dijete/</a></td>
+      <td>-0.631259</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1212</th>
+      <td>Horvatinčić traži novu odgodu zatvora: “Trpi velike bolove”</td>
+      <td><a href="https://www.dalmacijadanas.hr/horvatincic-trazi-novu-odgodu-zatvora-trpi-velike-bolove/" target="_blank">https://www.dalmacijadanas.hr/horvatincic-trazi-novu-odgodu-zatvora-trpi-velike-bolove/</a></td>
+      <td>-0.631045</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1536</th>
+      <td>Osobni liječnik pape Franje preminuo od koronavirusa</td>
+      <td><a href="https://www.dalmacijadanas.hr/osobni-lijecnik-pape-franje-preminuo-od-koronavirusa/" target="_blank">https://www.dalmacijadanas.hr/osobni-lijecnik-pape-franje-preminuo-od-koronavirusa/</a></td>
+      <td>-0.630161</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>750</th>
+      <td>ODLIČNE VIJESTI: SD županija bilježi tek nešto više od 10 novih slučajeva</td>
+      <td><a href="https://www.dalmacijadanas.hr/odlicne-vijesti-sd-zupanija-biljezi-tek-nesto-vise-od-10-novih-slucajeva/" target="_blank">https://www.dalmacijadanas.hr/odlicne-vijesti-sd-zupanija-biljezi-tek-nesto-vise-od-10-novih-slucajeva/</a></td>
+      <td>-0.630161</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2808</th>
+      <td>Razvlašteni kosovski episkop Artemije preminuo od koronavirusa</td>
+      <td><a href="https://www.dalmacijadanas.hr/razvlasteni-kosovski-episkop-artemije-preminuo-od-koronavirusa/" target="_blank">https://www.dalmacijadanas.hr/razvlasteni-kosovski-episkop-artemije-preminuo-od-koronavirusa/</a></td>
+      <td>-0.629286</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>502</th>
+      <td>GORAN KOTUR ODLUČAN: “Tražimo da se smanji prirez u Splitu – i to odmah”</td>
+      <td><a href="https://www.dalmacijadanas.hr/goran-kotur-odlucan-trazimo-da-se-smanji-prirez-u-splitu-i-to-odmah/" target="_blank">https://www.dalmacijadanas.hr/goran-kotur-odlucan-trazimo-da-se-smanji-prirez-u-splitu-i-to-odmah/</a></td>
+      <td>-0.628644</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1822</th>
+      <td>MJERE SE I DALJE KRŠE Božinović otkrio koliko je kaznenih prijava podneseno zbog širenja zaraze</td>
+      <td><a href="https://www.dalmacijadanas.hr/mjere-se-i-dalje-krse-bozinovic-otkrio-koliko-je-kaznenih-prijava-podneseno-zbog-sirenja-zaraze/" target="_blank">https://www.dalmacijadanas.hr/mjere-se-i-dalje-krse-bozinovic-otkrio-koliko-je-kaznenih-prijava-podneseno-zbog-sirenja-zaraze/</a></td>
+      <td>-0.628352</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1177</th>
+      <td>Mlađi sin Otta Barića: “Sram me ove države. Nedavno sam pokopao oca, rekli smo ljudima da ne dođu”</td>
+      <td><a href="https://www.dalmacijadanas.hr/mladi-sin-otta-barica-sram-me-ove-drzave-nedavno-sam-pokopao-oca-rekli-smo-ljudima-da-ne-dodu/" target="_blank">https://www.dalmacijadanas.hr/mladi-sin-otta-barica-sram-me-ove-drzave-nedavno-sam-pokopao-oca-rekli-smo-ljudima-da-ne-dodu/</a></td>
+      <td>-0.625317</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1037</th>
+      <td>Ispitani roditelji teško ozlijeđene djevojčice, majka je prvookrivljena</td>
+      <td><a href="https://www.dalmacijadanas.hr/ispitani-roditelji-tesko-ozlijedene-djevojcice-majka-je-prvookrivljena/" target="_blank">https://www.dalmacijadanas.hr/ispitani-roditelji-tesko-ozlijedene-djevojcice-majka-je-prvookrivljena/</a></td>
+      <td>-0.621724</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2996</th>
+      <td>Radimir Čačić: “Nažalost nemam ovlasti da zabranim rad ugostiteljskim objektima”</td>
+      <td><a href="https://www.dalmacijadanas.hr/radimir-cacic-nazalost-nemam-ovlasti-da-zabranim-rad-ugostiteljskim-objektima/" target="_blank">https://www.dalmacijadanas.hr/radimir-cacic-nazalost-nemam-ovlasti-da-zabranim-rad-ugostiteljskim-objektima/</a></td>
+      <td>-0.620746</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2257</th>
+      <td>Jednom zlostavljanom djetetu potrebna je samo jedna osoba koja će reagirati. Jedna dvogodišnja djevojčica nije je imala</td>
+      <td><a href="https://www.dalmacijadanas.hr/jednom-zlostavljanom-djetetu-potrebna-je-samo-jedna-osoba-koja-ce-reagirati-jedna-dvogodisnja-djevojcica-nije-je-imala/" target="_blank">https://www.dalmacijadanas.hr/jednom-zlostavljanom-djetetu-potrebna-je-samo-jedna-osoba-koja-ce-reagirati-jedna-dvogodisnja-djevojcica-nije-je-imala/</a></td>
+      <td>-0.615417</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2990</th>
+      <td>U KB-u Dubrava ponovno nestala struja, sumnja se da je sve namjerno</td>
+      <td><a href="https://www.dalmacijadanas.hr/u-kb-u-dubrava-ponovno-nestala-struja-sumnja-se-da-je-sve-namjerno/" target="_blank">https://www.dalmacijadanas.hr/u-kb-u-dubrava-ponovno-nestala-struja-sumnja-se-da-je-sve-namjerno/</a></td>
+      <td>-0.606817</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1922</th>
+      <td>Djevojka s koronom bila u zatvorenom kafiću s prijateljima, zaraženi vozio poznanicu</td>
+      <td><a href="https://www.dalmacijadanas.hr/djevojka-s-koronom-bila-u-zatvorenom-kaficu-s-prijateljima-zarazeni-vozio-poznanicu/" target="_blank">https://www.dalmacijadanas.hr/djevojka-s-koronom-bila-u-zatvorenom-kaficu-s-prijateljima-zarazeni-vozio-poznanicu/</a></td>
+      <td>-0.606333</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>KORONA U DALMACIJI Zaraza se proširila u jednom staračkom domu: “Većina korisnika je zaražena”</td>
+      <td><a href="https://www.dalmacijadanas.hr/korona-u-dalmaciji-zaraza-se-prosirila-u-jednom-starackom-domu-vecina-korisnika-je-zarazena/" target="_blank">https://www.dalmacijadanas.hr/korona-u-dalmaciji-zaraza-se-prosirila-u-jednom-starackom-domu-vecina-korisnika-je-zarazena/</a></td>
+      <td>-0.605591</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1240</th>
+      <td>SLUČAJ KOJI JE RASTUŽIO DALMACIJU Podignuta optužnica protiv četvero djelatnika bolnice zbog smrti dječaka</td>
+      <td><a href="https://www.dalmacijadanas.hr/slucaj-koji-je-rastuzio-dalmaciju-podignuta-optuznica-protiv-cetvero-djelatnika-bolnice-zbog-smrti-djecaka/" target="_blank">https://www.dalmacijadanas.hr/slucaj-koji-je-rastuzio-dalmaciju-podignuta-optuznica-protiv-cetvero-djelatnika-bolnice-zbog-smrti-djecaka/</a></td>
+      <td>-0.597195</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>441</th>
+      <td>DALMATINSKA OPĆINA UVELA ZABRANE “Nema sportskih okupljanja i treninga”</td>
+      <td><a href="https://www.dalmacijadanas.hr/dalmatinska-opcina-uvela-zabrane-nema-sportskih-okupljanja-i-treninga/" target="_blank">https://www.dalmacijadanas.hr/dalmatinska-opcina-uvela-zabrane-nema-sportskih-okupljanja-i-treninga/</a></td>
+      <td>-0.593043</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2822</th>
+      <td>POTRESAN STATUS LIJEČNIKA: “Posebno smo umorni od uzaludnih smrti”</td>
+      <td><a href="https://www.dalmacijadanas.hr/potresan-status-lijecnika-posebno-smo-umorni-od-uzaludnih-smrti/" target="_blank">https://www.dalmacijadanas.hr/potresan-status-lijecnika-posebno-smo-umorni-od-uzaludnih-smrti/</a></td>
+      <td>-0.579628</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1233</th>
+      <td>UZ NOTE TAMBURAŠA Balašević pokopan u Novom Sadu</td>
+      <td><a href="https://www.dalmacijadanas.hr/uz-note-tamburasa-balasevic-pokopan-u-novom-sadu/" target="_blank">https://www.dalmacijadanas.hr/uz-note-tamburasa-balasevic-pokopan-u-novom-sadu/</a></td>
+      <td>-0.577252</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2941</th>
+      <td>Muškarac (37) umro od Covida: ‘Virus je nepredvidiv, kod nekih imunološki odgovor nije dobar’</td>
+      <td><a href="https://www.dalmacijadanas.hr/muskarac-37-umro-od-covida-virus-je-nepredvidiv-kod-nekih-imunoloski-odgovor-nije-dobar/" target="_blank">https://www.dalmacijadanas.hr/muskarac-37-umro-od-covida-virus-je-nepredvidiv-kod-nekih-imunoloski-odgovor-nije-dobar/</a></td>
+      <td>-0.576955</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1586</th>
+      <td>Šef civilne zaštite priveden zbog obiteljskog nasilja, žrtve su njegova žena i svećenik kojeg je zatekao doma</td>
+      <td><a href="https://www.dalmacijadanas.hr/sef-civilne-zastite-priveden-zbog-obiteljskog-nasilja-zrtve-su-njegova-zena-i-svecenik-kojeg-je-zatekao-doma/" target="_blank">https://www.dalmacijadanas.hr/sef-civilne-zastite-priveden-zbog-obiteljskog-nasilja-zrtve-su-njegova-zena-i-svecenik-kojeg-je-zatekao-doma/</a></td>
+      <td>-0.568553</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1155</th>
+      <td>Splićanin (68) ostao bez 20 tisuća kuna zbog internetske prijevare, policija istražuje slučaj</td>
+      <td><a href="https://www.dalmacijadanas.hr/splicanin-68-ostao-bez-20-tisuca-kuna-zbog-internetske-prijevare-policija-istrazuje-slucaj/" target="_blank">https://www.dalmacijadanas.hr/splicanin-68-ostao-bez-20-tisuca-kuna-zbog-internetske-prijevare-policija-istrazuje-slucaj/</a></td>
+      <td>-0.565119</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1671</th>
+      <td>STRAVIČAN DOGAĐAJ U BOLNICI Zatukao covid pacijenta spremnikom kisika, žrtva je preminula</td>
+      <td><a href="https://www.dalmacijadanas.hr/stravican-dogadaj-u-bolnici-zatukao-covid-pacijenta-s-kisikom-zrtva-je-preminula/" target="_blank">https://www.dalmacijadanas.hr/stravican-dogadaj-u-bolnici-zatukao-covid-pacijenta-s-kisikom-zrtva-je-preminula/</a></td>
+      <td>-0.564329</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>424</th>
+      <td>PORAST ZARAŽENIH U SDŽ Preminula dva muškarca, više od 70 novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/porast-zarazenih-u-splitu-preminula-dva-muskarca/" target="_blank">https://www.dalmacijadanas.hr/porast-zarazenih-u-splitu-preminula-dva-muskarca/</a></td>
+      <td>-0.556042</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1625</th>
+      <td>Pripremali se za doček Nove godine: Kod zatvorenika na Bilicama našli travu, tablete…</td>
+      <td><a href="https://www.dalmacijadanas.hr/pripremali-se-za-docek-nove-godine-kod-zatvorenika-na-bilicama-nasli-travu-tablete/" target="_blank">https://www.dalmacijadanas.hr/pripremali-se-za-docek-nove-godine-kod-zatvorenika-na-bilicama-nasli-travu-tablete/</a></td>
+      <td>-0.548601</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1385</th>
+      <td>ZAR JE TO MOGUĆE? Zabilježeni slučajevi pacijenata istovremeno zaraženih s dvije varijante koronavirusa</td>
+      <td><a href="https://www.dalmacijadanas.hr/zar-je-to-moguce-zabiljezeni-slucajevi-pacijenata-istovremeno-zarazenih-s-dvije-varijante-koronavirusa/" target="_blank">https://www.dalmacijadanas.hr/zar-je-to-moguce-zabiljezeni-slucajevi-pacijenata-istovremeno-zarazenih-s-dvije-varijante-koronavirusa/</a></td>
+      <td>-0.546004</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1051</th>
+      <td>Danas 2623 nova slučaja, 19 ljudi umrlo. Na respiratoru je 17 pacijenata više nego jučer</td>
+      <td><a href="https://www.dalmacijadanas.hr/danas-2623-nova-slucaja-19-ljudi-umrlo-na-respiratoru-je-17-pacijenata-vise-nego-jucer/" target="_blank">https://www.dalmacijadanas.hr/danas-2623-nova-slucaja-19-ljudi-umrlo-na-respiratoru-je-17-pacijenata-vise-nego-jucer/</a></td>
+      <td>-0.533436</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2814</th>
+      <td>Prometni stručnjaci o hororu na A1: “Neprilagođena brzina postavljena tempomatom, težak umor i korištenje mobitela izvjesni uzroci”</td>
+      <td><a href="https://www.dalmacijadanas.hr/prometni-strucnjaci-o-hororu-na-a1-neprilagodena-brzina-postavljena-tempomatom-tezak-umor-i-koristenje-mobitela-izvjesni-uzroci/" target="_blank">https://www.dalmacijadanas.hr/prometni-strucnjaci-o-hororu-na-a1-neprilagodena-brzina-postavljena-tempomatom-tezak-umor-i-koristenje-mobitela-izvjesni-uzroci/</a></td>
+      <td>-0.528551</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1486</th>
+      <td>PREKRŠIO MJERE Gradonačelnik večerao s francuskim veleposlanikom: “Bilo bi neprimjereno odbiti”</td>
+      <td><a href="https://www.dalmacijadanas.hr/prekrsio-mjere-gradonacelnik-vecerao-s-francuskim-veleposlanikom-bilo-bi-neprimjereno-odbiti/" target="_blank">https://www.dalmacijadanas.hr/prekrsio-mjere-gradonacelnik-vecerao-s-francuskim-veleposlanikom-bilo-bi-neprimjereno-odbiti/</a></td>
+      <td>-0.520733</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3229</th>
+      <td>Ovo je vijest koja bi mogla malo smiriti paniku i dramu zbog rasta broja zaraženih u zadnje vrijeme</td>
+      <td><a href="https://www.dalmacijadanas.hr/ovo-je-vijest-koja-bi-mogla-malo-smiriti-paniku-i-dramu-zbog-rasta-broja-zarazenih-u-zadnje-vrijeme/" target="_blank">https://www.dalmacijadanas.hr/ovo-je-vijest-koja-bi-mogla-malo-smiriti-paniku-i-dramu-zbog-rasta-broja-zarazenih-u-zadnje-vrijeme/</a></td>
+      <td>-0.519931</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1693</th>
+      <td>Pijani Dalmatinac bivšu djevojku gađao pepeljarom, udarao šakama, stavio joj nož po vrat</td>
+      <td><a href="https://www.dalmacijadanas.hr/pijani-dalmatinac-bivsu-djevojku-gadao-pepeljarom-udarao-sakama-stavio-joj-noz-po-vrat/" target="_blank">https://www.dalmacijadanas.hr/pijani-dalmatinac-bivsu-djevojku-gadao-pepeljarom-udarao-sakama-stavio-joj-noz-po-vrat/</a></td>
+      <td>-0.514438</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1768</th>
+      <td>Stiglo cjepivo, ali i novi problemi: U Engleskoj se pojavio do sada nepoznat soj koronavirusa</td>
+      <td><a href="https://www.dalmacijadanas.hr/stiglo-cjepivo-ali-i-novi-problemi-u-engleskoj-se-pojavilo-do-sada-nepoznat-soj-koronavirusa/" target="_blank">https://www.dalmacijadanas.hr/stiglo-cjepivo-ali-i-novi-problemi-u-engleskoj-se-pojavilo-do-sada-nepoznat-soj-koronavirusa/</a></td>
+      <td>-0.503633</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1180</th>
+      <td>Ahmetović o ispraćaju: “Danas se od svih hrvatskih građana ponovno radi idiote”</td>
+      <td><a href="https://www.dalmacijadanas.hr/ahmetovic-o-ispracaju-danas-se-od-svih-hrvatskih-gradana-ponovno-radi-idiote/" target="_blank">https://www.dalmacijadanas.hr/ahmetovic-o-ispracaju-danas-se-od-svih-hrvatskih-gradana-ponovno-radi-idiote/</a></td>
+      <td>-0.503283</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1414</th>
+      <td>SMRT DJEČAKA: “Prvo su posumnjali na slijepo crijevo”</td>
+      <td><a href="https://www.dalmacijadanas.hr/smrt-djecaka-prvo-su-posumnjali-na-slijepo-crijevo/" target="_blank">https://www.dalmacijadanas.hr/smrt-djecaka-prvo-su-posumnjali-na-slijepo-crijevo/</a></td>
+      <td>-0.498050</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>982</th>
+      <td>Sukob u narkomanskom miljeu? Tko je 32-godišnjak propucan usred noći na staroj kliškoj cesti?</td>
+      <td><a href="https://www.dalmacijadanas.hr/sukob-u-narkomanskom-miljeu-tko-je-32-godisnjak-propucan-usred-noci-na-staroj-kliskoj-cesti/" target="_blank">https://www.dalmacijadanas.hr/sukob-u-narkomanskom-miljeu-tko-je-32-godisnjak-propucan-usred-noci-na-staroj-kliskoj-cesti/</a></td>
+      <td>-0.496238</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1579</th>
+      <td>Šef Stožera napao ženu i svećenika. Svećenik: Prijetio je smrću, nisam dobro</td>
+      <td><a href="https://www.dalmacijadanas.hr/sef-stozera-napao-zenu-i-svecenika-svecenik-prijetio-je-smrcu-nisam-dobro/" target="_blank">https://www.dalmacijadanas.hr/sef-stozera-napao-zenu-i-svecenika-svecenik-prijetio-je-smrcu-nisam-dobro/</a></td>
+      <td>-0.495034</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>527</th>
+      <td>Makarski gradonačelnik prebačen na zarazni odjel KBC-a Split zbog općeg lošeg stanja?</td>
+      <td><a href="https://www.dalmacijadanas.hr/makarski-gradonacelnik-prebacen-na-zarazni-odjel-kbc-a-split-zbog-opceg-loseg-stanja/" target="_blank">https://www.dalmacijadanas.hr/makarski-gradonacelnik-prebacen-na-zarazni-odjel-kbc-a-split-zbog-opceg-loseg-stanja/</a></td>
+      <td>-0.493128</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>561</th>
+      <td>Dr. Markić: “Predviđa se da će svaki treći stanovnik Republike Hrvatske oboljeti od raka”</td>
+      <td><a href="https://www.dalmacijadanas.hr/dr-markic-predvida-se-da-ce-svaki-treci-stanovnik-republike-hrvatske-oboljet-od-raka/" target="_blank">https://www.dalmacijadanas.hr/dr-markic-predvida-se-da-ce-svaki-treci-stanovnik-republike-hrvatske-oboljet-od-raka/</a></td>
+      <td>-0.489848</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1316</th>
+      <td>ODGOĐENA RASPRAVA Pregledane snimke: Zavadlav je vježbao pucati kod Trogira, gađao je improviziranu metu</td>
+      <td><a href="https://www.dalmacijadanas.hr/odgodena-rasprava-pregledane-snimke-zavadlav-je-vjezbao-pucati-kod-trogira-gadao-je-improviziranu-metu/" target="_blank">https://www.dalmacijadanas.hr/odgodena-rasprava-pregledane-snimke-zavadlav-je-vjezbao-pucati-kod-trogira-gadao-je-improviziranu-metu/</a></td>
+      <td>-0.489840</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>990</th>
+      <td>UZNEMIRUJUĆI VIDEO Policija u Mostaru brutalno pretukla mladića koji je prekršio policijski sat: “Sve je snimljeno”</td>
+      <td><a href="https://www.dalmacijadanas.hr/uznemirujuci-video-policija-u-mostaru-brutalno-pretukla-mladica-koji-je-prekrsio-policijski-sat-sve-je-snimljeno/" target="_blank">https://www.dalmacijadanas.hr/uznemirujuci-video-policija-u-mostaru-brutalno-pretukla-mladica-koji-je-prekrsio-policijski-sat-sve-je-snimljeno/</a></td>
+      <td>-0.489412</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1940</th>
+      <td>Kakva zbrka: Jandroković prekinuo sjednicu zbog nejasnoća oko samoizolacije Dalije Orešković</td>
+      <td><a href="https://www.dalmacijadanas.hr/kakva-zbrka-jandrokovic-prekinuo-sjednicu-zbog-nejasnoca-oko-samoizolacije-dalije-oreskovic/" target="_blank">https://www.dalmacijadanas.hr/kakva-zbrka-jandrokovic-prekinuo-sjednicu-zbog-nejasnoca-oko-samoizolacije-dalije-oreskovic/</a></td>
+      <td>-0.488070</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2168</th>
+      <td>Britanski epidemiolog upozorio: “Ovo je sve češći simptom korone”</td>
+      <td><a href="https://www.dalmacijadanas.hr/britanski-epidemiolog-upozorio-ovo-je-sve-cesci-simptom-korone/" target="_blank">https://www.dalmacijadanas.hr/britanski-epidemiolog-upozorio-ovo-je-sve-cesci-simptom-korone/</a></td>
+      <td>-0.484549</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1553</th>
+      <td>IZ BOLNICE U ZATVOR? Pokrenuta istraga protiv medicinske sestre: Pacijent preminuo nakon greške na dijalizi</td>
+      <td><a href="https://www.dalmacijadanas.hr/iz-bolnice-u-zatvor-pokrenuta-istraga-protiv-medicinske-sestre-pacijent-preminuo-nakon-greske-na-dijalizi/" target="_blank">https://www.dalmacijadanas.hr/iz-bolnice-u-zatvor-pokrenuta-istraga-protiv-medicinske-sestre-pacijent-preminuo-nakon-greske-na-dijalizi/</a></td>
+      <td>-0.483510</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1572</th>
+      <td>BROJNE ŠTETE Novi potres ostavio velike posljedice, urušile se dvije kuće: “Grad nije za život”</td>
+      <td><a href="https://www.dalmacijadanas.hr/brojne-stete-novi-potres-ostavio-velike-posljedice-urusile-se-dvije-kuce-grad-nije-za-zivot/" target="_blank">https://www.dalmacijadanas.hr/brojne-stete-novi-potres-ostavio-velike-posljedice-urusile-se-dvije-kuce-grad-nije-za-zivot/</a></td>
+      <td>-0.481012</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>853</th>
+      <td>TEŽAK UDARAC KORONE Poslovni prostori u Dalmaciji zatvaraju se jedan za drugim</td>
+      <td><a href="https://www.dalmacijadanas.hr/tezak-udarac-korone-poslovni-prostori-u-dalmaciji-zatvaraju-se-jedan-za-drugim/" target="_blank">https://www.dalmacijadanas.hr/tezak-udarac-korone-poslovni-prostori-u-dalmaciji-zatvaraju-se-jedan-za-drugim/</a></td>
+      <td>-0.476053</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1850</th>
+      <td>Pili cijelu noć, potukli se i pokušao ga ubiti, pa ispalo i da je COVID pozitivan</td>
+      <td><a href="https://www.dalmacijadanas.hr/pili-cijeli-noc-potukli-se-i-pokusao-ga-ubiti-pa-ispalo-i-da-je-covid-pozitivan/" target="_blank">https://www.dalmacijadanas.hr/pili-cijeli-noc-potukli-se-i-pokusao-ga-ubiti-pa-ispalo-i-da-je-covid-pozitivan/</a></td>
+      <td>-0.474102</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3371</th>
+      <td>NEMA DO MIRTE Talijani poludjeli za Mirtom Šurjak</td>
+      <td><a href="https://www.dalmacijadanas.hr/nema-do-mirte-talijani-poludjeli-za-mirtom-surjak/" target="_blank">https://www.dalmacijadanas.hr/nema-do-mirte-talijani-poludjeli-za-mirtom-surjak/</a></td>
+      <td>-0.471534</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>603</th>
+      <td>BOJAN IVOŠEVIĆ: “Dosta je bilo cirkusa oko Marjana, vrijeme je da počnu uhićenja”</td>
+      <td><a href="https://www.dalmacijadanas.hr/bojan-ivosevic-dosta-je-bilo-cirkusa-oko-marjana-vrijeme-je-da-pocnu-uhicenja/" target="_blank">https://www.dalmacijadanas.hr/bojan-ivosevic-dosta-je-bilo-cirkusa-oko-marjana-vrijeme-je-da-pocnu-uhicenja/</a></td>
+      <td>-0.466001</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1239</th>
+      <td>ODLAZAK LEGENDE Mnogima je bio omiljeni kantautor, evo kada će biti sahranjen</td>
+      <td><a href="https://www.dalmacijadanas.hr/odlazak-legende-mnogima-je-bio-omiljeni-kantautor-evo-kada-ce-biti-sahranjen/" target="_blank">https://www.dalmacijadanas.hr/odlazak-legende-mnogima-je-bio-omiljeni-kantautor-evo-kada-ce-biti-sahranjen/</a></td>
+      <td>-0.464356</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1699</th>
+      <td>Biolog Kurolt iz Klinike za infektivne bolesti otkriva je li novi soj koronavirusa već stigao u Hrvatsku</td>
+      <td><a href="https://www.dalmacijadanas.hr/biolog-kurolt-iz-klinike-za-infektivne-bolesti-otkriva-je-li-novi-soj-koronavirusa-vec-stigao-u-hrvatsku/" target="_blank">https://www.dalmacijadanas.hr/biolog-kurolt-iz-klinike-za-infektivne-bolesti-otkriva-je-li-novi-soj-koronavirusa-vec-stigao-u-hrvatsku/</a></td>
+      <td>-0.462355</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>501</th>
+      <td>Oni su im valjda krivi za sve probleme: Pogledajte tko je “izgorio” u Kaštel Sućurcu</td>
+      <td><a href="https://www.dalmacijadanas.hr/oni-su-im-valjda-krivi-za-sve-probleme-pogledajte-tko-je-izgorio-u-kastel-sucurcu/" target="_blank">https://www.dalmacijadanas.hr/oni-su-im-valjda-krivi-za-sve-probleme-pogledajte-tko-je-izgorio-u-kastel-sucurcu/</a></td>
+      <td>-0.460212</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2813</th>
+      <td>Policija “napravila đir” zagrebačkim ugostiteljskim objektima: Nema distance, mnogi ne nose masku, zatečena i osoba s mjerom “COVID-liječenje”</td>
+      <td><a href="https://www.dalmacijadanas.hr/policija-napravila-dir-zagrebackim-ugostiteljskim-objektima-nema-distance-mnogi-ne-nose-masku-zatecena-i-osoba-s-mjerom-covid-lijecenje/" target="_blank">https://www.dalmacijadanas.hr/policija-napravila-dir-zagrebackim-ugostiteljskim-objektima-nema-distance-mnogi-ne-nose-masku-zatecena-i-osoba-s-mjerom-covid-lijecenje/</a></td>
+      <td>-0.457068</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2687</th>
+      <td>Nove mjere na graničnim prijelazima od ponoći: “U Hrvatsku isključivo uz negativni PCR test”</td>
+      <td><a href="https://www.dalmacijadanas.hr/zatvaraju-se-granicni-prijelazi-veceras-od-ponoci-u-hrvatsku-iskljucivo-uz-negativni-pcr-test/" target="_blank">https://www.dalmacijadanas.hr/zatvaraju-se-granicni-prijelazi-veceras-od-ponoci-u-hrvatsku-iskljucivo-uz-negativni-pcr-test/</a></td>
+      <td>-0.456990</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2124</th>
+      <td>GLAZBENI SVIJET U ŠOKU Preminuo je Đorđe Balašević</td>
+      <td><a href="https://www.dalmacijadanas.hr/glazbeni-svijet-u-soku-preminuo-je-dorde-balasevic/" target="_blank">https://www.dalmacijadanas.hr/glazbeni-svijet-u-soku-preminuo-je-dorde-balasevic/</a></td>
+      <td>-0.456379</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3173</th>
+      <td>Brat najmlađe žrtve koronavirusa u Hrvatskoj: Ona nije umrla od korone već od ozbiljnih bolesti s kojima se dugo bori, a korona ju je dokrajčila</td>
+      <td><a href="https://www.dalmacijadanas.hr/brat-najmlade-zrtve-koronavirusa-u-hrvatskoj-ona-nije-umrla-od-korone-vec-od-ozbiljnih-bolesti-s-kojima-se-dugo-bori-a-korona-ju-je-dokrajcila/" target="_blank">https://www.dalmacijadanas.hr/brat-najmlade-zrtve-koronavirusa-u-hrvatskoj-ona-nije-umrla-od-korone-vec-od-ozbiljnih-bolesti-s-kojima-se-dugo-bori-a-korona-ju-je-dokrajcila/</a></td>
+      <td>-0.454062</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1341</th>
+      <td>Mlada Hrvatica oduzela si je život. U pismu piše kako ju je iznevjerio sustav</td>
+      <td><a href="https://www.dalmacijadanas.hr/mlada-hrvatica-oduzela-si-je-zivot-u-pismu-pise-kako-ju-je-iznevjerio-sustav/" target="_blank">https://www.dalmacijadanas.hr/mlada-hrvatica-oduzela-si-je-zivot-u-pismu-pise-kako-ju-je-iznevjerio-sustav/</a></td>
+      <td>-0.452734</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>837</th>
+      <td>Pacijent otišao iz bolnice nezadovoljan uvjetima, zbog toga što je pozitivan na koronavirus – posjetila ga policija</td>
+      <td><a href="https://www.dalmacijadanas.hr/pacijent-otisao-iz-bolnice-nezadovoljan-uvjetima-zbog-toga-sto-je-pozitivan-na-koronavirus-posjetila-ga-policija/" target="_blank">https://www.dalmacijadanas.hr/pacijent-otisao-iz-bolnice-nezadovoljan-uvjetima-zbog-toga-sto-je-pozitivan-na-koronavirus-posjetila-ga-policija/</a></td>
+      <td>-0.452575</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1744</th>
+      <td>NAJNOVIJI PODACI Imamo 3.918 novih slučajeva zaraze koronavirusom, preminulo 85 osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-imamo-3-918-novih-slucajeva-zaraze-koronavirusom-preminulo-85-osoba/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-imamo-3-918-novih-slucajeva-zaraze-koronavirusom-preminulo-85-osoba/</a></td>
+      <td>-0.449911</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>920</th>
+      <td>OGROMAN RED ISPRED HIGIJENSKOG Unatoč lošem vremenu, Splićani strpljivo čekaju testiranje na koronu</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromni-red-ispred-higijenskog-unatoc-losem-vremenu-splicani-strpljivo-cekaju-testiranje-na-koronu/" target="_blank">https://www.dalmacijadanas.hr/ogromni-red-ispred-higijenskog-unatoc-losem-vremenu-splicani-strpljivo-cekaju-testiranje-na-koronu/</a></td>
+      <td>-0.449123</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2922</th>
+      <td>Zbog korone se poremtila prevencija protiv ove iznimno zarazne bolesti: Prijeti li nam opet ova pošast?</td>
+      <td><a href="https://www.dalmacijadanas.hr/zbog-korone-se-poremtila-prevencija-protiv-ove-iznimno-zarazne-bolesti-prijeti-li-nam-opet-ova-posast/" target="_blank">https://www.dalmacijadanas.hr/zbog-korone-se-poremtila-prevencija-protiv-ove-iznimno-zarazne-bolesti-prijeti-li-nam-opet-ova-posast/</a></td>
+      <td>-0.448851</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1304</th>
+      <td>BRITANSKI SOJ KORONAVIRUSA STIGAO U HRVATSKU Potvrđena tri slučaja, među njima dijete</td>
+      <td><a href="https://www.dalmacijadanas.hr/britanski-soj-koronavirusa-stigao-u-hrvatsku-potvrdena-tri-slucaja/" target="_blank">https://www.dalmacijadanas.hr/britanski-soj-koronavirusa-stigao-u-hrvatsku-potvrdena-tri-slucaja/</a></td>
+      <td>-0.448656</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>331</th>
+      <td>ZARAŽENI DALMATINAC “UHVAĆEN” NA GRANICI U izolaciji je bio tek nekoliko dana</td>
+      <td><a href="https://www.dalmacijadanas.hr/zarazeni-dalmatinac-uhvacen-na-granici-u-izolaciji-je-bio-tek-nekoliko-dana/" target="_blank">https://www.dalmacijadanas.hr/zarazeni-dalmatinac-uhvacen-na-granici-u-izolaciji-je-bio-tek-nekoliko-dana/</a></td>
+      <td>-0.443083</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1920</th>
+      <td>KREĆE KAŽNJAVANJE Jandroković otkrio i kada</td>
+      <td><a href="https://www.dalmacijadanas.hr/krece-kaznjavanje-jandrokovic-otkrio-i-kada/" target="_blank">https://www.dalmacijadanas.hr/krece-kaznjavanje-jandrokovic-otkrio-i-kada/</a></td>
+      <td>-0.440882</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2994</th>
+      <td>APEL MUŠKARCA ČIJI OTAC IMA TUMOR: “Otac mi ne može dobiti lijek za tumor jer je bolnica u dugovima”</td>
+      <td><a href="https://www.dalmacijadanas.hr/apel-muskarca-ciji-otac-ima-tumor-otac-mi-ne-moze-dobiti-lijek-za-tumor-jer-je-bolnica-u-dugovima/" target="_blank">https://www.dalmacijadanas.hr/apel-muskarca-ciji-otac-ima-tumor-otac-mi-ne-moze-dobiti-lijek-za-tumor-jer-je-bolnica-u-dugovima/</a></td>
+      <td>-0.440019</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1466</th>
+      <td>ZABRINJAVAJUĆE: Od korone umro 43-godišnjak, nije imao komorbiditeta</td>
+      <td><a href="https://www.dalmacijadanas.hr/zabrinjavajuce-od-korone-umro-43-godisnjak-nije-imao-komorbiditeta/" target="_blank">https://www.dalmacijadanas.hr/zabrinjavajuce-od-korone-umro-43-godisnjak-nije-imao-komorbiditeta/</a></td>
+      <td>-0.438781</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2715</th>
+      <td>Policija provela racije u nekoliko ugostiteljskih objekata: Vlasnik kluba uhićen zbog širenja zaraze</td>
+      <td><a href="https://www.dalmacijadanas.hr/policija-provela-racije-u-nekoliko-ugostiteljskih-objekata-vlasnik-kluba-uhicen-zbog-sirenja-zaraze/" target="_blank">https://www.dalmacijadanas.hr/policija-provela-racije-u-nekoliko-ugostiteljskih-objekata-vlasnik-kluba-uhicen-zbog-sirenja-zaraze/</a></td>
+      <td>-0.438735</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2603</th>
+      <td>TRAGEDIJA U SPLITU Preminula učenica Ekonomsko-upravne škole, bila je pozitivna na koronavirus</td>
+      <td><a href="https://www.dalmacijadanas.hr/tragedija-u-splitu-preminula-ucenica-ekonomsko-upravne-skole-bila-je-pozitivna-na-koronavirus/" target="_blank">https://www.dalmacijadanas.hr/tragedija-u-splitu-preminula-ucenica-ekonomsko-upravne-skole-bila-je-pozitivna-na-koronavirus/</a></td>
+      <td>-0.437614</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1548</th>
+      <td>PUTNICI KAO ‘SRDELE’ U AUTOBUSU Čitatelj: “Ovo nije prvi put, požalio sam se Stožeru”</td>
+      <td><a href="https://www.dalmacijadanas.hr/putnici-kao-srdele-u-autobusu-citatelj-ovo-nije-prvi-put-pozalio-sam-se-stozeru/" target="_blank">https://www.dalmacijadanas.hr/putnici-kao-srdele-u-autobusu-citatelj-ovo-nije-prvi-put-pozalio-sam-se-stozeru/</a></td>
+      <td>-0.436470</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1743</th>
+      <td>Ova županija je danas prvi put u Dalmaciji najgora po broju preminulih</td>
+      <td><a href="https://www.dalmacijadanas.hr/ova-zupanija-je-danas-prvi-put-u-dalmaciji-najgora-po-broju-preminulih/" target="_blank">https://www.dalmacijadanas.hr/ova-zupanija-je-danas-prvi-put-u-dalmaciji-najgora-po-broju-preminulih/</a></td>
+      <td>-0.435778</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2732</th>
+      <td>Od koronavirusa preminuo ratni zapovjednik 71. bojne vojne policije</td>
+      <td><a href="https://www.dalmacijadanas.hr/od-koronavirusa-preminuo-ratni-zapovjednik-71-bojne-vojne-policije/" target="_blank">https://www.dalmacijadanas.hr/od-koronavirusa-preminuo-ratni-zapovjednik-71-bojne-vojne-policije/</a></td>
+      <td>-0.430953</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2785</th>
+      <td>Iako su u Hrvatskoj razgrabljene, “bakrene” maske ne štite dodatno od koronavirusa: Inspekcija zabranila njihov uvoz</td>
+      <td><a href="https://www.dalmacijadanas.hr/iako-su-u-hrvatskoj-razgrabljene-bakrene-maske-ne-stite-dodatno-od-koronavirusa-inspekcija-zabranila-njihov-uvoz/" target="_blank">https://www.dalmacijadanas.hr/iako-su-u-hrvatskoj-razgrabljene-bakrene-maske-ne-stite-dodatno-od-koronavirusa-inspekcija-zabranila-njihov-uvoz/</a></td>
+      <td>-0.430228</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1258</th>
+      <td>SKANDAL Cijepili visokorizične skupine praznim špricama praveći se da je unutra doza</td>
+      <td><a href="https://www.dalmacijadanas.hr/skandal-cijepili-visokorizicne-skupine-praznim-spricama-praveci-se-da-je-unutra-doza/" target="_blank">https://www.dalmacijadanas.hr/skandal-cijepili-visokorizicne-skupine-praznim-spricama-praveci-se-da-je-unutra-doza/</a></td>
+      <td>-0.429008</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3387</th>
+      <td>KOLUMNA ŽANE PAVLOVIĆ Govor mržnje sve izraženiji: Koliko puta ste u komentarima pročitali – “Mrzim Srbe, Muslimane, pedere…”?</td>
+      <td><a href="https://www.dalmacijadanas.hr/kolumna-zane-pavlovic-govor-mrznje-sve-izrazeniji-koliko-puta-ste-u-komentarima-procitali-mrzim-srbe-muslimane-pedere/" target="_blank">https://www.dalmacijadanas.hr/kolumna-zane-pavlovic-govor-mrznje-sve-izrazeniji-koliko-puta-ste-u-komentarima-procitali-mrzim-srbe-muslimane-pedere/</a></td>
+      <td>-0.428540</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2452</th>
+      <td>EKSPLOZIJA ZARAZE NA RIVIJERI S potvrđenim nalazom otišao na rođendan, pozitivnog srednjoškolca roditelji poslali na nastavu…</td>
+      <td><a href="https://www.dalmacijadanas.hr/eksplozija-zaraze-na-rivijeri-s-potvrdenim-nalazom-otisao-na-rodendan-pozitivnog-srednjoskolca-roditelji-poslali-na-nastavu/" target="_blank">https://www.dalmacijadanas.hr/eksplozija-zaraze-na-rivijeri-s-potvrdenim-nalazom-otisao-na-rodendan-pozitivnog-srednjoskolca-roditelji-poslali-na-nastavu/</a></td>
+      <td>-0.428074</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
     </tr>
   </tbody>
 </table>

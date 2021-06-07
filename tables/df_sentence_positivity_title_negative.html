@@ -1,83 +1,814 @@
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: left;">
       <th></th>
       <th>Title</th>
       <th>URL</th>
       <th>Title_positivity_sentence</th>
       <th>Positivity</th>
+      <th>RF_title_prediction</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>1682</th>
-      <td>Ova država uvodi “zelene putovnice”: Tko se ne cijepi, neće moći u restorane i javni prijevoz</td>
-      <td>https://www.dalmacijadanas.hr/ova-drzava-uvodi-zelene-putovnice-tko-se-ne-cijepi-nece-moci-u-restorane-i-javni-prijevoz/</td>
+      <th>1716</th>
+      <td>Liječnici za bolovanje moraju dokazati da su se zarazili na poslu, a saborski zastupnici ga ne moraju ni otvoriti</td>
+      <td><a href="https://www.dalmacijadanas.hr/lijecnici-za-bolovanje-moraju-dokazati-da-su-se-zarazili-na-poslu-a-saborski-zastupnici-ga-ne-moraju-ni-otvoriti/" target="_blank">https://www.dalmacijadanas.hr/lijecnici-za-bolovanje-moraju-dokazati-da-su-se-zarazili-na-poslu-a-saborski-zastupnici-ga-ne-moraju-ni-otvoriti/</a></td>
       <td>-1.0</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
-      <th>2541</th>
-      <td>BLIZANKE KOJE ĆE VAS ODUŠEVITI Zajedno su izgubile gotovo 60 kilograma: “Ako mislite da ne možete, pokušajte. I mi smo uspjele”</td>
-      <td>https://www.dalmacijadanas.hr/blizanke-koje-ce-vas-oduseviti-zajedno-su-izgubile-gotovo-60-kilograma-ako-mislite-da-ne-mozete-pokusajte-i-mi-smo-uspjele/</td>
+      <th>672</th>
+      <td>UOČI OPERACIJE “MASLENICA” U izviđanju poginuli Mate Patrlj i Ivan Šabić, heroji 4. gardijske brigade</td>
+      <td><a href="https://www.dalmacijadanas.hr/uoci-operacije-maslenica-u-izvidanju-poginuli-mate-patrlj-i-ivan-sabic-heroji-4-gardijske-brigade/" target="_blank">https://www.dalmacijadanas.hr/uoci-operacije-maslenica-u-izvidanju-poginuli-mate-patrlj-i-ivan-sabic-heroji-4-gardijske-brigade/</a></td>
       <td>-1.0</td>
-      <td>POSITIVE</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2759</th>
+      <td>Ugostitelji šokirani: Ne znamo hoćemo li zadržati ljude, ovo je užas</td>
+      <td><a href="https://www.dalmacijadanas.hr/ugostitelji-sokirani-ne-znamo-hocemo-li-zadrzati-ljude-ovo-je-uzas/" target="_blank">https://www.dalmacijadanas.hr/ugostitelji-sokirani-ne-znamo-hocemo-li-zadrzati-ljude-ovo-je-uzas/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2785</th>
+      <td>Iako su u Hrvatskoj razgrabljene, “bakrene” maske ne štite dodatno od koronavirusa: Inspekcija zabranila njihov uvoz</td>
+      <td><a href="https://www.dalmacijadanas.hr/iako-su-u-hrvatskoj-razgrabljene-bakrene-maske-ne-stite-dodatno-od-koronavirusa-inspekcija-zabranila-njihov-uvoz/" target="_blank">https://www.dalmacijadanas.hr/iako-su-u-hrvatskoj-razgrabljene-bakrene-maske-ne-stite-dodatno-od-koronavirusa-inspekcija-zabranila-njihov-uvoz/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>644</th>
+      <td>Šef stožera koji je jeo s društvom u hotelu ne želi dati ostavku: “Glupo je da govorim lokaciju”</td>
+      <td><a href="https://www.dalmacijadanas.hr/sef-stozera-koji-je-jeo-s-drustvom-u-hotelu-ne-zeli-dati-ostavku-glupo-je-da-govorim-lokaciju/" target="_blank">https://www.dalmacijadanas.hr/sef-stozera-koji-je-jeo-s-drustvom-u-hotelu-ne-zeli-dati-ostavku-glupo-je-da-govorim-lokaciju/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>640</th>
+      <td>MIRO BULJ OPLEO PO DANKU KONČARU: “Bezobrazni tajkun koji kupuje hotele, a ne isplaćuje plaće”</td>
+      <td><a href="https://www.dalmacijadanas.hr/miro-bulj-opleo-po-danku-koncaru-bezobrazni-tajkun-koji-kupuje-hotele-a-ne-isplacuje-place/" target="_blank">https://www.dalmacijadanas.hr/miro-bulj-opleo-po-danku-koncaru-bezobrazni-tajkun-koji-kupuje-hotele-a-ne-isplacuje-place/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1508</th>
+      <td>UOČI OPERACIJE “MASLENICA” U izviđanju poginuli Mate Patrlj i Ivan Šabić, heroji 4. gardijske brigade</td>
+      <td><a href="https://www.dalmacijadanas.hr/uoci-operacije-maslenica-u-izvidanju-poginuli-mate-patrlj-i-ivan-sabic-heroji-4-gardijske-brigade/" target="_blank">https://www.dalmacijadanas.hr/uoci-operacije-maslenica-u-izvidanju-poginuli-mate-patrlj-i-ivan-sabic-heroji-4-gardijske-brigade/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2793</th>
+      <td>Radman: “Ne ostaje drugo nego se vratiti na najelementarnije stvari, a to je izolacija”</td>
+      <td><a href="https://www.dalmacijadanas.hr/radman-ne-ostaje-drugo-nego-se-vratiti-na-najelementarnije-stvari-a-to-je-izolacija/" target="_blank">https://www.dalmacijadanas.hr/radman-ne-ostaje-drugo-nego-se-vratiti-na-najelementarnije-stvari-a-to-je-izolacija/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>627</th>
+      <td>KAKO ĆE IZGLEDATI KARNEVALSKE SVEČANOSTI? Stožer uputio ne baš dobre vijesti</td>
+      <td><a href="https://www.dalmacijadanas.hr/kako-ce-izgledati-karnevalske-svecanosti-stozer-uputio-ne-bas-dobre-vijesti/" target="_blank">https://www.dalmacijadanas.hr/kako-ce-izgledati-karnevalske-svecanosti-stozer-uputio-ne-bas-dobre-vijesti/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>623</th>
+      <td>Matijević: Marjan se sanirao na isti način kako su se poslije rata obnavljale kuće od strane HDZ-ove vlasti</td>
+      <td><a href="https://www.dalmacijadanas.hr/matijanic-marjan-se-sanirao-na-isti-nacin-kako-su-se-poslije-rata-obnavljale-kuce-od-strane-hdz-ove-vlasti/" target="_blank">https://www.dalmacijadanas.hr/matijanic-marjan-se-sanirao-na-isti-nacin-kako-su-se-poslije-rata-obnavljale-kuce-od-strane-hdz-ove-vlasti/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2803</th>
+      <td>NE IDE NABOLJE U Hrvatskoj 3308 novozaraženih, preminulo je 49 osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/ne-ide-nabolje-u-hrvatskoj-3308-novozarazenih-preminulo-je-49-osoba/" target="_blank">https://www.dalmacijadanas.hr/ne-ide-nabolje-u-hrvatskoj-3308-novozarazenih-preminulo-je-49-osoba/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>617</th>
+      <td>Očaj starica u domu u Dalmaciji: ‘Nema osoblja, pa ležimo kao krave’</td>
+      <td><a href="https://www.dalmacijadanas.hr/ocaj-starica-u-domu-u-dalmaciji-nema-osoblja-pa-lezimo-kao-krave/" target="_blank">https://www.dalmacijadanas.hr/ocaj-starica-u-domu-u-dalmaciji-nema-osoblja-pa-lezimo-kao-krave/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>608</th>
+      <td>GORAN KOTUR Zajedno poručimo Plenkoviću: Ne smiješ se igrati sa Splitom!</td>
+      <td><a href="https://www.dalmacijadanas.hr/goran-kotur-zajedno-porucimo-plenkovicu-ne-smijes-se-igrati-sa-splitom/" target="_blank">https://www.dalmacijadanas.hr/goran-kotur-zajedno-porucimo-plenkovicu-ne-smijes-se-igrati-sa-splitom/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>607</th>
+      <td>ŽRTVA APSURDA Splitski ugostitelj proizvodi kavu za van, a ne može je prodavati!</td>
+      <td><a href="https://www.dalmacijadanas.hr/zrtva-apsurda-splitski-ugostitelj-proizvodi-kavu-za-van-a-ne-moze-je-prodavati/" target="_blank">https://www.dalmacijadanas.hr/zrtva-apsurda-splitski-ugostitelj-proizvodi-kavu-za-van-a-ne-moze-je-prodavati/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2813</th>
+      <td>Policija “napravila đir” zagrebačkim ugostiteljskim objektima: Nema distance, mnogi ne nose masku, zatečena i osoba s mjerom “COVID-liječenje”</td>
+      <td><a href="https://www.dalmacijadanas.hr/policija-napravila-dir-zagrebackim-ugostiteljskim-objektima-nema-distance-mnogi-ne-nose-masku-zatecena-i-osoba-s-mjerom-covid-lijecenje/" target="_blank">https://www.dalmacijadanas.hr/policija-napravila-dir-zagrebackim-ugostiteljskim-objektima-nema-distance-mnogi-ne-nose-masku-zatecena-i-osoba-s-mjerom-covid-lijecenje/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1927</th>
+      <td>Više se ne gleda državljanstvo: Evo tko sve i pod kojim uvjetima može ući u Hrvatsku</td>
+      <td><a href="https://www.dalmacijadanas.hr/vise-se-ne-gleda-drzavljanstvo-evo-tko-sve-i-pod-kojim-uvjetima-moze-uci-u-hrvatsku/" target="_blank">https://www.dalmacijadanas.hr/vise-se-ne-gleda-drzavljanstvo-evo-tko-sve-i-pod-kojim-uvjetima-moze-uci-u-hrvatsku/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2816</th>
+      <td>Đikić: “Plenković nema nimalo empatije za 57 ljudi koji su jučer umrli, tako država ne može funkcionirati”</td>
+      <td><a href="https://www.dalmacijadanas.hr/dikic-plenkovic-nema-nimalo-empatije-za-57-ljudi-koji-su-jucer-umrli-tako-drzava-ne-moze-funkcionirati/" target="_blank">https://www.dalmacijadanas.hr/dikic-plenkovic-nema-nimalo-empatije-za-57-ljudi-koji-su-jucer-umrli-tako-drzava-ne-moze-funkcionirati/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>592</th>
+      <td>OTOČANI U PROBLEMU Doktorica sa Šolte ne želi svoje pacijente cijepiti: “Korona je politički virus”</td>
+      <td><a href="https://www.dalmacijadanas.hr/otocani-u-problemu-doktorica-sa-solte-ne-zeli-svoje-pacijente-cijepiti-korona-je-politicki-virus/" target="_blank">https://www.dalmacijadanas.hr/otocani-u-problemu-doktorica-sa-solte-ne-zeli-svoje-pacijente-cijepiti-korona-je-politicki-virus/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1524</th>
+      <td>Biskup Košić na misi: “Potres je podmukao i nepredvidiv. Protiv njega se ne možemo boriti kao protiv Srba ili komunista”</td>
+      <td><a href="https://www.dalmacijadanas.hr/biskup-kosic-na-misi-potres-je-podmukao-i-nepredvidiv-protiv-njega-se-ne-mozemo-boriti-kao-protiv-srba-ili-komunista/" target="_blank">https://www.dalmacijadanas.hr/biskup-kosic-na-misi-potres-je-podmukao-i-nepredvidiv-protiv-njega-se-ne-mozemo-boriti-kao-protiv-srba-ili-komunista/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2838</th>
+      <td>Čačić žestoko napao Stožer: “Nemam želudac slušati te gluposti”</td>
+      <td><a href="https://www.dalmacijadanas.hr/cacic-zestoko-napao-stozer-nemam-zeludac-slusati-te-gluposti/" target="_blank">https://www.dalmacijadanas.hr/cacic-zestoko-napao-stozer-nemam-zeludac-slusati-te-gluposti/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2843</th>
+      <td>Beroš se zarazio u subotu? U nedjelju bio u vladi, nitko ne ide u samoizolaciju</td>
+      <td><a href="https://www.dalmacijadanas.hr/beros-se-zarazio-u-subotu-u-nedjelju-bio-u-vladi-nitko-ne-ide-u-samoizolaciju/" target="_blank">https://www.dalmacijadanas.hr/beros-se-zarazio-u-subotu-u-nedjelju-bio-u-vladi-nitko-ne-ide-u-samoizolaciju/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>563</th>
+      <td>ČEKA SE U REDOVIMA Porezna uprava radi samo sat vremena, ljudi ne uspijevaju doći na red: “Ovo je sramota”</td>
+      <td><a href="https://www.dalmacijadanas.hr/ceka-se-u-redovima-porezna-uprava-radi-samo-sat-vremena-ljudi-ne-uspijevaju-doci-na-red-ovo-je-sramota/" target="_blank">https://www.dalmacijadanas.hr/ceka-se-u-redovima-porezna-uprava-radi-samo-sat-vremena-ljudi-ne-uspijevaju-doci-na-red-ovo-je-sramota/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1489</th>
+      <td>Beroš za skandal u bolnici doznao preko medija: “Ovo se ne smije događati”</td>
+      <td><a href="https://www.dalmacijadanas.hr/beros-za-skandal-u-bolnici-doznao-preko-medija-ovo-se-ne-smije-dogadati/" target="_blank">https://www.dalmacijadanas.hr/beros-za-skandal-u-bolnici-doznao-preko-medija-ovo-se-ne-smije-dogadati/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2741</th>
+      <td>JAVIO SE LAUC: “Nema koristi od zatvaranja teretana, a šteta je velika”</td>
+      <td><a href="https://www.dalmacijadanas.hr/javio-se-lauc-nema-koristi-od-zatvaranja-teretana-a-steta-je-velika/" target="_blank">https://www.dalmacijadanas.hr/javio-se-lauc-nema-koristi-od-zatvaranja-teretana-a-steta-je-velika/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>699</th>
+      <td>Tijekom prosinca uništeno 25 kontejnera, iz Grada Splita poručuju: “Ne dopustite primitivizam, prijavljujte prekršitelje!”</td>
+      <td><a href="https://www.dalmacijadanas.hr/tijekom-prosinca-unisteno-25-kontejnera-iz-grada-splita-porucuju-ne-dopustite-primitivizam-prijavljujte-prekrsitelje/" target="_blank">https://www.dalmacijadanas.hr/tijekom-prosinca-unisteno-25-kontejnera-iz-grada-splita-porucuju-ne-dopustite-primitivizam-prijavljujte-prekrsitelje/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>702</th>
+      <td>Dr. Ivo Ivić o malom interesu građana za cjepivo: “Ako se ljudi ne budu cijepili, osuđeni smo na lockdown”</td>
+      <td><a href="https://www.dalmacijadanas.hr/dr-ivo-ivic-o-malom-interesu-gradana-za-cjepivo-ako-se-ljudi-ne-budu-cijepili-osudeni-smo-na-lockdown/" target="_blank">https://www.dalmacijadanas.hr/dr-ivo-ivic-o-malom-interesu-gradana-za-cjepivo-ako-se-ljudi-ne-budu-cijepili-osudeni-smo-na-lockdown/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>823</th>
+      <td>“PROBLEMI SA PRONALASKOM MAJSTORA”: Radovi na sustavu tople vode u KBC-u Split počinju već sutra</td>
+      <td><a href="https://www.dalmacijadanas.hr/problemi-sa-pronalaskom-majstora-radovi-na-sustavu-tople-vode-u-kbc-u-split-pocinju-vec-sutra/" target="_blank">https://www.dalmacijadanas.hr/problemi-sa-pronalaskom-majstora-radovi-na-sustavu-tople-vode-u-kbc-u-split-pocinju-vec-sutra/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>818</th>
       <td>Splitski novinari i sportaši pokazali srce, darovali tone hrane za beskućnike: “Nitko ne treba i ne smije biti gladan”</td>
-      <td>https://www.dalmacijadanas.hr/splitski-novinari-i-sportasi-pokazali-srce-darovali-tone-hrane-za-beskucnike-nitko-ne-treba-i-ne-smije-biti-gladan/</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitski-novinari-i-sportasi-pokazali-srce-darovali-tone-hrane-za-beskucnike-nitko-ne-treba-i-ne-smije-biti-gladan/" target="_blank">https://www.dalmacijadanas.hr/splitski-novinari-i-sportasi-pokazali-srce-darovali-tone-hrane-za-beskucnike-nitko-ne-treba-i-ne-smije-biti-gladan/</a></td>
       <td>-1.0</td>
-      <td>POSITIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1992</th>
+      <td>Žestoke reakcije: “Neprihvatljivo je što Hajduk radi Caktašu. Ne smije biti ucjena ni prisilnih uvjeta”</td>
+      <td><a href="https://www.dalmacijadanas.hr/zestoke-reakcije-neprihvatljivo-je-sto-hajduk-radi-caktasu-ne-smije-biti-ucjena-ni-prisilnih-uvjeta/" target="_blank">https://www.dalmacijadanas.hr/zestoke-reakcije-neprihvatljivo-je-sto-hajduk-radi-caktasu-ne-smije-biti-ucjena-ni-prisilnih-uvjeta/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>813</th>
       <td>FANTASTIČNA VIJEST Covid-centar u Splitu dobio četiri uređaja koji pomažu da ljudi ne odu na respirator</td>
-      <td>https://www.dalmacijadanas.hr/fantasticna-vijest-covid-centar-u-splitu-dobio-cetiri-uredaja-koji-pomazu-da-ljudi-ne-odu-na-respirator/</td>
+      <td><a href="https://www.dalmacijadanas.hr/fantasticna-vijest-covid-centar-u-splitu-dobio-cetiri-uredaja-koji-pomazu-da-ljudi-ne-odu-na-respirator/" target="_blank">https://www.dalmacijadanas.hr/fantasticna-vijest-covid-centar-u-splitu-dobio-cetiri-uredaja-koji-pomazu-da-ljudi-ne-odu-na-respirator/</a></td>
       <td>-1.0</td>
-      <td>POSITIVE</td>
-    </tr>
-    <tr>
-      <th>2545</th>
-      <td>Šef stožera Splitsko-dalmatinske županije: “Moramo imati na umu i najgore scenarije. Ne treba isključiti soluciju Spaladium arene”</td>
-      <td>https://www.dalmacijadanas.hr/sef-stozera-splitsko-dalmatinske-zupanije-moramo-imati-na-umu-i-najgore-scenarije-ne-treba-iskljucit-soluciju-spaladium-arene/</td>
-      <td>-1.0</td>
-      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>805</th>
       <td>IVANA MARKOVIĆ OPLELA PO PREMIJERU PLENKOVIĆU I STOŽERU: “Ozračje je trulo, za neke može sve, a dok drugi ne mogu po svoju djecu”</td>
-      <td>https://www.dalmacijadanas.hr/ivana-markovic-oplela-po-premijeru-plenkovicu-i-stozeru-ozracje-je-trulo-za-neke-moze-sve-a-dok-drugi-ne-mogu-po-svoju-djecu/</td>
+      <td><a href="https://www.dalmacijadanas.hr/ivana-markovic-oplela-po-premijeru-plenkovicu-i-stozeru-ozracje-je-trulo-za-neke-moze-sve-a-dok-drugi-ne-mogu-po-svoju-djecu/" target="_blank">https://www.dalmacijadanas.hr/ivana-markovic-oplela-po-premijeru-plenkovicu-i-stozeru-ozracje-je-trulo-za-neke-moze-sve-a-dok-drugi-ne-mogu-po-svoju-djecu/</a></td>
       <td>-1.0</td>
-      <td>POSITIVE</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>802</th>
       <td>SPLITSKO MAKARSKA NADBISKUPIJA UPUTILA PORUKU VJERNICIMA: “Ništa nas ne može rastaviti od ljubavi Božje: ni tama noći niti pandemija naše grešnosti”</td>
-      <td>https://www.dalmacijadanas.hr/splitsko-makarska-nadbiskupija-uputila-poruku-vjernicima-nista-nas-ne-moze-rastaviti-od-ljubavi-bozje-ni-tama-noci-niti-pandemija-nase-gresnosti/</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitsko-makarska-nadbiskupija-uputila-poruku-vjernicima-nista-nas-ne-moze-rastaviti-od-ljubavi-bozje-ni-tama-noci-niti-pandemija-nase-gresnosti/" target="_blank">https://www.dalmacijadanas.hr/splitsko-makarska-nadbiskupija-uputila-poruku-vjernicima-nista-nas-ne-moze-rastaviti-od-ljubavi-bozje-ni-tama-noci-niti-pandemija-nase-gresnosti/</a></td>
       <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>795</th>
+      <td>KINEZI “OKUPIRALI” SPLITSKU ZRAČNU LUKU Ništa ne prepuštaju slučaju: Ovako radnici s Pelješkog mosta putuju</td>
+      <td><a href="https://www.dalmacijadanas.hr/kinezi-okupirali-splitsku-zracnu-luku-nista-ne-prepustaju-slucaju-ovako-radnici-s-peljeskog-mosta-putuju/" target="_blank">https://www.dalmacijadanas.hr/kinezi-okupirali-splitsku-zracnu-luku-nista-ne-prepustaju-slucaju-ovako-radnici-s-peljeskog-mosta-putuju/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1455</th>
+      <td>UBLAŽILI MJERE Švedska ima manje mrtvih po glavi stanovnika od Hrvatske</td>
+      <td><a href="https://www.dalmacijadanas.hr/ublazili-mjere-svedska-ima-manje-mrtvih-po-glavi-stanovnika-od-hrvatske/" target="_blank">https://www.dalmacijadanas.hr/ublazili-mjere-svedska-ima-manje-mrtvih-po-glavi-stanovnika-od-hrvatske/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
-      <th>2549</th>
-      <td>MARIJANA PULJAK: “U krizi su svi nagomilani problemi u zdravstvu eksplodirali”</td>
-      <td>https://www.dalmacijadanas.hr/marijana-puljak-u-krizi-su-svi-nagomilani-problemi-u-zdravstvu-eksplodirali/</td>
+      <th>788</th>
+      <td>BOŽIĆNA PORUKA SPLITSKO-DALMATINSKOG NADBISKUPA: “Pojava bolesti COVID-19 ne mogu biti zapreka radosnom slavlju Božića”</td>
+      <td><a href="https://www.dalmacijadanas.hr/bozicna-poruka-splitsko-dalmatinskog-nadbiskupa-pojava-bolesti-covid-19-ne-mogu-biti-zapreka-radosnom-slavlju-bozica/" target="_blank">https://www.dalmacijadanas.hr/bozicna-poruka-splitsko-dalmatinskog-nadbiskupa-pojava-bolesti-covid-19-ne-mogu-biti-zapreka-radosnom-slavlju-bozica/</a></td>
       <td>-1.0</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
-      <th>2550</th>
-      <td>APEL NZJZ SDŽ: Ne stižemo pozvati sve kontakte pozitivnih, molimo da testirani ostanu kući do dolaska rezultata!</td>
-      <td>https://www.dalmacijadanas.hr/apel-nzjz-sdz-ne-stizemo-pozvati-sve-kontakte-pozitivnih-molimo-da-testirani-ostanu-kuci-do-dolaska-rezultata/</td>
+      <th>782</th>
+      <td>NJIHOV OPTIMIZAM JE NEVJEROJATAN Ovi Splićani nam moraju biti putokaz: “Treba ići dalje, čuvati se i ne misliti na druge stvari”</td>
+      <td><a href="https://www.dalmacijadanas.hr/njihov-optimizam-je-nevjerojatan-ovi-splicani-nam-moraju-biti-putokaz-treba-ici-dalje-cuvati-se-i-ne-misliti-na-druge-stvari/" target="_blank">https://www.dalmacijadanas.hr/njihov-optimizam-je-nevjerojatan-ovi-splicani-nam-moraju-biti-putokaz-treba-ici-dalje-cuvati-se-i-ne-misliti-na-druge-stvari/</a></td>
       <td>-1.0</td>
+      <td>NONNEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
-      <th>2556</th>
-      <td>U SINJU UVEDENE RESTRIKCIJE Inspektori imaju pune ruke posla jer neki ne mare za mjere: ”Mlado ludo, staro bez pameti”</td>
-      <td>https://www.dalmacijadanas.hr/u-sinju-uvedene-restrikcije-inspektori-imaju-pune-ruke-posla-jer-neki-ne-mare-za-mjere-mlado-ludo-staro-bez-pameti/</td>
+      <th>2856</th>
+      <td>Medved: Nećemo stati dok ne nađemo i posljednju osobu nestalu u Domovinskom ratu</td>
+      <td><a href="https://www.dalmacijadanas.hr/medved-necemo-stati-dok-ne-nademo-i-posljednju-osobu-nestalu-u-domovinskom-ratu/" target="_blank">https://www.dalmacijadanas.hr/medved-necemo-stati-dok-ne-nademo-i-posljednju-osobu-nestalu-u-domovinskom-ratu/</a></td>
       <td>-1.0</td>
       <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2682</th>
+      <td>SPLITSKI GENIJALCI Noćna su mora aviokompanija, ne naplaćuju usluge u slučaju neuspjeha: “Ne odustajemo dok ne dođe do pozitivnog ishoda”</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitski-genijalci-nocna-su-mora-aviokompanija-ne-naplacuju-usluge-u-slucaju-neuspjeha-ne-odustajemo-dok-ne-dode-do-pozitivnog-ishoda/" target="_blank">https://www.dalmacijadanas.hr/splitski-genijalci-nocna-su-mora-aviokompanija-ne-naplacuju-usluge-u-slucaju-neuspjeha-ne-odustajemo-dok-ne-dode-do-pozitivnog-ishoda/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>752</th>
+      <td>Dr. Ivić: Ne bih imao ništa protiv malo rigoroznijih mjera. Veliko nam je olakšanje pad hospitaliziranih bolesnika u Splitu</td>
+      <td><a href="https://www.dalmacijadanas.hr/dr-ivic-ne-bih-imao-nista-protiv-malo-rigoroznijih-mjera-veliko-nam-je-olaksanje-pad-hospitaliziranih-bolesnika-u-splitu/" target="_blank">https://www.dalmacijadanas.hr/dr-ivic-ne-bih-imao-nista-protiv-malo-rigoroznijih-mjera-veliko-nam-je-olaksanje-pad-hospitaliziranih-bolesnika-u-splitu/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2686</th>
+      <td>Capak: “Stroge mjere donose rezultat. To ne znači da ih nećemo produžiti nakon 4 tjedna”</td>
+      <td><a href="https://www.dalmacijadanas.hr/capak-stroge-mjere-donose-rezultat-to-ne-znaci-da-ih-necemo-produziti-nakon-4-tjedna/" target="_blank">https://www.dalmacijadanas.hr/capak-stroge-mjere-donose-rezultat-to-ne-znaci-da-ih-necemo-produziti-nakon-4-tjedna/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>744</th>
+      <td>PRVI CIJEPLJENI LIJEČNIK U SPLITU “Poručujem svojim Dalmatincima da se cijepe. Da nije potpuno sigurno, ni sam se ne bih cijepio”</td>
+      <td><a href="https://www.dalmacijadanas.hr/prvi-cijepljeni-lijecnik-u-splitu-porucujem-svojim-dalmatincima-da-se-cijepe-da-nije-potpuno-sigurno-ni-sam-se-ne-bih-cijepio/" target="_blank">https://www.dalmacijadanas.hr/prvi-cijepljeni-lijecnik-u-splitu-porucujem-svojim-dalmatincima-da-se-cijepe-da-nije-potpuno-sigurno-ni-sam-se-ne-bih-cijepio/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1985</th>
+      <td>Gyurcso: Osijek je puno bolja sredina od Hajduka</td>
+      <td><a href="https://www.dalmacijadanas.hr/gyurcso-osijek-je-puno-bolja-sredina-od-hajduka/" target="_blank">https://www.dalmacijadanas.hr/gyurcso-osijek-je-puno-bolja-sredina-od-hajduka/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>731</th>
+      <td>Šef splitskog HGSS-a s pogođenog područja: “Volonteri, ne dolazite bez organizacije! Sela oko Petrinje su sravnjena sa zemljom”</td>
+      <td><a href="https://www.dalmacijadanas.hr/sef-splitskog-hgss-a-s-pogodenog-podrucja-volonteri-ne-dolazite-bez-organizacije-sela-oko-petrinje-su-sravnjena-sa-zemljom/" target="_blank">https://www.dalmacijadanas.hr/sef-splitskog-hgss-a-s-pogodenog-podrucja-volonteri-ne-dolazite-bez-organizacije-sela-oko-petrinje-su-sravnjena-sa-zemljom/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2716</th>
+      <td>Centar predložio ukidanje HDZ-ovog stožera: “Politički ratovi staju kad se brani život po život”</td>
+      <td><a href="https://www.dalmacijadanas.hr/centar-predlozio-osnivanje-stozera-nacionalnog-jedinstva-politicki-ratovi-staju-kad-se-brani-zivot-po-zivot/" target="_blank">https://www.dalmacijadanas.hr/centar-predlozio-osnivanje-stozera-nacionalnog-jedinstva-politicki-ratovi-staju-kad-se-brani-zivot-po-zivot/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2718</th>
+      <td>Kolarić: “Ne znamo gdje se sada zaražavamo, sada se možete zaraziti bilo gdje”</td>
+      <td><a href="https://www.dalmacijadanas.hr/kolaric-ne-znamo-gdje-se-sada-zarazavamo-sada-se-mozete-zaraziti-bilo-gdje/" target="_blank">https://www.dalmacijadanas.hr/kolaric-ne-znamo-gdje-se-sada-zarazavamo-sada-se-mozete-zaraziti-bilo-gdje/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>714</th>
+      <td>Splićanin nenamješten stan pretvorio u vježbaonicu: “I kad misliš da je sve savršeno postoje oni koji ne vole da je vama savršeno”</td>
+      <td><a href="https://www.dalmacijadanas.hr/splicanin-nenamjesten-stan-pretvorio-u-vjezbaonicu-i-kad-mislis-da-je-sve-savrseno-postoji-oni-koji-ne-vole-da-je-vama-savrseno/" target="_blank">https://www.dalmacijadanas.hr/splicanin-nenamjesten-stan-pretvorio-u-vjezbaonicu-i-kad-mislis-da-je-sve-savrseno-postoji-oni-koji-ne-vole-da-je-vama-savrseno/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2722</th>
+      <td>STROŽE MJERE PRATIT ĆE I STROŽI ZAKON: Vlada kani kažnjavati one koji se mjera ne budu pridržavali</td>
+      <td><a href="https://www.dalmacijadanas.hr/stroze-mjere-pratit-ce-i-strozi-zakon-vlada-kani-kaznjavati-one-koji-se-mjera-ne-budu-pridrzavali/" target="_blank">https://www.dalmacijadanas.hr/stroze-mjere-pratit-ce-i-strozi-zakon-vlada-kani-kaznjavati-one-koji-se-mjera-ne-budu-pridrzavali/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1475</th>
+      <td>ŠPRAJC KOMENTIRAO CAPAKA “Zato je takve izjave najbolje uopće ne shvaćati, a drugu Capaku ne pakovati.”</td>
+      <td><a href="https://www.dalmacijadanas.hr/sprajc-komentirao-capaka-zato-je-takve-izjave-najbolje-uopce-ne-shvacati-a-drugu-capaku-ne-pakovati/" target="_blank">https://www.dalmacijadanas.hr/sprajc-komentirao-capaka-zato-je-takve-izjave-najbolje-uopce-ne-shvacati-a-drugu-capaku-ne-pakovati/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1460</th>
+      <td>PLJAČKA BANKE Uperio pištolj djelatnici u rebra: ‘Vikao je da će ju ubiti ako ga ne pusti van. Onda ju je gurnuo’</td>
+      <td><a href="https://www.dalmacijadanas.hr/pljacka-banke-uperio-pistolj-djelatnici-u-rebra-vikao-je-da-ce-ju-ubiti-ako-ga-ne-pusti-van-onda-ju-je-gurnuo/" target="_blank">https://www.dalmacijadanas.hr/pljacka-banke-uperio-pistolj-djelatnici-u-rebra-vikao-je-da-ce-ju-ubiti-ako-ga-ne-pusti-van-onda-ju-je-gurnuo/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>552</th>
+      <td>Doktorica sa Šolte ne želi cijepiti ljude protiv korone i nitko joj ne može ništa</td>
+      <td><a href="https://www.dalmacijadanas.hr/doktorica-sa-solte-koja-ne-zeli-cijepiti-ljude-protiv-korone-i-nitko-joj-ne-moze-nista/" target="_blank">https://www.dalmacijadanas.hr/doktorica-sa-solte-koja-ne-zeli-cijepiti-ljude-protiv-korone-i-nitko-joj-ne-moze-nista/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2871</th>
+      <td>Zarazio se koronom pa se, umjesto samoizolacije, zaputio u kafić, a susjedima očistio septičku jamu</td>
+      <td><a href="https://www.dalmacijadanas.hr/zarazio-se-koronom-pa-se-umjesto-samoizolacije-zaputio-u-kafic-a-susjedima-ocistio-septicku-jamu/" target="_blank">https://www.dalmacijadanas.hr/zarazio-se-koronom-pa-se-umjesto-samoizolacije-zaputio-u-kafic-a-susjedima-ocistio-septicku-jamu/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1905</th>
+      <td>NEVJEROJATNO: Zaražen koronom došao na očevid prometne nesreće</td>
+      <td><a href="https://www.dalmacijadanas.hr/nevjerojatno-zarazen-koronom-dosao-na-ocevid-prometne-nesrece/" target="_blank">https://www.dalmacijadanas.hr/nevjerojatno-zarazen-koronom-dosao-na-ocevid-prometne-nesrece/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1575</th>
+      <td>BIH SKIJALIŠTA PUNA DALMATINACA! Što će reći Capak? Blidinje i Kupres “grcaju” u snijegu, negativni testovi očito nisu problem</td>
+      <td><a href="https://www.dalmacijadanas.hr/bih-skijalista-puna-dalmatinaca-sto-ce-reci-capak-blidinje-i-kupres-grcaju-u-snijegu-negativni-testovi-ocito-nisu-problem/" target="_blank">https://www.dalmacijadanas.hr/bih-skijalista-puna-dalmatinaca-sto-ce-reci-capak-blidinje-i-kupres-grcaju-u-snijegu-negativni-testovi-ocito-nisu-problem/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1576</th>
+      <td>Ivan Račan hospitaliziran i na kisiku: “Pogoršalo mi se stanje s disanjem”</td>
+      <td><a href="https://www.dalmacijadanas.hr/ivan-racan-hospitaliziran-i-na-kisiku-pogorsalo-mi-se-stanje-s-disanjem/" target="_blank">https://www.dalmacijadanas.hr/ivan-racan-hospitaliziran-i-na-kisiku-pogorsalo-mi-se-stanje-s-disanjem/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>433</th>
+      <td>OVO SE MNOGIMA NEĆE SVIDJETI Jedan dalmatinski stožer ne želi otvoriti terase kafića</td>
+      <td><a href="https://www.dalmacijadanas.hr/ovo-se-mnogima-nece-svidjeti-jedan-dalmatinski-stozer-ne-zeli-otvoriti-terase-kafica/" target="_blank">https://www.dalmacijadanas.hr/ovo-se-mnogima-nece-svidjeti-jedan-dalmatinski-stozer-ne-zeli-otvoriti-terase-kafica/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3009</th>
+      <td>Đikić: Moramo biti iskreni prema javnosti, situacija je krajnje alarmantna. Do kraja mjeseca imat ćemo 1500 mrtvih</td>
+      <td><a href="https://www.dalmacijadanas.hr/dikic-moramo-biti-iskreni-prema-javnosti-situacija-je-krajnje-alarmantna-do-kraja-mjeseca-imat-cemo-1500-mrtvih/" target="_blank">https://www.dalmacijadanas.hr/dikic-moramo-biti-iskreni-prema-javnosti-situacija-je-krajnje-alarmantna-do-kraja-mjeseca-imat-cemo-1500-mrtvih/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1589</th>
+      <td>Obnova nakon rata: “Bio sam jedan od glavnih inženjera, ali nisam odgovoran”</td>
+      <td><a href="https://www.dalmacijadanas.hr/obnova-nakon-rata-bio-sam-jedan-od-glavnih-inzenjera-ali-nisam-odgovoran/" target="_blank">https://www.dalmacijadanas.hr/obnova-nakon-rata-bio-sam-jedan-od-glavnih-inzenjera-ali-nisam-odgovoran/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3015</th>
+      <td>JEDNA ZEMLJA IMA VELIKI PROBLEM: Gotovo 60 posto građana ne želi se cijepiti protiv koronavirusa</td>
+      <td><a href="https://www.dalmacijadanas.hr/jedna-zemlja-ima-veliki-problem-gotovo-60-posto-gradana-ne-zeli-se-cijepiti-protiv-koronavirusa/" target="_blank">https://www.dalmacijadanas.hr/jedna-zemlja-ima-veliki-problem-gotovo-60-posto-gradana-ne-zeli-se-cijepiti-protiv-koronavirusa/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>414</th>
+      <td>HNS Split: “Gradska uprava mora rješavati probleme građana i svakome od nas pružiti jednake uvjete i prilike za kvalitetan život”</td>
+      <td><a href="https://www.dalmacijadanas.hr/hns-split-gradska-uprava-mora-rjesavati-probleme-gradana-i-svakome-od-nas-pruziti-jednake-uvjete-i-prilike-za-kvalitetan-zivot/" target="_blank">https://www.dalmacijadanas.hr/hns-split-gradska-uprava-mora-rjesavati-probleme-gradana-i-svakome-od-nas-pruziti-jednake-uvjete-i-prilike-za-kvalitetan-zivot/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1595</th>
+      <td>Plenković o srušenim kućama koje su obnovljene nakon rata: “Treba ispitati kako se to dogodilo, zašto, tko je radio nadzor, davao dozvole. Nemam saznanja o tome”</td>
+      <td><a href="https://www.dalmacijadanas.hr/plenkovic-o-srusenim-kucama-koje-su-obnovljene-nakon-rata-treba-ispitati-kako-se-to-dogodilo-zasto-tko-je-radio-nadzor-davao-dozvole-nemam-saznanja-o-tome/" target="_blank">https://www.dalmacijadanas.hr/plenkovic-o-srusenim-kucama-koje-su-obnovljene-nakon-rata-treba-ispitati-kako-se-to-dogodilo-zasto-tko-je-radio-nadzor-davao-dozvole-nemam-saznanja-o-tome/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3037</th>
+      <td>Užas u KB Dubrava: Nestalo je struje, svi respiratori su se isključili. Ne valjaju ni agregati</td>
+      <td><a href="https://www.dalmacijadanas.hr/uzas-u-kb-dubrava-nestalo-je-struje-svi-respiratori-su-se-iskljucili-ne-valjaju-ni-agregati/" target="_blank">https://www.dalmacijadanas.hr/uzas-u-kb-dubrava-nestalo-je-struje-svi-respiratori-su-se-iskljucili-ne-valjaju-ni-agregati/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>388</th>
+      <td>TRADICIJA SE NASTAVLJA Ove nedjelje ne propustite uspon 100 žena na vrh Mosora: Osvajaju se četiri vrha</td>
+      <td><a href="https://www.dalmacijadanas.hr/tradicija-se-nastavlja-ove-nedjelje-ne-propustite-uspon-100-zena-na-vrh-mosora-osvajaju-se-cetiri-vrha/" target="_blank">https://www.dalmacijadanas.hr/tradicija-se-nastavlja-ove-nedjelje-ne-propustite-uspon-100-zena-na-vrh-mosora-osvajaju-se-cetiri-vrha/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1574</th>
+      <td>Petrinju čeka evakuacija? “Ovo ne prestaje i ne miruje, moramo se dislocirati iz strogog centra grada”</td>
+      <td><a href="https://www.dalmacijadanas.hr/petrinju-ceka-evakuacija-ovo-ne-prestaje-i-ne-miruje-moramo-se-dislocirati-iz-strogog-centra-grada/" target="_blank">https://www.dalmacijadanas.hr/petrinju-ceka-evakuacija-ovo-ne-prestaje-i-ne-miruje-moramo-se-dislocirati-iz-strogog-centra-grada/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3045</th>
+      <td>STO DANA VLADE: Što je najbolje, a što najgore od Vladinih poteza?</td>
+      <td><a href="https://www.dalmacijadanas.hr/sto-dana-vlade-sto-je-najbolje-a-sto-najgore-od-vladinih-poteza/" target="_blank">https://www.dalmacijadanas.hr/sto-dana-vlade-sto-je-najbolje-a-sto-najgore-od-vladinih-poteza/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3059</th>
+      <td>DANAS PONOVNO OGROMNE BROJKE: 2.772 novooboljelih, čak 20 mrtvih</td>
+      <td><a href="https://www.dalmacijadanas.hr/danas-ponovno-ogromne-brojke-2-772-novooboljelih-cak-20-mrtvih/" target="_blank">https://www.dalmacijadanas.hr/danas-ponovno-ogromne-brojke-2-772-novooboljelih-cak-20-mrtvih/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3070</th>
+      <td>NIJE DOBRO: U Hrvatskoj novih 2.776 slučajeva, 18 mrtvih</td>
+      <td><a href="https://www.dalmacijadanas.hr/nije-dobro-u-hrvatskoj-novih-2776-slucajeva-18-mrtvih/" target="_blank">https://www.dalmacijadanas.hr/nije-dobro-u-hrvatskoj-novih-2776-slucajeva-18-mrtvih/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3073</th>
+      <td>Širi se status o KB Dubravi: “Ujutro krenete na WC, a pred njim leži mrtav čovjek”</td>
+      <td><a href="https://www.dalmacijadanas.hr/siri-se-status-o-kb-dubravi-ujutro-krenete-na-wc-a-pred-njim-lezi-mrtav-covjek/" target="_blank">https://www.dalmacijadanas.hr/siri-se-status-o-kb-dubravi-ujutro-krenete-na-wc-a-pred-njim-lezi-mrtav-covjek/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1608</th>
+      <td>Zašto Civilna zaštita koristi Gmail, a ne MUP-ov mail? Objašnjenje će vas iznenaditi</td>
+      <td><a href="https://www.dalmacijadanas.hr/zasto-civilna-zastita-koristi-gmail-a-ne-mup-ov-mail-objasnjenje-ce-vas-iznenaditi/" target="_blank">https://www.dalmacijadanas.hr/zasto-civilna-zastita-koristi-gmail-a-ne-mup-ov-mail-objasnjenje-ce-vas-iznenaditi/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>358</th>
+      <td>NA KLISU SE NE GUBI VRIJEME Radovi na tvrđavi u punom su jeku</td>
+      <td><a href="https://www.dalmacijadanas.hr/na-klisu-se-ne-gubi-vrijeme-radovi-na-tvrdavi-u-punom-su-jeku/" target="_blank">https://www.dalmacijadanas.hr/na-klisu-se-ne-gubi-vrijeme-radovi-na-tvrdavi-u-punom-su-jeku/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1611</th>
+      <td>Trut o kritikama zbog kaosa: “Na društvenim mrežama je napad”</td>
+      <td><a href="https://www.dalmacijadanas.hr/trut-o-kritikama-zbog-kaosa-na-drustvenim-mrezama-je-napad/" target="_blank">https://www.dalmacijadanas.hr/trut-o-kritikama-zbog-kaosa-na-drustvenim-mrezama-je-napad/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1860</th>
+      <td>PORUKA NADE Papa: “Nema te pandemije i krize koja može ugasiti svjetlo Božića”</td>
+      <td><a href="https://www.dalmacijadanas.hr/poruka-nade-papa-nema-te-pandemije-i-krize-koja-moze-ugasiti-svjetlo-bozica/" target="_blank">https://www.dalmacijadanas.hr/poruka-nade-papa-nema-te-pandemije-i-krize-koja-moze-ugasiti-svjetlo-bozica/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>348</th>
+      <td>RODITELJI OMIŠKIH OSNOVACA FRUSTRIRANI “Zašto nam djeca ne idu normalno u školu, čemu uopće služe učitelji?”</td>
+      <td><a href="https://www.dalmacijadanas.hr/roditelji-omiskih-osnovaca-frustrirani-zasto-nam-djeca-ne-idu-normalno-u-skolu-cemu-uopce-sluze-ucitelji/" target="_blank">https://www.dalmacijadanas.hr/roditelji-omiskih-osnovaca-frustrirani-zasto-nam-djeca-ne-idu-normalno-u-skolu-cemu-uopce-sluze-ucitelji/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3093</th>
+      <td>Sršen: Političari ne usude donijeti drastične mjere jer žele ostati simpatični biračima</td>
+      <td><a href="https://www.dalmacijadanas.hr/srsen-politicari-ne-usude-donijeti-drasticne-mjere-jer-zele-ostati-simpaticni-biracima/" target="_blank">https://www.dalmacijadanas.hr/srsen-politicari-ne-usude-donijeti-drasticne-mjere-jer-zele-ostati-simpaticni-biracima/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3095</th>
+      <td>RADIMIR ČAČIĆ UPOZORAVA: “Ako ne uvedemo policijski sat, lockdown će doći sam po sebi”</td>
+      <td><a href="https://www.dalmacijadanas.hr/radimir-cacic-upozorava-ako-ne-uvedemo-policijski-sat-lockdown-ce-doci-sam-po-sebi/" target="_blank">https://www.dalmacijadanas.hr/radimir-cacic-upozorava-ako-ne-uvedemo-policijski-sat-lockdown-ce-doci-sam-po-sebi/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1872</th>
+      <td>Župnik o “uradi sam” blagoslovu doma: “Moja nakana nikako nije loša, ništa ne tražim, a to najbolje zna sam Bog”</td>
+      <td><a href="https://www.dalmacijadanas.hr/zupnik-o-uradi-sam-blagoslovu-doma-moja-nakana-nikako-nije-losa-nista-ne-trazim-a-to-najbolje-zna-sam-bog/" target="_blank">https://www.dalmacijadanas.hr/zupnik-o-uradi-sam-blagoslovu-doma-moja-nakana-nikako-nije-losa-nista-ne-trazim-a-to-najbolje-zna-sam-bog/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1441</th>
+      <td>Vozač BMW-a pozitivan na covid. Njegov otac: Rekao sam mu da ne pije, nije poslušao</td>
+      <td><a href="https://www.dalmacijadanas.hr/vozac-bmw-a-pozitivan-na-covid-njegov-otac-rekao-sam-mu-da-ne-pije-nije-poslusao/" target="_blank">https://www.dalmacijadanas.hr/vozac-bmw-a-pozitivan-na-covid-njegov-otac-rekao-sam-mu-da-ne-pije-nije-poslusao/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>439</th>
+      <td>VLASNICA KAFIĆA IZ LOVREĆA: “Policija me uhitila, odvela u pidžami i cijelu noć držala u podrumskoj ćeliji”</td>
+      <td><a href="https://www.dalmacijadanas.hr/vlasnica-kafica-iz-lovreca-policija-me-uhitila-odvela-u-pidzami-i-cijelu-noc-drzala-u-podrumskoj-celiji/" target="_blank">https://www.dalmacijadanas.hr/vlasnica-kafica-iz-lovreca-policija-me-uhitila-odvela-u-pidzami-i-cijelu-noc-drzala-u-podrumskoj-celiji/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3007</th>
+      <td>Je li netko podvalio Papi? “Ne možemo reći da je u Vatikanu bio muk, dogodilo se nešto još gore”</td>
+      <td><a href="https://www.dalmacijadanas.hr/je-li-netko-podvalio-papi-ne-mozemo-reci-da-je-u-vatikanu-bio-muk-dogodilo-se-nesto-jos-gore/" target="_blank">https://www.dalmacijadanas.hr/je-li-netko-podvalio-papi-ne-mozemo-reci-da-je-u-vatikanu-bio-muk-dogodilo-se-nesto-jos-gore/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2883</th>
+      <td>Imunolog objasnio što se treba dogoditi da se pandemija skroz obustavi</td>
+      <td><a href="https://www.dalmacijadanas.hr/imunolog-objasnio-sto-se-treba-dogoditi-da-se-pandemija-skroz-obustavi/" target="_blank">https://www.dalmacijadanas.hr/imunolog-objasnio-sto-se-treba-dogoditi-da-se-pandemija-skroz-obustavi/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2884</th>
+      <td>‘Hrvati, ne otpuštajte radnike, mi ćemo ih isplatiti. Od sutra vam je dostupno 500 mil. eura’</td>
+      <td><a href="https://www.dalmacijadanas.hr/hrvati-ne-otpustajte-radnike-mi-cemo-ih-isplatiti-od-sutra-vam-je-dostupno-500-mil-eura/" target="_blank">https://www.dalmacijadanas.hr/hrvati-ne-otpustajte-radnike-mi-cemo-ih-isplatiti-od-sutra-vam-je-dostupno-500-mil-eura/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>528</th>
+      <td>Broj hospitaliziranih u Splitu ne pada, evo koliko je novozaraženih u županiji</td>
+      <td><a href="https://www.dalmacijadanas.hr/broj-hospitaliziranih-u-splitu-ne-pada-evo-koliko-je-novozarazenih-u-zupaniji/" target="_blank">https://www.dalmacijadanas.hr/broj-hospitaliziranih-u-splitu-ne-pada-evo-koliko-je-novozarazenih-u-zupaniji/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2896</th>
+      <td>Markotić: “Ako osjetite gušenje, kašalj, kratak dah, ne čekajte nego se odmah javite liječniku”</td>
+      <td><a href="https://www.dalmacijadanas.hr/markotic-ako-osjetite-gusenje-kasalj-kratak-dah-ne-cekajte-nego-se-odmah-lijecniku/" target="_blank">https://www.dalmacijadanas.hr/markotic-ako-osjetite-gusenje-kasalj-kratak-dah-ne-cekajte-nego-se-odmah-lijecniku/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>519</th>
+      <td>U SPLIT STIGLO ASTRAZENECA CJEPIVO, Dr. Karin: Iako ne štiti 100 posto, cijepljenjem se izbjegava smrt</td>
+      <td><a href="https://www.dalmacijadanas.hr/u-split-stiglo-astrazeneca-cjepivo-dr-karin-iako-ne-stiti-100-posto-cijepljenjem-se-izbjegava-smrt/" target="_blank">https://www.dalmacijadanas.hr/u-split-stiglo-astrazeneca-cjepivo-dr-karin-iako-ne-stiti-100-posto-cijepljenjem-se-izbjegava-smrt/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2906</th>
+      <td>Plenković: “Milanović je stalker. Opsjednut je s košarkom, da na trepavicama stojim ne može me pobijediti”</td>
+      <td><a href="https://www.dalmacijadanas.hr/plenkovic-milanovic-je-stalker-opsjednut-je-s-kosarkom-da-na-trepavicama-stojim-ne-moze-me-pobijediti/" target="_blank">https://www.dalmacijadanas.hr/plenkovic-milanovic-je-stalker-opsjednut-je-s-kosarkom-da-na-trepavicama-stojim-ne-moze-me-pobijediti/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2914</th>
+      <td>GLAS PODUZETNIKA: “Zašto Vlada ne pomaže prijevoznicima iz privatnog sektora?”</td>
+      <td><a href="https://www.dalmacijadanas.hr/glas-poduzetnika-zasto-vlada-ne-pomaze-prijevoznicima-iz-privatnog-sektora/" target="_blank">https://www.dalmacijadanas.hr/glas-poduzetnika-zasto-vlada-ne-pomaze-prijevoznicima-iz-privatnog-sektora/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>501</th>
+      <td>Oni su im valjda krivi za sve probleme: Pogledajte tko je “izgorio” u Kaštel Sućurcu</td>
+      <td><a href="https://www.dalmacijadanas.hr/oni-su-im-valjda-krivi-za-sve-probleme-pogledajte-tko-je-izgorio-u-kastel-sucurcu/" target="_blank">https://www.dalmacijadanas.hr/oni-su-im-valjda-krivi-za-sve-probleme-pogledajte-tko-je-izgorio-u-kastel-sucurcu/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2951</th>
+      <td>Liječnica iz Rijeke o čijoj snimci s parkinga priča cijela Hrvatska: “Nemam se kome za što ispričavati. Ja ne radim u COVID centru, ali sam u srcu COVID centra”</td>
+      <td><a href="https://www.dalmacijadanas.hr/lijecnica-iz-rijeke-o-cijoj-snimci-s-parkinga-prica-cijela-hrvatska-nemam-se-kome-za-sto-ispricavati-ja-ne-radim-u-covid-centru-ali-sam-u-srcu-covid-centra/" target="_blank">https://www.dalmacijadanas.hr/lijecnica-iz-rijeke-o-cijoj-snimci-s-parkinga-prica-cijela-hrvatska-nemam-se-kome-za-sto-ispricavati-ja-ne-radim-u-covid-centru-ali-sam-u-srcu-covid-centra/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>490</th>
+      <td>BELJAK: U Splitu bolji rezultat s Vucom nego bez njega</td>
+      <td><a href="https://www.dalmacijadanas.hr/beljak-u-splitu-bolji-rezultat-s-vucom-nego-bez-njega/" target="_blank">https://www.dalmacijadanas.hr/beljak-u-splitu-bolji-rezultat-s-vucom-nego-bez-njega/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>441</th>
+      <td>DALMATINSKA OPĆINA UVELA ZABRANE “Nema sportskih okupljanja i treninga”</td>
+      <td><a href="https://www.dalmacijadanas.hr/dalmatinska-opcina-uvela-zabrane-nema-sportskih-okupljanja-i-treninga/" target="_blank">https://www.dalmacijadanas.hr/dalmatinska-opcina-uvela-zabrane-nema-sportskih-okupljanja-i-treninga/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1552</th>
+      <td>Capakova pomoćnica objasnila što se planira s preostalim dozama cjepiva: “Nema puno skeptičnih…”</td>
+      <td><a href="https://www.dalmacijadanas.hr/capakova-pomocnica-objasnila-sto-se-planira-s-preostalim-dozama-cjepiva-nema-puno-skepticnih/" target="_blank">https://www.dalmacijadanas.hr/capakova-pomocnica-objasnila-sto-se-planira-s-preostalim-dozama-cjepiva-nema-puno-skepticnih/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1561</th>
+      <td>MJERE SE PRODUŽUJU Božinović: “Nema utemeljenja za popuštanje”</td>
+      <td><a href="https://www.dalmacijadanas.hr/mjere-se-produzuju-bozinovic-nema-utemeljenja-za-popustanje/" target="_blank">https://www.dalmacijadanas.hr/mjere-se-produzuju-bozinovic-nema-utemeljenja-za-popustanje/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>470</th>
+      <td>KAŠTELANSKI VINARI U NEZAVIDNOM POLOŽAJU Vlade Perišin: “Ne mogu doć do ničega, tu sam malo žalostan”</td>
+      <td><a href="https://www.dalmacijadanas.hr/kastelanski-vinari-u-nezavidnom-polozaju-vlade-perisin-ne-mogu-doc-do-nicega-tu-sam-malo-zalostan/" target="_blank">https://www.dalmacijadanas.hr/kastelanski-vinari-u-nezavidnom-polozaju-vlade-perisin-ne-mogu-doc-do-nicega-tu-sam-malo-zalostan/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1895</th>
+      <td>EPIDEMIOLOG KOLARIĆ: “Mislim da više od 5000 zaraženih ne možemo ni detektirati”</td>
+      <td><a href="https://www.dalmacijadanas.hr/epidemiolog-kolaric-mislim-da-vise-od-5000-zarazenih-ne-mozemo-ni-detektirati/" target="_blank">https://www.dalmacijadanas.hr/epidemiolog-kolaric-mislim-da-vise-od-5000-zarazenih-ne-mozemo-ni-detektirati/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1894</th>
+      <td>ČEKAJU POZIV MINISTRA: “U bolnicama je Bejrut, a vani ljudi slave kao da se ništa ne događa”</td>
+      <td><a href="https://www.dalmacijadanas.hr/u-bolnicama-je-bejrut-a-vani-ljudi-slave-kao-da-se-nista-ne-dogada/" target="_blank">https://www.dalmacijadanas.hr/u-bolnicama-je-bejrut-a-vani-ljudi-slave-kao-da-se-nista-ne-dogada/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2987</th>
+      <td>Organizator prosvjeda protiv Stožera: “Većina mjera je promašena, ne vode nikamo”</td>
+      <td><a href="https://www.dalmacijadanas.hr/organizator-prosvjeda-protiv-stozera-vecina-mjera-je-promasena-ne-vode-nikamo/" target="_blank">https://www.dalmacijadanas.hr/organizator-prosvjeda-protiv-stozera-vecina-mjera-je-promasena-ne-vode-nikamo/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2994</th>
+      <td>APEL MUŠKARCA ČIJI OTAC IMA TUMOR: “Otac mi ne može dobiti lijek za tumor jer je bolnica u dugovima”</td>
+      <td><a href="https://www.dalmacijadanas.hr/apel-muskarca-ciji-otac-ima-tumor-otac-mi-ne-moze-dobiti-lijek-za-tumor-jer-je-bolnica-u-dugovima/" target="_blank">https://www.dalmacijadanas.hr/apel-muskarca-ciji-otac-ima-tumor-otac-mi-ne-moze-dobiti-lijek-za-tumor-jer-je-bolnica-u-dugovima/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2996</th>
+      <td>Radimir Čačić: “Nažalost nemam ovlasti da zabranim rad ugostiteljskim objektima”</td>
+      <td><a href="https://www.dalmacijadanas.hr/radimir-cacic-nazalost-nemam-ovlasti-da-zabranim-rad-ugostiteljskim-objektima/" target="_blank">https://www.dalmacijadanas.hr/radimir-cacic-nazalost-nemam-ovlasti-da-zabranim-rad-ugostiteljskim-objektima/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1569</th>
+      <td>Otac i sin završili u postaji zbog svećenika: “Ona je s njim već dulje, ali sam se ja pravio da ne vidim jer nisam želio”</td>
+      <td><a href="https://www.dalmacijadanas.hr/otac-i-sin-zavrsili-u-postaji-zbog-svecenika-ona-je-s-njim-vec-dulje-ali-sam-se-ja-pravio-da-ne-vidim-jer-nisam-zelio/" target="_blank">https://www.dalmacijadanas.hr/otac-i-sin-zavrsili-u-postaji-zbog-svecenika-ona-je-s-njim-vec-dulje-ali-sam-se-ja-pravio-da-ne-vidim-jer-nisam-zelio/</a></td>
+      <td>-1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3001</th>
+      <td>REKLI SU NE MOŽE Teretana poručila Stožeru: Nećemo prestati raditi!</td>
+      <td><a href="https://www.dalmacijadanas.hr/rekli-su-ne-moze-teretana-porucila-stozeru-necemo-prestati-raditi/" target="_blank">https://www.dalmacijadanas.hr/rekli-su-ne-moze-teretana-porucila-stozeru-necemo-prestati-raditi/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>445</th>
+      <td>Splitsko-dalmatinska županija nagradila najbolje učenike</td>
+      <td><a href="https://www.dalmacijadanas.hr/splitsko-dalmatinska-zupanija-nagradila-najbolje-ucenike/" target="_blank">https://www.dalmacijadanas.hr/splitsko-dalmatinska-zupanija-nagradila-najbolje-ucenike/</a></td>
+      <td>-1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
   </tbody>
 </table>

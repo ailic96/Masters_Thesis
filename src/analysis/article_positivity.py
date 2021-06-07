@@ -35,7 +35,13 @@ def list_contains(list_1, list_positive, list_negative):
             if(word == word_negative[0]):
                 total-=float(word_negative[1]) 
 
-    return total/len(list_1)
+    try:
+        total_score = total/len(list_1)
+    except:
+        total_score = 0
+        pass
+
+    return total_score
 
 
 
@@ -56,12 +62,14 @@ def sentence_positivity(list_1, list_positive, list_negative):
     sentence_weights = []
 
     negative_expressions = ['ne']
-    
+
+    list_1 = list(filter(None, list_1))
+
     for sentence in list_1:
 
         sentence_tokens = word_tokenize(sentence)
         sentence_score = 0
-
+        
         # Iterate through each sentence
         for idx, word in enumerate(sentence_tokens):
             
@@ -85,15 +93,17 @@ def sentence_positivity(list_1, list_positive, list_negative):
                 elif word in negative_expressions:      # Skips 'ne'
                     continue
         
-        # Add calculated positivity to a list
-        sentence_weights.append(sentence_score)
+        try:
+            sentence_score = sentence_score / len(sentence)
+        except ZeroDivisionError:
+            sentence_score = 0
+        finally:
+            # Add calculated positivity to a list
+            sentence_weights.append(sentence_score)
 
-    #Remove sentence weights if their value equals 0.0
-    total = [elem for elem in sentence_weights if elem != 0.0]
-    total_mean = np.mean(total)
+    total_mean = np.mean(sentence_weights)
 
     return total_mean
-
 
 
 def article_positivity(input_path, output_path, positivity_path, negativity_path):
@@ -168,7 +178,7 @@ def article_positivity(input_path, output_path, positivity_path, negativity_path
                 continue
             else:
 
-                print('Processed ' + str(processed_articles) + ' / ' + str(article_counter - num_rows ) + ' articles')
+                print('Processed ' + str(processed_articles) + ' / ' + str(article_counter - num_rows -1) + '(' + str(article_counter-1) +')' + ' articles')
 
                 #print(row)
                 title = row[1]

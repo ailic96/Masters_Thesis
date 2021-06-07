@@ -1,47 +1,813 @@
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: left;">
       <th></th>
       <th>Title</th>
       <th>URL</th>
       <th>Text_positivity_sentence</th>
       <th>Positivity</th>
+      <th>RF_text_prediction</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>3391</th>
-      <td>HITNE SITUACIJE KOJE MOŽETE RIJEŠITI KOD KUĆE Uhobolja kod djece: Savjeti poznate splitske otorinolaringologinje</td>
-      <td>https://www.dalmacijadanas.hr/uhobolja-kod-djece-sto-mogu-napraviti-kuci-splitska-otorinolaringologica-donosi-savjete/</td>
+      <th>2411</th>
+      <td>REKORDAN BROJ ZARAŽENIH: Preko 400 novooboljelih u Splitsko-dalmatinskoj županiji</td>
+      <td><a href="https://www.dalmacijadanas.hr/rekordan-broj-zarazenih-preko-400-novooboljelih-u-splitsko-dalmatinskoj-zupaniji/" target="_blank">https://www.dalmacijadanas.hr/rekordan-broj-zarazenih-preko-400-novooboljelih-u-splitsko-dalmatinskoj-zupaniji/</a></td>
       <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>828</th>
+      <td>KLAPSKI SVIJET TUGUJE Preminuo pjevač legendarne hrvatske klape</td>
+      <td><a href="https://www.dalmacijadanas.hr/klapski-svijet-tuguje-preminuo-pjevac-legendarne-hrvatske-klape/" target="_blank">https://www.dalmacijadanas.hr/klapski-svijet-tuguje-preminuo-pjevac-legendarne-hrvatske-klape/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2518</th>
+      <td>PREMINULE TRI OSOBE Rekordan broj novooboljelih u SDŽ, “eksplozija” zaraze u Sinju</td>
+      <td><a href="https://www.dalmacijadanas.hr/preminule-tri-osobe-rekordan-broj-novooboljelih-u-sdz-eksplozija-zaraze-u-sinju/" target="_blank">https://www.dalmacijadanas.hr/preminule-tri-osobe-rekordan-broj-novooboljelih-u-sdz-eksplozija-zaraze-u-sinju/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1796</th>
+      <td>PREMINULO 78 PACIJENATA U Hrvatskoj 4.135 novooboljelih, veliki broj pacijenata na respiratoru</td>
+      <td><a href="https://www.dalmacijadanas.hr/preminulo-78-pacijenata-u-hrvatskoj-4-135-novooboljelih-veliki-broj-pacijenata-na-respiratoru/" target="_blank">https://www.dalmacijadanas.hr/preminulo-78-pacijenata-u-hrvatskoj-4-135-novooboljelih-veliki-broj-pacijenata-na-respiratoru/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1806</th>
+      <td>I DALJE VELIKE BROJKE Danas 4.396 novooboljelih, testirano11.687 ljudi, umrle 64 osobe</td>
+      <td><a href="https://www.dalmacijadanas.hr/i-dalje-velike-brojke-danas-4-396-novooboljelih-testirano11-687-ljudi-umrle-64-osobe/" target="_blank">https://www.dalmacijadanas.hr/i-dalje-velike-brojke-danas-4-396-novooboljelih-testirano11-687-ljudi-umrle-64-osobe/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2918</th>
+      <td>Imamo 3.056 novozaraženih na 9.417 testiranih. Umrle su 43 osobe</td>
+      <td><a href="https://www.dalmacijadanas.hr/imamo-3056-novozarazenih-na-9417-testiranih-umrle-su-43-osobe/" target="_blank">https://www.dalmacijadanas.hr/imamo-3056-novozarazenih-na-9417-testiranih-umrle-su-43-osobe/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2908</th>
+      <td>PREMINULO 38 OSOBA U Hrvatskoj 2866 novozaraženih</td>
+      <td><a href="https://www.dalmacijadanas.hr/preminulo-38-osoba-u-hrvatskoj-2866-novozarazenih/" target="_blank">https://www.dalmacijadanas.hr/preminulo-38-osoba-u-hrvatskoj-2866-novozarazenih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>945</th>
+      <td>POZITIVAN JOŠ JEDAN DALMATINSKI NAČELNIK Iz izolacije poručio: “Samo pozitivno”</td>
+      <td><a href="https://www.dalmacijadanas.hr/pozitivan-jos-jedan-dalmatinski-nacelnik-iz-izolacije-porucio-samo-pozitivno/" target="_blank">https://www.dalmacijadanas.hr/pozitivan-jos-jedan-dalmatinski-nacelnik-iz-izolacije-porucio-samo-pozitivno/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>939</th>
+      <td>NAJNOVIJI PODACI Skok broja zaraženih u SDŽ: Žarišta su Split, Solin, Sinj, Imotski, Kaštela, Makarska…</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-skok-broja-zarazenih-u-sdz-zarista-su-split-solin-sinj-imotski-kastela-makarska/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-skok-broja-zarazenih-u-sdz-zarista-su-split-solin-sinj-imotski-kastela-makarska/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2892</th>
+      <td>NAKON VIKENDA MANJE NOVOOBOLJELIH: Oglasio se nacionalni stožer, umrle su 33 osobe</td>
+      <td><a href="https://www.dalmacijadanas.hr/nakon-vikenda-manje-novooboljelih-oglasio-se-nacionalni-stozer-umrle-su-33-osobe/" target="_blank">https://www.dalmacijadanas.hr/nakon-vikenda-manje-novooboljelih-oglasio-se-nacionalni-stozer-umrle-su-33-osobe/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1850</th>
+      <td>Pili cijelu noć, potukli se i pokušao ga ubiti, pa ispalo i da je COVID pozitivan</td>
+      <td><a href="https://www.dalmacijadanas.hr/pili-cijeli-noc-potukli-se-i-pokusao-ga-ubiti-pa-ispalo-i-da-je-covid-pozitivan/" target="_blank">https://www.dalmacijadanas.hr/pili-cijeli-noc-potukli-se-i-pokusao-ga-ubiti-pa-ispalo-i-da-je-covid-pozitivan/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1899</th>
+      <td>POZITIVNA NA COVID-19 U Hrvatskoj 27-godišnja djevojka na intenzivnoj, nema drugih bolesti</td>
+      <td><a href="https://www.dalmacijadanas.hr/pozitivna-na-covid-19-u-hrvatskoj-27-godisnja-djevojka-na-intezivnoj-nema-drugih-bolesti/" target="_blank">https://www.dalmacijadanas.hr/pozitivna-na-covid-19-u-hrvatskoj-27-godisnja-djevojka-na-intezivnoj-nema-drugih-bolesti/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>317</th>
+      <td>OGROMNE BROJKE U SD ŽUPANIJI U Splitu jako puno novih slučajeva zaraze Covidom</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromne-brojke-u-sd-zupaniji-u-splitu-jako-puno-novih-slucajeva-zaraze-covidom/" target="_blank">https://www.dalmacijadanas.hr/ogromne-brojke-u-sd-zupaniji-u-splitu-jako-puno-novih-slucajeva-zaraze-covidom/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1910</th>
+      <td>POTVRĐENE NOVE CRNE BROJKE: Imamo preko 4.500 novooboljelih, preminulo 48 osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/potvrdene-nove-crne-brojke-imamo-preko-4-500-novooboljelih-preminulo-48-osoba/" target="_blank">https://www.dalmacijadanas.hr/potvrdene-nove-crne-brojke-imamo-preko-4-500-novooboljelih-preminulo-48-osoba/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1912</th>
+      <td>NOVI REKORD NOVOOBOLJELIH? Danas opet imamo jako puno zaraženih, stigli neslužbeni podaci</td>
+      <td><a href="https://www.dalmacijadanas.hr/novi-rekord-novooboljelih-danas-opet-imamo-jako-puno-zarazenih-stigli-nesluzbeni-podaci/" target="_blank">https://www.dalmacijadanas.hr/novi-rekord-novooboljelih-danas-opet-imamo-jako-puno-zarazenih-stigli-nesluzbeni-podaci/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>324</th>
+      <td>SLUŽBENO Ogroman je broj zaraženih u SD županiji, evo odakle su novooboljeli</td>
+      <td><a href="https://www.dalmacijadanas.hr/sluzbeno-ogroman-je-broj-zarazenih-u-sd-zupaniji-evo-odakle-su-novooboljeli/" target="_blank">https://www.dalmacijadanas.hr/sluzbeno-ogroman-je-broj-zarazenih-u-sd-zupaniji-evo-odakle-su-novooboljeli/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>326</th>
+      <td>ALARMANTNE BROJKE U SD ŽUPANIJI Preko 260 novih slučajeva zaraze, evo detalja</td>
+      <td><a href="https://www.dalmacijadanas.hr/alarmantne-brojke-u-sd-zupaniji-preko-260-novih-slucajeva-zaraze-evo-detalja/" target="_blank">https://www.dalmacijadanas.hr/alarmantne-brojke-u-sd-zupaniji-preko-260-novih-slucajeva-zaraze-evo-detalja/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2867</th>
+      <td>OBARAMO NOVI REKORD? Prema neslužbenim podacima danas imamo najveći broj zaraženih</td>
+      <td><a href="https://www.dalmacijadanas.hr/obaramo-novi-rekord-prema-nesluzbenim-podacima-danas-imamo-najveci-broj-zarazenih/" target="_blank">https://www.dalmacijadanas.hr/obaramo-novi-rekord-prema-nesluzbenim-podacima-danas-imamo-najveci-broj-zarazenih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>336</th>
+      <td>NAJNOVIJI PODACI ZA SPLITSKO PODRUČJE Preminuo muškarac, evo koliko je novooboljelih osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-za-splitsko-podrucje-preminuo-muskarac-evo-koliko-je-novooboljelih-osoba/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-za-splitsko-podrucje-preminuo-muskarac-evo-koliko-je-novooboljelih-osoba/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>347</th>
+      <td>OGROMAN BROJ NOVOOBOLJELIH U SD ŽUPANIJI Split bilježi jako puno slučajeva zaraze Covidom</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogroman-broj-novooboljelih-u-sd-zupaniji-split-biljezi-jako-puno-slucajeva-zaraze-covidom/" target="_blank">https://www.dalmacijadanas.hr/ogroman-broj-novooboljelih-u-sd-zupaniji-split-biljezi-jako-puno-slucajeva-zaraze-covidom/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2841</th>
+      <td>NAKON POZITIVNOG TESTA Javio se Beroš i uputio apel</td>
+      <td><a href="https://www.dalmacijadanas.hr/nakon-pozitivnog-testa-javio-se-beros-i-uputio-apel/" target="_blank">https://www.dalmacijadanas.hr/nakon-pozitivnog-testa-javio-se-beros-i-uputio-apel/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>350</th>
+      <td>OGROMNE BROJKE U DALMACIJI U Splitsko-dalmatinskoj županiji preko 130 zaraženih koronom</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromne-brojke-u-dalmaciji-u-splitsko-dalmatinskoj-zupaniji-preko-130-oboljelih-koronom/" target="_blank">https://www.dalmacijadanas.hr/ogromne-brojke-u-dalmaciji-u-splitsko-dalmatinskoj-zupaniji-preko-130-oboljelih-koronom/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1986</th>
+      <td>ĐOKOVIĆ DIRNUT PRIZORIMA IZ SPLITA “Hvala, Splite. Kakva emocija, ovo je prelijepo!”</td>
+      <td><a href="https://www.dalmacijadanas.hr/dokovic-dirnut-prizorima-iz-splita-hvala-splite-kakva-emocija-ovo-je-prelijepo/" target="_blank">https://www.dalmacijadanas.hr/dokovic-dirnut-prizorima-iz-splita-hvala-splite-kakva-emocija-ovo-je-prelijepo/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2835</th>
+      <td>MALO BOLJI PODACI NAM STIŽU?: Danas imamo manje od 3.000 novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/malo-bolji-podaci-nam-stizu-danas-imamo-manje-od-3-000-novooboljelih/" target="_blank">https://www.dalmacijadanas.hr/malo-bolji-podaci-nam-stizu-danas-imamo-manje-od-3-000-novooboljelih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>357</th>
+      <td>OGROMNE BROJKE SU I DALJE Evo koliko je novozaraženih u Splitsko-dalmatinskoj županiji. Najviše ih je iz Splita</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromne-brojke-su-i-dalje-evo-koliko-je-novozarazenih-u-splitsko-dalmatinskoj-zupaniji-najvise-ih-je-iz-splita/" target="_blank">https://www.dalmacijadanas.hr/ogromne-brojke-su-i-dalje-evo-koliko-je-novozarazenih-u-splitsko-dalmatinskoj-zupaniji-najvise-ih-je-iz-splita/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2834</th>
+      <td>KAKAV SLUČAJ: Zaražen koronom izašao na cestu i potukao se</td>
+      <td><a href="https://www.dalmacijadanas.hr/kakav-slucaj-zarazen-koronom-izasao-na-cestu-i-potukao-se/" target="_blank">https://www.dalmacijadanas.hr/kakav-slucaj-zarazen-koronom-izasao-na-cestu-i-potukao-se/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>360</th>
+      <td>KORONA PARTY Policija kažnjava organizatora zabave u Pakoštanima, prijavljen i Ante Gotovina</td>
+      <td><a href="https://www.dalmacijadanas.hr/korona-party-policija-kaznjava-organizatora-zabave-u-pakostanima-prijavljen-i-ante-gotovina/" target="_blank">https://www.dalmacijadanas.hr/korona-party-policija-kaznjava-organizatora-zabave-u-pakostanima-prijavljen-i-ante-gotovina/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>847</th>
+      <td>NAJNOVIJI PODACI ZA SD ŽUPANIJU Umrle dvije osobe, evo koliko je novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-za-sd-zupaniju-umrle-dvije-osobe-evo-koliko-je-novooboljelih/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-za-sd-zupaniju-umrle-dvije-osobe-evo-koliko-je-novooboljelih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2000</th>
+      <td>UVIJEK SA SVOJOM ZAJEDNICOM Bilo srce i Zrno Soli daruju institucije i udruge grada Splita</td>
+      <td><a href="https://www.dalmacijadanas.hr/uvijek-sa-svojom-zajednicom-bilo-srce-i-zrno-soli-daruju-institucije-i-udruge-grada-splita/" target="_blank">https://www.dalmacijadanas.hr/uvijek-sa-svojom-zajednicom-bilo-srce-i-zrno-soli-daruju-institucije-i-udruge-grada-splita/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>369</th>
+      <td>OPET RAST BROJKI U SD ŽUPANIJI Preminule 3 osobe, evo koliko je novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/opet-rast-brojki-u-sd-zupaniji-preminule-3-osobe-evo-koliko-je-novooboljelih/" target="_blank">https://www.dalmacijadanas.hr/opet-rast-brojki-u-sd-zupaniji-preminule-3-osobe-evo-koliko-je-novooboljelih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2020</th>
+      <td>TUGA U SUSJEDSTVU Preminuo srpski olimpijac u 42. godini: Stanje mu se pogoršalo nakon korone</td>
+      <td><a href="https://www.dalmacijadanas.hr/tuga-u-susjedstvu-preminuo-srpski-olimpijac-u-42-godini-stanje-mu-se-pogorsalo-nakon-korone/" target="_blank">https://www.dalmacijadanas.hr/tuga-u-susjedstvu-preminuo-srpski-olimpijac-u-42-godini-stanje-mu-se-pogorsalo-nakon-korone/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>287</th>
+      <td>VISOKE BROJKE U JEDNOJ DALMATINSKOJ ŽUPANIJI Imaju 90 novih slučajeva, preminula jedna osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/visoke-brojke-u-jednoj-dalmatinskoj-zupaniji-imaju-90-novih-slucajeva-preminula-jedna-osoba/" target="_blank">https://www.dalmacijadanas.hr/visoke-brojke-u-jednoj-dalmatinskoj-zupaniji-imaju-90-novih-slucajeva-preminula-jedna-osoba/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>286</th>
+      <td>OGROMNE BROJKE U SPLITSKO-DALMATINSKOJ ŽUPANIJI Više od 300 novih slučajeva. Očekuju se službeni podaci Stožera SDŽ</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromne-brojke-u-splitsko-dalmatinskoj-zupaniji-vise-od-300-novih-slucajeva-ocekuju-se-sluzbeni-podaci-stozera-sdz/" target="_blank">https://www.dalmacijadanas.hr/ogromne-brojke-u-splitsko-dalmatinskoj-zupaniji-vise-od-300-novih-slucajeva-ocekuju-se-sluzbeni-podaci-stozera-sdz/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1785</th>
+      <td>DANAŠNJE BROJKE U HRVATSKOJ Preminulo 78 osoba, broj novih slučajeva zaraze i dalje visok</td>
+      <td><a href="https://www.dalmacijadanas.hr/danasnje-brojke-u-hrvatskoj-preminulo-78-osoba-broj-novih-slucajeva-zaraze-i-dalje-visok/" target="_blank">https://www.dalmacijadanas.hr/danasnje-brojke-u-hrvatskoj-preminulo-78-osoba-broj-novih-slucajeva-zaraze-i-dalje-visok/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1007</th>
+      <td>BROJEVI IDU DOLJE Hrvatska danas broji manje zaraženih nego prije tjedan dana. 25 posto testiranih je pozitivno, 34 osobe preminule</td>
+      <td><a href="https://www.dalmacijadanas.hr/brojevi-idu-dole-hrvatska-danas-broji-manje-zarazenih-nego-prije-tjedan-dana-25-posto-testiranih-je-pozitivno-34-osobe-preminule/" target="_blank">https://www.dalmacijadanas.hr/brojevi-idu-dole-hrvatska-danas-broji-manje-zarazenih-nego-prije-tjedan-dana-25-posto-testiranih-je-pozitivno-34-osobe-preminule/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3090</th>
+      <td>NAJNOVIJI PODACI ZA HRVATSKU Stožer: 1413 novih slučajeva na 8185 testiranih, 18 mrtvih</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-za-hrvatsku-stozer-1413-novih-slucajeva-na-8185-testiranih-18-mrtvih/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-za-hrvatsku-stozer-1413-novih-slucajeva-na-8185-testiranih-18-mrtvih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1039</th>
+      <td>Znate li što se danas, na Veliku subotu, slavi?</td>
+      <td><a href="https://www.dalmacijadanas.hr/znate-li-sto-se-danas-na-veliku-subotu-slavi/" target="_blank">https://www.dalmacijadanas.hr/znate-li-sto-se-danas-na-veliku-subotu-slavi/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3070</th>
+      <td>NIJE DOBRO: U Hrvatskoj novih 2.776 slučajeva, 18 mrtvih</td>
+      <td><a href="https://www.dalmacijadanas.hr/nije-dobro-u-hrvatskoj-novih-2776-slucajeva-18-mrtvih/" target="_blank">https://www.dalmacijadanas.hr/nije-dobro-u-hrvatskoj-novih-2776-slucajeva-18-mrtvih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1654</th>
+      <td>Manijak iz okolice Knina vukao psa autom po cesti, oderani su mu njuška, šape i trbuh</td>
+      <td><a href="https://www.dalmacijadanas.hr/manijak-iz-okolice-knina-vukao-psa-autom-po-cesti-oderani-su-mu-njuska-sape-i-trbuh/" target="_blank">https://www.dalmacijadanas.hr/manijak-iz-okolice-knina-vukao-psa-autom-po-cesti-oderani-su-mu-njuska-sape-i-trbuh/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1665</th>
+      <td>VELIKI PAD BROJA NOVOOBOLJELIH: Danas imamo vrlo malo zaraženih covidom, znatno manje je testiranih</td>
+      <td><a href="https://www.dalmacijadanas.hr/veliki-pad-broja-novooboljelih-danas-imamo-vrlo-malo-zarazenih-covidom-znatno-manje-je-testiranih/" target="_blank">https://www.dalmacijadanas.hr/veliki-pad-broja-novooboljelih-danas-imamo-vrlo-malo-zarazenih-covidom-znatno-manje-je-testiranih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>233</th>
+      <td>ODGOĐENA PROCESIJA Splitski svećenik: “Kristov križ popratite s vaših prozora i balkona”</td>
+      <td><a href="https://www.dalmacijadanas.hr/odgodena-procesija-splitski-svecenik-kristov-kriz-popratite-s-vasih-prozora-i-balkona/" target="_blank">https://www.dalmacijadanas.hr/odgodena-procesija-splitski-svecenik-kristov-kriz-popratite-s-vasih-prozora-i-balkona/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1673</th>
+      <td>PREMINULO JE 70 OSOBA: Evo koliko danas imamo novozaraženih u Hrvatskoj</td>
+      <td><a href="https://www.dalmacijadanas.hr/preminulo-je-70-osoba-evo-koliko-danas-imamo-novozarazenih-u-hrvatskoj/" target="_blank">https://www.dalmacijadanas.hr/preminulo-je-70-osoba-evo-koliko-danas-imamo-novozarazenih-u-hrvatskoj/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>236</th>
+      <td>TEŠKA COVID SITUACIJA Ogromne brojke u SD županiji, očekuju se službeni podaci</td>
+      <td><a href="https://www.dalmacijadanas.hr/teska-covid-situacija-ogromne-brojke-u-sd-zupaniji-ocekuju-se-sluzbeni-podaci/" target="_blank">https://www.dalmacijadanas.hr/teska-covid-situacija-ogromne-brojke-u-sd-zupaniji-ocekuju-se-sluzbeni-podaci/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1692</th>
+      <td>OGROMAN TJEDNI PAD Neslužbeno: U Hrvatskoj danas oko 1.500 pozitivnih, testirano 9.000 osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogroman-tjedni-pad-nesluzbeno-u-hrvatskoj-danas-oko-1-500-pozitivnih-testirano-9-000-osoba/" target="_blank">https://www.dalmacijadanas.hr/ogroman-tjedni-pad-nesluzbeno-u-hrvatskoj-danas-oko-1-500-pozitivnih-testirano-9-000-osoba/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1017</th>
+      <td>OGROMAN PORAST U HRVATSKOJ Danas imamo jako puno ‘Covid’ novooboljelih, evo neslužbenih brojki</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogroman-porast-u-hrvatskoj-danas-imamo-jako-puno-covid-novooboljelih-evo-nesluzbenih-brojki/" target="_blank">https://www.dalmacijadanas.hr/ogroman-porast-u-hrvatskoj-danas-imamo-jako-puno-covid-novooboljelih-evo-nesluzbenih-brojki/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>244</th>
+      <td>VALAMAR METEOR HOTEL 4* U MAKARSKOJ Novouređeni obiteljski hotel otvara vrata uoči uskršnjih blagdana</td>
+      <td><a href="https://www.dalmacijadanas.hr/valamar-meteor-hotel-4-u-makarskoj-novouredeni-obiteljski-hotel-otvara-vrata-uoci-uskrsnjih-blagdana/" target="_blank">https://www.dalmacijadanas.hr/valamar-meteor-hotel-4-u-makarskoj-novouredeni-obiteljski-hotel-otvara-vrata-uoci-uskrsnjih-blagdana/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>3025</th>
+      <td>NAJNOVIJI PODACI ZA HRVATSKU Danas 1.427 novih slučajeva zaraze, najviše umrlih do sad</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-za-hrvatsku-danas-1-427-novih-slucajeva-zaraze-najvise-umrlih-do-sad/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-za-hrvatsku-danas-1-427-novih-slucajeva-zaraze-najvise-umrlih-do-sad/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1008</th>
+      <td>BROJKE RASTU Još nekoliko županija uvodi strože mjere. U Dalmaciji popuštanje mjera</td>
+      <td><a href="https://www.dalmacijadanas.hr/brojke-rastu-jos-nekoliko-zupanija-uvodi-stroze-mjere-u-dalmaciji-popustanje-mjera/" target="_blank">https://www.dalmacijadanas.hr/brojke-rastu-jos-nekoliko-zupanija-uvodi-stroze-mjere-u-dalmaciji-popustanje-mjera/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>250</th>
+      <td>OGROMAN PORAST NOVOOBOLJELIH U SDŽ Preminule tri osobe, evo koliko je novozaraženih osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogroman-porast-novooboljelih-u-sdz-preminule-tri-osobe-evo-koliko-je-novozarazenih-osoba/" target="_blank">https://www.dalmacijadanas.hr/ogroman-porast-novooboljelih-u-sdz-preminule-tri-osobe-evo-koliko-je-novozarazenih-osoba/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1772</th>
+      <td>“NAJGORI SMO U EU” Posljednja 24 sata Hrvatska ima 1.472 novozaražena, preminulo 65 ljudi</td>
+      <td><a href="https://www.dalmacijadanas.hr/najgori-smo-u-eu-posljednja-24-sata-hrvatska-ima-1-472-novozarazena-preminulo-65-ljudi/" target="_blank">https://www.dalmacijadanas.hr/najgori-smo-u-eu-posljednja-24-sata-hrvatska-ima-1-472-novozarazena-preminulo-65-ljudi/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2990</th>
+      <td>U KB-u Dubrava ponovno nestala struja, sumnja se da je sve namjerno</td>
+      <td><a href="https://www.dalmacijadanas.hr/u-kb-u-dubrava-ponovno-nestala-struja-sumnja-se-da-je-sve-namjerno/" target="_blank">https://www.dalmacijadanas.hr/u-kb-u-dubrava-ponovno-nestala-struja-sumnja-se-da-je-sve-namjerno/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1704</th>
+      <td>ODLIČNE VIJESTI: Znatno manje novooboljelih u Hrvatskoj, evo koliko je danas novih slučajeva</td>
+      <td><a href="https://www.dalmacijadanas.hr/odlicne-vijesti-znatno-manje-novooboljelih-u-hrvatskoj-evo-koliko-je-danas-novih-slucajeva/" target="_blank">https://www.dalmacijadanas.hr/odlicne-vijesti-znatno-manje-novooboljelih-u-hrvatskoj-evo-koliko-je-danas-novih-slucajeva/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2984</th>
+      <td>Zaraženi Butković u četvrtak se susreo s članovima Vlade: “Nije bio u bliskom kontaktu, poštivali su razmak i nosili maske”</td>
+      <td><a href="https://www.dalmacijadanas.hr/zarazeni-butkovic-u-cetvrtak-se-susreo-s-clanovima-vlade-nije-bio-u-bliskom-kontaktu-postivali-su-razmak-i-nosili-maske/" target="_blank">https://www.dalmacijadanas.hr/zarazeni-butkovic-u-cetvrtak-se-susreo-s-clanovima-vlade-nije-bio-u-bliskom-kontaktu-postivali-su-razmak-i-nosili-maske/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>259</th>
+      <td>NOVE BROJKE ZA SPLITSKO PODRUČJE Preminuo jedan muškarac, evo koliko je novooboljelih osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/nove-brojke-za-splitsko-podrucje-preminuo-jedan-muskarac-evo-koliko-je-novooboljelih-osoba/" target="_blank">https://www.dalmacijadanas.hr/nove-brojke-za-splitsko-podrucje-preminuo-jedan-muskarac-evo-koliko-je-novooboljelih-osoba/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1707</th>
+      <td>NESLUŽBENO: Veliki pad broja novozaraženih u Hrvatskoj, evo koliko je danas novih oboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/nesluzbeno-veliki-pad-broja-novozarazenih-u-hrvatskoj-evo-koliko-je-danas-novih-oboljelih/" target="_blank">https://www.dalmacijadanas.hr/nesluzbeno-veliki-pad-broja-novozarazenih-u-hrvatskoj-evo-koliko-je-danas-novih-oboljelih/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>261</th>
+      <td>HITNI MEDICINSKI PRIJEVOZ Muškarac (44) pozitivan na koronu prevezen u Zagreb</td>
+      <td><a href="https://www.dalmacijadanas.hr/hitni-medicinski-prijevoz-muskarac-44-pozitivan-na-koronu-prevezen-u-zagreb/" target="_blank">https://www.dalmacijadanas.hr/hitni-medicinski-prijevoz-muskarac-44-pozitivan-na-koronu-prevezen-u-zagreb/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1708</th>
+      <td>Novi soj korone izvan kontrole, zabilježen u još zemalja EU</td>
+      <td><a href="https://www.dalmacijadanas.hr/novi-soj-korone-izvan-kontrole-zabiljezen-u-jos-zemalja-eu/" target="_blank">https://www.dalmacijadanas.hr/novi-soj-korone-izvan-kontrole-zabiljezen-u-jos-zemalja-eu/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>987</th>
+      <td>Umrla djevojka od 22 godine. Još se ne zna je li imala težih bolesti</td>
+      <td><a href="https://www.dalmacijadanas.hr/umrla-djevojka-od-22-godine-jos-se-ne-zna-je-li-imala-tezih-bolesti/" target="_blank">https://www.dalmacijadanas.hr/umrla-djevojka-od-22-godine-jos-se-ne-zna-je-li-imala-tezih-bolesti/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1734</th>
+      <td>U posljednja 24 sata 3.272 nova slučaja zaraze, umrlo 68 ljudi, preminula najmlađa osoba do sada</td>
+      <td><a href="https://www.dalmacijadanas.hr/u-posljednja-24-sata-3-272-nova-slucaja-zaraze-umrlo-68-ljudi-preminula-najmlada-osoba-do-sada/" target="_blank">https://www.dalmacijadanas.hr/u-posljednja-24-sata-3-272-nova-slucaja-zaraze-umrlo-68-ljudi-preminula-najmlada-osoba-do-sada/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>267</th>
+      <td>PREMINULE DVIJE OSOBE Čak 263 novooboljelih u Splitsko-dalmatinskoj županiji, veliki broj pacijenata na respiratoru</td>
+      <td><a href="https://www.dalmacijadanas.hr/preminule-dvije-osobe-cak-263-novooboljelih-u-splitsko-dalmatinskoj-zupaniji-veliki-broj-pacijenata-na-respiratoru/" target="_blank">https://www.dalmacijadanas.hr/preminule-dvije-osobe-cak-263-novooboljelih-u-splitsko-dalmatinskoj-zupaniji-veliki-broj-pacijenata-na-respiratoru/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2967</th>
+      <td>VISOKE BROJKE I DALJE: Imamo preko 1.500 novooboljelih, 38 ljudi umrlo</td>
+      <td><a href="https://www.dalmacijadanas.hr/visoke-brojke-i-dalje-imamo-preko-1-500-novooboljelih-38-ljudi-umrlo/" target="_blank">https://www.dalmacijadanas.hr/visoke-brojke-i-dalje-imamo-preko-1-500-novooboljelih-38-ljudi-umrlo/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1744</th>
+      <td>NAJNOVIJI PODACI Imamo 3.918 novih slučajeva zaraze koronavirusom, preminulo 85 osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-imamo-3-918-novih-slucajeva-zaraze-koronavirusom-preminulo-85-osoba/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-imamo-3-918-novih-slucajeva-zaraze-koronavirusom-preminulo-85-osoba/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1769</th>
+      <td>Putovao autobusom iako je pozitivan na koronavirus</td>
+      <td><a href="https://www.dalmacijadanas.hr/putovao-autobusom-iako-je-pozitivan-na-koronavirus/" target="_blank">https://www.dalmacijadanas.hr/putovao-autobusom-iako-je-pozitivan-na-koronavirus/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2034</th>
+      <td>Ante Rebić pozitivan na koronavirus, propušta veliki derbi protiv Juventusa</td>
+      <td><a href="https://www.dalmacijadanas.hr/ante-rebic-pozitivan-na-koronavirus-propusta-veliki-derbi-protiv-juventusa/" target="_blank">https://www.dalmacijadanas.hr/ante-rebic-pozitivan-na-koronavirus-propusta-veliki-derbi-protiv-juventusa/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>380</th>
+      <td>PREMINULE TRI OSOBE U Splitsko-dalmatinskoj županiji 102 novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/preminule-tri-osobe-u-splitsko-dalmatinskoj-zupaniji-102-novooboljelih/" target="_blank">https://www.dalmacijadanas.hr/preminule-tri-osobe-u-splitsko-dalmatinskoj-zupaniji-102-novooboljelih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>216</th>
+      <td>KORONA U SPLITSKO-DALMATINSKOJ Preminula je jedna osoba, evo koliko je novozaraženih</td>
+      <td><a href="https://www.dalmacijadanas.hr/korona-u-splitsko-dalmatinskoj-preminula-je-jedna-osoba-evo-koliko-je-novozarazenih/" target="_blank">https://www.dalmacijadanas.hr/korona-u-splitsko-dalmatinskoj-preminula-je-jedna-osoba-evo-koliko-je-novozarazenih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2795</th>
+      <td>NEODGOVORNO PONAŠANJE Zaraženi koronom išli registrirati auto, u trgovinu, organizirali feštu, pokušali otići u inozemstvo…</td>
+      <td><a href="https://www.dalmacijadanas.hr/neodgovorno-ponasanje-zarazeni-koronom-isli-registrirati-auto-u-trgovinu-organizirali-festu-pokusali-otici-u-inozemstvo/" target="_blank">https://www.dalmacijadanas.hr/neodgovorno-ponasanje-zarazeni-koronom-isli-registrirati-auto-u-trgovinu-organizirali-festu-pokusali-otici-u-inozemstvo/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>467</th>
+      <td>OPROŠTAJ OD BALAŠEVIĆA Obožavatelji se organiziraju preko društvenih mreža i pozivaju sve na Peristil</td>
+      <td><a href="https://www.dalmacijadanas.hr/oprostaj-od-balasevica-obozavatelji-se-organiziraju-preko-drustvenih-mreza-i-pozivaju-sve-na-peristil/" target="_blank">https://www.dalmacijadanas.hr/oprostaj-od-balasevica-obozavatelji-se-organiziraju-preko-drustvenih-mreza-i-pozivaju-sve-na-peristil/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>657</th>
+      <td>PREMINULE TRI OSOBE U Splitsko-dalmatinskoj županiji 72 novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/preminule-tri-osobe-u-splitsko-dalmatinskoj-zupaniji-72-novooboljelih/" target="_blank">https://www.dalmacijadanas.hr/preminule-tri-osobe-u-splitsko-dalmatinskoj-zupaniji-72-novooboljelih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>650</th>
+      <td>OGROMAN PAD U SDŽ tek nešto više od 20 novih slučajeva, pogledajte otkud su zaraženi</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogroman-pad-u-sdz-tek-nesto-vise-od-20-novih-slucajeva-pogledajte-otkud-su-zarazeni/" target="_blank">https://www.dalmacijadanas.hr/ogroman-pad-u-sdz-tek-nesto-vise-od-20-novih-slucajeva-pogledajte-otkud-su-zarazeni/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2374</th>
+      <td>Imotski gradonačelnik pozitivan na koronavirus!</td>
+      <td><a href="https://www.dalmacijadanas.hr/imotski-gradonacelnik-pozitivan-na-koronavirus/" target="_blank">https://www.dalmacijadanas.hr/imotski-gradonacelnik-pozitivan-na-koronavirus/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2384</th>
+      <td>OGROMNI REDOVI Splićani po ledenoj buri s olujnim udarima strpljivo čekaju na testiranje na Križinama</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromni-redovi-splicani-po-ledenoj-buri-s-olujnim-udarim-strpljivo-cekaju-na-testiranje-na-krizinama/" target="_blank">https://www.dalmacijadanas.hr/ogromni-redovi-splicani-po-ledenoj-buri-s-olujnim-udarim-strpljivo-cekaju-na-testiranje-na-krizinama/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2621</th>
+      <td>RASTE BROJ NOVOOBOLJELIH U SPLITSKO-DALMATINSKOJ ŽUPANIJI Jedna osoba preminula, evo koliko je novozaraženih</td>
+      <td><a href="https://www.dalmacijadanas.hr/raste-broj-novooboljelih-u-splitsko-dalmatinskoj-zupaniji-jedna-osoba-preminula-evo-koliko-je-novozarazenih/" target="_blank">https://www.dalmacijadanas.hr/raste-broj-novooboljelih-u-splitsko-dalmatinskoj-zupaniji-jedna-osoba-preminula-evo-koliko-je-novozarazenih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2388</th>
+      <td>ŽELJKA KARIN: “U cijeloj županiji virus cirkulira. Situacija je zabrinjavajuća”</td>
+      <td><a href="https://www.dalmacijadanas.hr/zeljka-karin-u-cijeloj-zupaniji-virus-cirkulira-situacija-je-zabrinjavajuca/" target="_blank">https://www.dalmacijadanas.hr/zeljka-karin-u-cijeloj-zupaniji-virus-cirkulira-situacija-je-zabrinjavajuca/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>494</th>
+      <td>VELIKI PAD BROJA NOVOOBOLJELIH U SD ŽUPANIJI Evo koliko je novih slučajeva, preminule su četiri osobe</td>
+      <td><a href="https://www.dalmacijadanas.hr/veliki-pad-broja-novooboljelih-u-sd-zupaniji-evo-koliko-je-novih-slucajeva-preminule-su-cetiri-osobe/" target="_blank">https://www.dalmacijadanas.hr/veliki-pad-broja-novooboljelih-u-sd-zupaniji-evo-koliko-je-novih-slucajeva-preminule-su-cetiri-osobe/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2393</th>
+      <td>NAJNOVIJI PODACI ZA SDŽ Preminule 4 osobe, velik broj novooboljelih u Splitu, Kaštelima, Sinju</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-za-sdz-preminule-4-osobe-velik-broj-novooboljelih-u-splitu-kastelima-sinju/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-za-sdz-preminule-4-osobe-velik-broj-novooboljelih-u-splitu-kastelima-sinju/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2612</th>
+      <td>Načelnica Vele Luke pozitivna na koronavirus: “Nakon što sam osjetila simptome, stavila sam se u izolaciju i zatražila testiranje”</td>
+      <td><a href="https://www.dalmacijadanas.hr/nacelnica-vele-luke-pozitivna-na-koronavirus-nakon-sto-sam-osjetila-simptome-stavila-sam-se-u-izolaciju-i-zatrazila-testiranje/" target="_blank">https://www.dalmacijadanas.hr/nacelnica-vele-luke-pozitivna-na-koronavirus-nakon-sto-sam-osjetila-simptome-stavila-sam-se-u-izolaciju-i-zatrazila-testiranje/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>1239</th>
+      <td>ODLAZAK LEGENDE Mnogima je bio omiljeni kantautor, evo kada će biti sahranjen</td>
+      <td><a href="https://www.dalmacijadanas.hr/odlazak-legende-mnogima-je-bio-omiljeni-kantautor-evo-kada-ce-biti-sahranjen/" target="_blank">https://www.dalmacijadanas.hr/odlazak-legende-mnogima-je-bio-omiljeni-kantautor-evo-kada-ce-biti-sahranjen/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2604</th>
+      <td>U Splitsko-dalmatinskoj županiji u posljednja 24 sata 43 novooboljele osobe, preminula 17-godišnjakinja</td>
+      <td><a href="https://www.dalmacijadanas.hr/u-splitsko-dalmatinskoj-zupaniji-u-posljednja-24-sata-43-novooboljele-osobe-preminula-17-godisnjakinja/" target="_blank">https://www.dalmacijadanas.hr/u-splitsko-dalmatinskoj-zupaniji-u-posljednja-24-sata-43-novooboljele-osobe-preminula-17-godisnjakinja/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>618</th>
+      <td>PREKO 80 NOVIH SLUČAJEVA U SD ŽUPANIJI: Najviše ih je iz Splita i Kaštela, preminule su tri osobe</td>
+      <td><a href="https://www.dalmacijadanas.hr/preko-80-novih-slucajeva-u-sd-zupaniji-najvise-ih-je-iz-splita-i-kastela-preminule-su-tri-osobe/" target="_blank">https://www.dalmacijadanas.hr/preko-80-novih-slucajeva-u-sd-zupaniji-najvise-ih-je-iz-splita-i-kastela-preminule-su-tri-osobe/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2603</th>
+      <td>TRAGEDIJA U SPLITU Preminula učenica Ekonomsko-upravne škole, bila je pozitivna na koronavirus</td>
+      <td><a href="https://www.dalmacijadanas.hr/tragedija-u-splitu-preminula-ucenica-ekonomsko-upravne-skole-bila-je-pozitivna-na-koronavirus/" target="_blank">https://www.dalmacijadanas.hr/tragedija-u-splitu-preminula-ucenica-ekonomsko-upravne-skole-bila-je-pozitivna-na-koronavirus/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2590</th>
+      <td>OGROMAN RED Jučer je u SDŽ bilo čak 28 posto pozitivnih među testiranima, redovi u Splitu veći nego jučer</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromni-red-jucer-je-u-sdz-bilo-cak-28-posto-pozitivnih-medu-testiranima-redovi-su-splitu-veci-nego-jucer/" target="_blank">https://www.dalmacijadanas.hr/ogromni-red-jucer-je-u-sdz-bilo-cak-28-posto-pozitivnih-medu-testiranima-redovi-su-splitu-veci-nego-jucer/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>606</th>
+      <td>Rijedak sindrom kod djece zaražene koronom: Osam slučajeva u Splitu</td>
+      <td><a href="https://www.dalmacijadanas.hr/rijedak-sindrom-kod-djece-zarazene-koronom-osam-slucajeva-u-splitu/" target="_blank">https://www.dalmacijadanas.hr/rijedak-sindrom-kod-djece-zarazene-koronom-osam-slucajeva-u-splitu/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>514</th>
+      <td>UMRLE DVIJE OSOBE Više od 50 novih slučajeva u SD županiji, najviše ih je iz Splita</td>
+      <td><a href="https://www.dalmacijadanas.hr/umrle-dvije-osobe-vise-od-50-novih-slucajeva-u-sd-zupaniji-najvise-ih-je-iz-splita/" target="_blank">https://www.dalmacijadanas.hr/umrle-dvije-osobe-vise-od-50-novih-slucajeva-u-sd-zupaniji-najvise-ih-je-iz-splita/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2442</th>
+      <td>REKORDNE BROJKE U SD ŽUPANIJI Danas 436 novooboljelih osoba, 6 ljudi preminulo</td>
+      <td><a href="https://www.dalmacijadanas.hr/rekordne-brojke-u-sd-zupaniji-danas-436-novooboljelih-osoba-6-ljudi-preminulo/" target="_blank">https://www.dalmacijadanas.hr/rekordne-brojke-u-sd-zupaniji-danas-436-novooboljelih-osoba-6-ljudi-preminulo/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2567</th>
+      <td>LOŠA SITUACIJA NA DALMATINSKOM JUGU: Preko 100 novooboljelih osoba, preminula jedna osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/losa-situacija-na-dalmatinskom-jugu-preko-100-novooboljelih-osoba-preminula-jedna-osoba/" target="_blank">https://www.dalmacijadanas.hr/losa-situacija-na-dalmatinskom-jugu-preko-100-novooboljelih-osoba-preminula-jedna-osoba/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2453</th>
+      <td>SLUŽBENO Na području Splitsko-dalmatinske županije 374 novozaraženih, osim Splita ogroman broj u Makarskoj</td>
+      <td><a href="https://www.dalmacijadanas.hr/sluzbeno-na-podrucju-splitsko-dalmatinske-zupanije-374-novozarazenih-osim-splita-ogroman-broj-u-makarskoj/" target="_blank">https://www.dalmacijadanas.hr/sluzbeno-na-podrucju-splitsko-dalmatinske-zupanije-374-novozarazenih-osim-splita-ogroman-broj-u-makarskoj/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2463</th>
+      <td>PODACI SU ZABRINJAVAJUĆI: U SD županiji preko 300 novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/podaci-su-zabrinjavajuci-u-sd-zupaniji-preko-300-novooboljelih/" target="_blank">https://www.dalmacijadanas.hr/podaci-su-zabrinjavajuci-u-sd-zupaniji-preko-300-novooboljelih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>578</th>
+      <td>STANJE U SPLITSKO-DALMATINSKOJ ŽUPANIJI Preminule 4 osobe, pao broj novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/stanje-u-splitsko-dalmatinskoj-zupaniji-preminule-4-osobe-pao-broj-novooboljelih/" target="_blank">https://www.dalmacijadanas.hr/stanje-u-splitsko-dalmatinskoj-zupaniji-preminule-4-osobe-pao-broj-novooboljelih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2490</th>
+      <td>PREMINULE DVIJE OSOBE U Splitsko-dalmatinskoj županiji 225 novooboljelih, 11 osoba na respiratoru</td>
+      <td><a href="https://www.dalmacijadanas.hr/preminule-dvije-osobe-u-splitsko-dalmatinskoj-zupaniji-225-novooboljelih-11-osoba-na-respiratoru/" target="_blank">https://www.dalmacijadanas.hr/preminule-dvije-osobe-u-splitsko-dalmatinskoj-zupaniji-225-novooboljelih-11-osoba-na-respiratoru/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2495</th>
+      <td>OGROMNE BROJKE I DALJE: U Splitsko-dalmatinskoj županiji gotovo 300 novooboljelih</td>
+      <td><a href="https://www.dalmacijadanas.hr/ogromne-brojke-i-dalje-u-splitsko-dalmatinskoj-zupaniji-gotovo-300-novooboljelih/" target="_blank">https://www.dalmacijadanas.hr/ogromne-brojke-i-dalje-u-splitsko-dalmatinskoj-zupaniji-gotovo-300-novooboljelih/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>2554</th>
       <td>LOŠA SITUACIJA U SD ŽUPANIJI: Veliki broj novooboljelih, jedna osoba preminula</td>
-      <td>https://www.dalmacijadanas.hr/losa-situacija-u-sd-zupaniji-veliki-broj-novooboljelih-jedna-osoba-preminula/</td>
+      <td><a href="https://www.dalmacijadanas.hr/losa-situacija-u-sd-zupaniji-veliki-broj-novooboljelih-jedna-osoba-preminula/" target="_blank">https://www.dalmacijadanas.hr/losa-situacija-u-sd-zupaniji-veliki-broj-novooboljelih-jedna-osoba-preminula/</a></td>
       <td>1.0</td>
       <td>NEGATIVE</td>
-    </tr>
-    <tr>
-      <th>2455</th>
-      <td>“Zaželi sretniju starost” ide dalje u Splitu: Skrb osigrana za 342 starijih Splićanki i Splićana u nepovoljnom položaju</td>
-      <td>https://www.dalmacijadanas.hr/zazeli-sretniju-starost-ide-dalje-u-splitu-skrb-osigrana-za-342-starijih-splicanki-i-splicana-u-nepovoljnom-polozaju/</td>
-      <td>1.0</td>
-      <td>POSITIVE</td>
+      <td>NEGATIVE</td>
     </tr>
     <tr>
       <th>536</th>
       <td>DOBRE BROJKE U SD ŽUPANIJI Vrlo malo novih slučajeva zaraze, evo detalja</td>
-      <td>https://www.dalmacijadanas.hr/dobre-brojke-u-sd-zupaniji-vrlo-malo-novih-slucajeva-zaraze-evo-detalja/</td>
+      <td><a href="https://www.dalmacijadanas.hr/dobre-brojke-u-sd-zupaniji-vrlo-malo-novih-slucajeva-zaraze-evo-detalja/" target="_blank">https://www.dalmacijadanas.hr/dobre-brojke-u-sd-zupaniji-vrlo-malo-novih-slucajeva-zaraze-evo-detalja/</a></td>
       <td>1.0</td>
       <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2539</th>
+      <td>NAJNOVIJI PODACI ZA SD ŽUPANIJU I danas velika brojka, preminula jedna osoba</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-za-sd-zupaniju-i-danas-velika-brojka-preminula-jedna-osoba/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-za-sd-zupaniju-i-danas-velika-brojka-preminula-jedna-osoba/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>571</th>
+      <td>SPASI ŽIVOT, DARUJ KRV Održana prva akcija dobrovoljnog darivanja krvi u organizaciji Pitt Bulla i Crvenog križa</td>
+      <td><a href="https://www.dalmacijadanas.hr/spasi-zivot-daruj-krv-odrzana-prva-akcija-dobrovoljnog-darivanja-krvi-u-organizaciju-pitt-bulla-i-crvenog-kriza/" target="_blank">https://www.dalmacijadanas.hr/spasi-zivot-daruj-krv-odrzana-prva-akcija-dobrovoljnog-darivanja-krvi-u-organizaciju-pitt-bulla-i-crvenog-kriza/</a></td>
+      <td>1.0</td>
+      <td>NONNEGATIVE</td>
+      <td>NONNEGATIVE</td>
     </tr>
     <tr>
       <th>2502</th>
       <td>PET LJUDI UMRLO U SPLITSKOJ BOLNICI: SD županija broji 332 novozaražene osobe, evo odakle su novooboljeli</td>
-      <td>https://www.dalmacijadanas.hr/pet-ljudi-umrlo-u-splitskoj-bolnici-sd-zupanija-broji-332-novozarazene-osobe-evo-odakle-su-novooboljeli/</td>
+      <td><a href="https://www.dalmacijadanas.hr/pet-ljudi-umrlo-u-splitskoj-bolnici-sd-zupanija-broji-332-novozarazene-osobe-evo-odakle-su-novooboljeli/" target="_blank">https://www.dalmacijadanas.hr/pet-ljudi-umrlo-u-splitskoj-bolnici-sd-zupanija-broji-332-novozarazene-osobe-evo-odakle-su-novooboljeli/</a></td>
       <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>464</th>
+      <td>KORONA U SPLITSKO-DALMATINSKOJ ŽUPANIJI 70 novih slučajeva, uvjerljivo najviše iz Splita</td>
+      <td><a href="https://www.dalmacijadanas.hr/korona-u-splitsko-dalmatinskoj-zupaniji-70-novih-slucajeva-uvjerljivo-najvise-iz-splita/" target="_blank">https://www.dalmacijadanas.hr/korona-u-splitsko-dalmatinskoj-zupaniji-70-novih-slucajeva-uvjerljivo-najvise-iz-splita/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2654</th>
+      <td>STIGLI PODACI ZA SPLITSKO-DALMATINSKU ŽUPANIJU Danas 22 novooboljele osobe, preminuo muškarac, troje na respiratoru</td>
+      <td><a href="https://www.dalmacijadanas.hr/stigli-podaci-za-splitsko-dalmatinsku-zupaniju-danas-22-novooboljele-osobe-preminuo-muskarac-troje-na-respiratoru/" target="_blank">https://www.dalmacijadanas.hr/stigli-podaci-za-splitsko-dalmatinsku-zupaniju-danas-22-novooboljele-osobe-preminuo-muskarac-troje-na-respiratoru/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>673</th>
+      <td>NAJNOVIJI PODACI ZA SPLITSKO-DALMATINSKU ŽUPANIJU Najviše novooboljelih iz Splita i Kaštela, preminule dvije žene</td>
+      <td><a href="https://www.dalmacijadanas.hr/najnoviji-podaci-za-splitsko-dalmatinsku-zupaniju-najvise-novooboljelih-iz-splita-i-kastela-preminule-dvije-zene/" target="_blank">https://www.dalmacijadanas.hr/najnoviji-podaci-za-splitsko-dalmatinsku-zupaniju-najvise-novooboljelih-iz-splita-i-kastela-preminule-dvije-zene/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
+      <td>NEGATIVE</td>
+    </tr>
+    <tr>
+      <th>2728</th>
+      <td>NEVJEROJATNO: Zaraženi sjeo u auto i otišao u trgovinu</td>
+      <td><a href="https://www.dalmacijadanas.hr/nevjerojatno-zarazeni-sjeo-u-auto-i-otisao-u-trgovinu/" target="_blank">https://www.dalmacijadanas.hr/nevjerojatno-zarazeni-sjeo-u-auto-i-otisao-u-trgovinu/</a></td>
+      <td>1.0</td>
+      <td>NEGATIVE</td>
       <td>NEGATIVE</td>
     </tr>
   </tbody>

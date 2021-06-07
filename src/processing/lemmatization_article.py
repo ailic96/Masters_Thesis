@@ -65,7 +65,7 @@ def lemmatize_articles(input_path, output_path):
                 doc_subtitle = nlp(subtitle)
                 lem_subtitle = [word.lemma for sent in doc_subtitle.sentences for word in sent.words]
             except:
-                subtitle = 'N/A'
+                title = 'N/A'
                 lem_subtitle = 'N/A'
                 pass
 
@@ -74,7 +74,7 @@ def lemmatize_articles(input_path, output_path):
                 lem_article_text =  [word.lemma for sent in doc_article_text.sentences for word in sent.words]
             
             except:
-                article_text = 'N/A'
+                title = 'N/A'
                 lem_article_text = 'N/A'
                 pass
 
